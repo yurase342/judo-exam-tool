@@ -54,14 +54,13 @@ export const useSessionStore = create<SessionState>((set) => ({
         : ({
             mode: 'learning',
             examNumbers: [],
-            sessions: ['gozen', 'gogo'], // デフォルトで午前・午後両方
             questionCount: 50,
             shuffle: true, // デフォルトでシャッフル有効
             ...settings,
             // sessionsが空の場合は、午前・午後両方を設定
             sessions: settings.sessions && settings.sessions.length > 0 
               ? settings.sessions 
-              : ['gozen', 'gogo'],
+              : ['gozen', 'gogo'], // デフォルトで午前・午後両方
           } as SessionSettings),
     })),
   startSession: () => {

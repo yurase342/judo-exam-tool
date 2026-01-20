@@ -178,7 +178,7 @@ const Home: FC<HomeProps> = ({ onStartSession }) => {
       console.log('[handleStart] 既に読み込まれた問題数:', allLoadedQuestions.length);
       
       // sessionsが空の場合は、午前・午後両方を設定
-      const targetSessions = settings.sessions && settings.sessions.length > 0 
+      const targetSessions: SessionType[] = settings.sessions && settings.sessions.length > 0 
         ? settings.sessions 
         : ['gozen', 'gogo'];
       

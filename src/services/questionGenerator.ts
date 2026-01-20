@@ -267,8 +267,9 @@ export async function generateQuestionsFromAnswerPdf(
       const response = await fetch(bessatsuPdfPath);
       if (response.ok) {
         const blob = await response.blob();
+        const arrayBuffer = await blob.arrayBuffer();
         const extractedSupplements = await extractSupplementsFromPDF(
-          blob,
+          arrayBuffer,
           examConfig.year,
           examNumber,
           session,
