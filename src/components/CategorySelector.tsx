@@ -44,8 +44,12 @@ const CategorySelector: React.FC<CategorySelectorProps> = ({
   };
 
   // 科目グループ（午前系・午後系）
+  // 注意: judo_therapy（柔道整復理論）は午前・午後両方に含まれる
+  // 午前のみの科目: 関係法規、解剖学、生理学、運動学、病理学概論
+  // 午後のみの科目: 衛生学、リハビリテーション医学、一般臨床医学、外科学概論、整形外科学
+  // 両方: 柔道整復理論
   const gozenCategories: CategoryId[] = ['judo_therapy', 'law', 'anatomy', 'physiology', 'kinesiology', 'pathology'];
-  const gogoCategories: CategoryId[] = ['hygiene', 'rehabilitation', 'clinical_general', 'surgery', 'orthopedics'];
+  const gogoCategories: CategoryId[] = ['judo_therapy', 'hygiene', 'rehabilitation', 'clinical_general', 'surgery', 'orthopedics'];
 
   // グループ選択
   const handleSelectGozen = () => {
