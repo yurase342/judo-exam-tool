@@ -135,6 +135,8 @@ export const ANSWER_PDF_MAP: Record<number, string> = {
 export const PDF_BASE_PATHS = {
   questions: '/pdfs/',      // 問題PDF
   answers: '/answers/',     // 正答PDF
+  bessatsuImages: '/data/bessatsu/',  // 別冊画像（WebP）
+  questionImages: '/data/question-images/',  // 問題内図画像（WebP）
 };
 
 /**
@@ -181,6 +183,70 @@ export function getBessatsuPdfPath(examNumber: number, session: SessionType): st
   if (!sessionConfig.bessatsuPdf) return null;
 
   return `${PDF_BASE_PATHS.questions}${sessionConfig.bessatsuPdf}`;
+}
+
+/**
+ * 別冊画像（WebP）のパスを取得
+ * @param examNumber 回次
+ * @param session セッション（午前/午後）
+ * @param pageNumber ページ番号（1-indexed）
+ * @returns WebP画像のパス
+ */
+export function getBessatsuImagePath(examNumber: number, session: SessionType, pageNumber: number): string {
+  // フォーマット: /data/bessatsu/{examNumber}/{session}/{pageNumber}.webp
+  return `${PDF_BASE_PATHS.bessatsuImages}${examNumber}/${session}/${pageNumber}.webp`;
+}
+
+/**
+ * 別冊画像のディレクトリパスを取得
+ * @param examNumber 回次
+ * @param session セッション（午前/午後）
+ * @returns ディレクトリパス
+ */
+export function getBessatsuImageDir(examNumber: number, session: SessionType): string {
+  return `${PDF_BASE_PATHS.bessatsuImages}${examNumber}/${session}/`;
+}
+
+/**
+ * 問題内図画像（WebP）のパスを取得
+ * @param examNumber 回次
+ * @param session セッション（午前/午後）
+ * @param questionNumber 問題番号
+ * @returns WebP画像のパス
+ */
+export function getQuestionImagePath(examNumber: number, session: SessionType, questionNumber: number): string {
+  // フォーマット: /data/question-images/{examNumber}/{session}/q{questionNumber}.webp
+  return `${PDF_BASE_PATHS.questionImages}${examNumber}/${session}/q${questionNumber}.webp`;
+}
+
+/**
+ * 問題内図画像が存在するかどうかを確認するためのマッピング
+ * 図を含む問題の一覧
+ */
+export const QUESTIONS_WITH_FIGURES: Record<string, number[]> = {
+  '29_gozen': [85],
+  '29_gogo': [82, 108, 109],
+  '30_gozen': [102],
+  '30_gogo': [86],
+  '31_gozen': [55, 57, 75],
+  '31_gogo': [106, 117],
+  '32_gozen': [64],
+  '32_gogo': [27, 119],
+  '33_gozen': [114],
+  '33_gogo': [87],
+};
+
+/**
+ * 問題に図が含まれているかどうかを確認
+ * @param examNumber 回次
+ * @param session セッション（午前/午後）
+ * @param questionNumber 問題番号
+ * @returns 図が含まれていればtrue
+ */
+export function hasQuestionImage(examNumber: number, session: SessionType, questionNumber: number): boolean {
+  const key = `${examNumber}_${session}`;
+  const questionsWithFigures = QUESTIONS_WITH_FIGURES[key];
+  return questionsWithFigures?.includes(questionNumber) ?? false;
 }
 
 /**

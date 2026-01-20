@@ -5,7 +5,7 @@
 
 import React, { useState, useEffect } from 'react';
 import { SessionType } from '../types';
-import { renderBessatsuPage, getBessatsuPageCount } from '../services/bessatsuRenderer';
+import { getBessatsuPageCount } from '../services/bessatsuRenderer';
 
 interface BessatsuViewerProps {
   examNumber: number;
@@ -40,18 +40,31 @@ export const BessatsuViewer: React.FC<BessatsuViewerProps> = ({
     fetchPageCount();
   }, [examNumber, session]);
 
-  // ページ画像を読み込む
+  // ページ画像を読み込む（public/data/bessatsu/から直接読み込む）
   useEffect(() => {
     const loadPage = async () => {
       setLoading(true);
       setError(null);
 
       try {
-        const url = await renderBessatsuPage(examNumber, session, currentPage);
-        if (url) {
-          setImageUrl(url);
+        const { getBessatsuImagePath } = await import('../config/pdfConfig');
+        const imagePath = getBessatsuImagePath(examNumber, session, currentPage);
+        
+        // 画像ファイルの存在確認
+        const response = await fetch(imagePath, { method: 'HEAD' });
+        if (response.ok) {
+          // 画像ファイルが存在する場合は、パスをそのまま使用
+          setImageUrl(imagePath);
         } else {
-          setError('画像の読み込みに失敗しました');
+          // 画像ファイルが見つからない場合は、PDFから動的に読み込む（フォールバック）
+          console.warn(`[BessatsuViewer] 画像ファイルが見つかりません: ${imagePath}、PDFから読み込みます`);
+          const { renderBessatsuPage } = await import('../services/bessatsuRenderer');
+          const url = await renderBessatsuPage(examNumber, session, currentPage);
+          if (url) {
+            setImageUrl(url);
+          } else {
+            setError('画像の読み込みに失敗しました');
+          }
         }
       } catch (err) {
         setError('画像の読み込み中にエラーが発生しました');

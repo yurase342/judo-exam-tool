@@ -2,8 +2,8 @@ import { useState, useEffect, useRef, useMemo } from 'react';
 import { Question } from '../types';
 import ImageModal from './ImageModal';
 import BessatsuViewer from './BessatsuViewer';
-import { renderBessatsuPage } from '../services/bessatsuRenderer';
 import { generateHint } from '../services/hintGenerator';
+import { hasQuestionImage, getQuestionImagePath } from '../config/pdfConfig';
 
 interface QuestionViewProps {
   question: Question;
@@ -37,6 +37,9 @@ const QuestionView: React.FC<QuestionViewProps> = ({
   const [bessatsuPage, setBessatsuPage] = useState<number | undefined>(undefined);
   const [bessatsuImages, setBessatsuImages] = useState<Map<number, string>>(new Map());
   const [loadingBessatsu, setLoadingBessatsu] = useState(false);
+  const [questionImageUrl, setQuestionImageUrl] = useState<string | null>(null); // 問題内図画像
+  const [loadingQuestionImage, setLoadingQuestionImage] = useState(false);
+  const [showQuestionImageModal, setShowQuestionImageModal] = useState(false); // 問題画像モーダル表示
   const choicesRef = useRef<HTMLDivElement>(null);
 
   // 問題が変わった時に選択状態をリセット
@@ -45,9 +48,11 @@ const QuestionView: React.FC<QuestionViewProps> = ({
     setShowHint(false);
     setHintUsed(false); // ヒント使用状態もリセット
     setShowBessatsuViewer(false);
+    setQuestionImageUrl(null); // 問題画像もリセット
+    setShowQuestionImageModal(false);
   }, [question.id]);
 
-  // 別冊画像を読み込む
+  // 別冊画像を読み込む（public/data/bessatsu/から直接読み込む）
   useEffect(() => {
     const loadBessatsuImages = async () => {
       if (question.supplementReferences.length === 0) {
@@ -59,18 +64,36 @@ const QuestionView: React.FC<QuestionViewProps> = ({
       const newImages = new Map<number, string>();
 
       try {
-        // 各別冊参照のページを読み込む
+        const { getBessatsuImagePath } = await import('../config/pdfConfig');
+        
+        // 各別冊参照の画像をpublicフォルダから読み込む
         for (const ref of question.supplementReferences) {
-          const pageNum = parseInt(ref.imageNumber, 10);
-          if (!isNaN(pageNum) && pageNum > 0) {
-            const imageUrl = await renderBessatsuPage(
+          // imageNumberからページ番号を抽出（例: "12A" -> 12, "1" -> 1）
+          const pageNumber = parseInt(ref.imageNumber.replace(/[^0-9]/g, ''), 10);
+          
+          if (!isNaN(pageNumber) && pageNumber > 0) {
+            // WebP画像のパスを取得
+            const imagePath = getBessatsuImagePath(
               question.examNumber,
               question.session,
-              pageNum
+              pageNumber
             );
-            if (imageUrl) {
-              newImages.set(pageNum, imageUrl);
+            
+            // 画像ファイルの存在確認
+            try {
+              const response = await fetch(imagePath, { method: 'HEAD' });
+              if (response.ok) {
+                // 画像ファイルが存在する場合は、パスをそのまま使用
+                newImages.set(pageNumber, imagePath);
+                console.log(`[QuestionView] 別冊画像を読み込み: ${imagePath}`);
+              } else {
+                console.warn(`[QuestionView] 別冊画像が見つかりません: ${imagePath}`);
+              }
+            } catch (fetchError) {
+              console.warn(`[QuestionView] 別冊画像の読み込みに失敗: ${imagePath}`, fetchError);
             }
+          } else {
+            console.warn(`[QuestionView] 無効な画像番号: ${ref.imageNumber}`);
           }
         }
       } catch (error) {
@@ -83,6 +106,43 @@ const QuestionView: React.FC<QuestionViewProps> = ({
 
     loadBessatsuImages();
   }, [question.id, question.supplementReferences, question.examNumber, question.session]);
+
+  // 問題内図画像を読み込む
+  useEffect(() => {
+    const loadQuestionImage = async () => {
+      // 問題に図が含まれているかチェック
+      if (!hasQuestionImage(question.examNumber, question.session, question.questionNumber)) {
+        setQuestionImageUrl(null);
+        return;
+      }
+
+      setLoadingQuestionImage(true);
+      try {
+        const imagePath = getQuestionImagePath(
+          question.examNumber,
+          question.session,
+          question.questionNumber
+        );
+
+        // 画像ファイルの存在確認
+        const response = await fetch(imagePath, { method: 'HEAD' });
+        if (response.ok) {
+          setQuestionImageUrl(imagePath);
+          console.log(`[QuestionView] 問題画像を読み込み: ${imagePath}`);
+        } else {
+          console.warn(`[QuestionView] 問題画像が見つかりません: ${imagePath}`);
+          setQuestionImageUrl(null);
+        }
+      } catch (error) {
+        console.error('[QuestionView] 問題画像読み込みエラー:', error);
+        setQuestionImageUrl(null);
+      } finally {
+        setLoadingQuestionImage(false);
+      }
+    };
+
+    loadQuestionImage();
+  }, [question.id, question.examNumber, question.session, question.questionNumber]);
 
   // キーボードショートカット（1-4キーで選択肢を選択）
   useEffect(() => {
@@ -129,13 +189,14 @@ const QuestionView: React.FC<QuestionViewProps> = ({
     return `${mins.toString().padStart(2, '0')}:${secs.toString().padStart(2, '0')}`;
   };
 
-  // 別冊画像がある場合の処理
+  // 別冊画像がある場合の処理（public/data/bessatsu/から読み込んだ画像パスを使用）
   const supplementImages = question.supplementReferences.map((ref) => {
-    const pageNum = parseInt(ref.imageNumber, 10);
+    // imageNumberからページ番号を抽出（例: "12A" -> 12, "1" -> 1）
+    const pageNum = parseInt(ref.imageNumber.replace(/[^0-9]/g, ''), 10);
     return {
-      id: ref.supplementId,
+      id: ref.supplementId || `${question.examNumber}-${question.session}-${ref.imageNumber}`,
       imageNumber: ref.imageNumber,
-      imageData: bessatsuImages.get(pageNum) || '',
+      imageData: bessatsuImages.get(pageNum) || '', // 画像パス（/data/bessatsu/...）または空文字列
       pageNumber: pageNum,
     };
   });
@@ -251,6 +312,37 @@ const QuestionView: React.FC<QuestionViewProps> = ({
                 </div>
               )}
             </div>
+
+            {/* 問題内図画像の表示 */}
+            {(questionImageUrl || loadingQuestionImage) && (
+              <div className="mt-4 border-t pt-4">
+                <h4 className="text-sm font-semibold text-gray-700 mb-2">📊 問題の図</h4>
+                {loadingQuestionImage ? (
+                  <div className="flex items-center justify-center py-8 text-gray-500">
+                    <div className="flex flex-col items-center">
+                      <div className="animate-spin rounded-full h-6 w-6 border-b-2 border-blue-500 mb-2"></div>
+                      <span className="text-sm">図を読み込み中...</span>
+                    </div>
+                  </div>
+                ) : questionImageUrl && (
+                  <div
+                    className="border-2 border-gray-200 rounded-lg overflow-hidden cursor-pointer hover:border-blue-400 transition-colors"
+                    onClick={() => setShowQuestionImageModal(true)}
+                  >
+                    <div className="relative">
+                      <img
+                        src={questionImageUrl}
+                        alt="問題の図"
+                        className="w-full max-h-[50vh] object-contain bg-gray-50"
+                      />
+                      <div className="absolute top-2 right-2 bg-black/60 text-white text-xs px-2 py-1 rounded">
+                        クリックで拡大
+                      </div>
+                    </div>
+                  </div>
+                )}
+              </div>
+            )}
 
             {/* ヒントボタン（学習モードのみ） */}
             {mode === 'learning' && (
@@ -394,6 +486,34 @@ const QuestionView: React.FC<QuestionViewProps> = ({
           onClose={() => setShowBessatsuViewer(false)}
           fullScreen={true}
         />
+      )}
+
+      {/* 問題画像モーダル（フルスクリーン） */}
+      {showQuestionImageModal && questionImageUrl && (
+        <div
+          className="fixed inset-0 z-50 bg-black/90 flex items-center justify-center"
+          onClick={() => setShowQuestionImageModal(false)}
+        >
+          <div className="relative w-full h-full flex items-center justify-center p-4">
+            <img
+              src={questionImageUrl}
+              alt="問題の図（拡大）"
+              className="max-w-full max-h-full object-contain"
+              onClick={(e) => e.stopPropagation()}
+            />
+            <button
+              onClick={() => setShowQuestionImageModal(false)}
+              className="absolute top-4 right-4 bg-white/80 hover:bg-white text-gray-800 rounded-full p-2 transition-colors"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </button>
+            <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-black/60 text-white text-sm px-4 py-2 rounded">
+              第{question.examNumber}回 {question.session === 'gozen' ? '午前' : '午後'} 問{question.questionNumber}
+            </div>
+          </div>
+        </div>
       )}
     </div>
   );

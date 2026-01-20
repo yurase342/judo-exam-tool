@@ -11,7 +11,6 @@ import { parseAnswerText } from './answerParser';
 import {
   getAnswerPdfPath as getAnswerPdfPathFromConfig,
   getQuestionPdfPath as getQuestionPdfPathFromConfig,
-  getBessatsuPdfPath,
   getAvailableExamNumbers,
   getExamConfig,
 } from '../config/pdfConfig';
@@ -255,44 +254,9 @@ export async function generateQuestionsFromAnswerPdf(
   }
   console.log(`[generateQuestionsFromAnswerPdf] 問題PDFパス: ${questionPdfPath}`);
 
-  // 別冊PDFのパスを取得（問題表示用）
-  const bessatsuPdfPath = getBessatsuPdfPath(examNumber, session);
-  
-  // 別冊PDFを読み込んで、画像から問題番号を検出
-  let supplements: Array<{ id: string; imageNumber: string; examNumber: number; session: 'gozen' | 'gogo'; questionNumbers?: number[] }> = [];
-  if (bessatsuPdfPath) {
-    try {
-      console.log(`[generateQuestionsFromAnswerPdf] 別冊PDFを読み込み中: ${bessatsuPdfPath}`);
-      const { extractSupplementsFromPDF } = await import('./supplementExtractor');
-      const response = await fetch(bessatsuPdfPath);
-      if (response.ok) {
-        const blob = await response.blob();
-        const arrayBuffer = await blob.arrayBuffer();
-        const extractedSupplements = await extractSupplementsFromPDF(
-          arrayBuffer,
-          examConfig.year,
-          examNumber,
-          session,
-          bessatsuPdfPath
-        );
-        supplements = extractedSupplements.map(supp => ({
-          id: supp.id,
-          imageNumber: supp.imageNumber,
-          examNumber: supp.examNumber,
-          session: supp.session,
-          questionNumbers: supp.questionNumbers,
-        }));
-        console.log(`[generateQuestionsFromAnswerPdf] 別冊画像を${supplements.length}件読み込み`);
-        supplements.forEach(supp => {
-          if (supp.questionNumbers && supp.questionNumbers.length > 0) {
-            console.log(`[generateQuestionsFromAnswerPdf]   画像${supp.imageNumber}: 問題${supp.questionNumbers.join(', ')}に対応`);
-          }
-        });
-      }
-    } catch (error: any) {
-      console.warn(`[generateQuestionsFromAnswerPdf] 別冊PDFの読み込みに失敗: ${error?.message || String(error)}`);
-    }
-  }
+  // 別冊画像はpublic/data/bessatsu/から直接読み込むため、ここでは処理不要
+  // 別冊参照のリンク情報のみを保持（画像データはQuestionViewで直接読み込む）
+  const supplements: Array<{ id: string; imageNumber: string; examNumber: number; session: 'gozen' | 'gogo'; questionNumbers?: number[] }> = [];
 
   try {
     // 正答PDFからテキストを抽出

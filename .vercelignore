@@ -1,0 +1,46 @@
+# Node modules
+node_modules/
+
+# Build outputs
+dist/
+dist-electron/
+build/
+out/
+release/
+
+# Logs
+*.log
+
+# Environment files
+.env
+.env.local
+.env*.local
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+
+# Cache
+.cache/
+.parcel-cache/
+
+# Large PDF files (excluded from deployment)
+05_柔道整復学・理論編/
+public/pdfs/*.pdf
+public/answers/*.pdf
+
+# Large source files (not needed for deployment)
+*.md
+!README.md

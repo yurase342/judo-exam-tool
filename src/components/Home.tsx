@@ -48,6 +48,10 @@ const Home: FC<HomeProps> = ({ onStartSession }) => {
           for (const session of ['gozen', 'gogo'] as SessionType[]) {
             try {
               console.log(`[Home] 第${examNumber}回 ${session} を処理中...`);
+              
+              // 別冊画像はpublic/data/bessatsu/から直接読み込むため、ここでは処理不要
+              
+              // 問題を生成
               const questions = await generateQuestionsFromAnswerPdf(examNumber, session);
               if (questions.length > 0) {
                 allQuestions = allQuestions.concat(questions);

@@ -169,3 +169,44 @@ export async function getQuestions(
 
   return allQuestions;
 }
+
+/**
+ * 別冊を取得
+ */
+export async function getSupplement(id: string): Promise<Supplement | undefined> {
+  const db = await getDatabase();
+  return await db.get('supplements', id);
+}
+
+/**
+ * 条件に一致する別冊を取得
+ */
+export async function getSupplements(
+  examNumbers: number[],
+  sessions: ('gozen' | 'gogo')[]
+): Promise<Supplement[]> {
+  const db = await getDatabase();
+  const allSupplements: Supplement[] = [];
+
+  for (const examNumber of examNumbers) {
+    for (const session of sessions) {
+      const range = IDBKeyRange.bound([0, examNumber, session], [9999, examNumber, session]);
+      const supplements = await db.getAllFromIndex('supplements', 'by-exam', range);
+      allSupplements.push(...supplements);
+    }
+  }
+
+  return allSupplements;
+}
+
+/**
+ * 画像番号で別冊を取得
+ */
+export async function getSupplementByImageNumber(
+  examNumber: number,
+  session: 'gozen' | 'gogo',
+  imageNumber: string
+): Promise<Supplement | undefined> {
+  const supplements = await getSupplements([examNumber], [session]);
+  return supplements.find(s => s.imageNumber === imageNumber);
+}
