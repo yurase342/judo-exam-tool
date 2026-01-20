@@ -141,14 +141,19 @@ const Home: FC<HomeProps> = ({ onStartSession }) => {
       ? settings.sessions
       : ['gozen', 'gogo'];
 
+    // 回次とセッションでフィルタリング
     let filtered = allLoadedQuestions.filter(q =>
       settings.examNumbers.includes(q.examNumber) &&
       targetSessions.includes(q.session)
     );
 
-    // カテゴリフィルタが選択されている場合
-    if (selectedCategories.length > 0 && selectedCategories.length < CATEGORY_LIST.length) {
+    // カテゴリフィルタを常に適用（選択した科目の問題のみ）
+    // カテゴリが設定されていない問題は除外
+    if (selectedCategories.length > 0) {
       filtered = filtered.filter(q => q.category && selectedCategories.includes(q.category));
+    } else {
+      // 科目が1つも選択されていない場合は0問
+      return 0;
     }
 
     return filtered.length;
@@ -197,13 +202,21 @@ const Home: FC<HomeProps> = ({ onStartSession }) => {
         targetSessions.includes(q.session)
       );
 
-      // カテゴリフィルタを適用
-      if (selectedCategories.length > 0 && selectedCategories.length < CATEGORY_LIST.length) {
-        filteredQuestions = filteredQuestions.filter(q =>
-          q.category && selectedCategories.includes(q.category)
-        );
-        console.log(`[handleStart] カテゴリフィルタ適用後: ${filteredQuestions.length}問 (選択: ${selectedCategories.map(c => CATEGORIES[c].name).join(', ')})`);
-      }
+      // カテゴリフィルタを常に適用（選択した科目の問題のみ出題）
+      // カテゴリが設定されていない問題は除外
+      filteredQuestions = filteredQuestions.filter(q =>
+        q.category && selectedCategories.includes(q.category)
+      );
+      console.log(`[handleStart] カテゴリフィルタ適用後: ${filteredQuestions.length}問 (選択: ${selectedCategories.map(c => CATEGORIES[c].name).join(', ')})`);
+
+      // カテゴリ別の問題数をログ出力（デバッグ用）
+      const categoryBreakdown: Record<string, number> = {};
+      filteredQuestions.forEach(q => {
+        if (q.category) {
+          categoryBreakdown[q.category] = (categoryBreakdown[q.category] || 0) + 1;
+        }
+      });
+      console.log('[handleStart] カテゴリ別問題数:', categoryBreakdown);
       
       // デバッグ: フィルタリング前の問題数を確認
       const gozenCount = allLoadedQuestions.filter(q => 

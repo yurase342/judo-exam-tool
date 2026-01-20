@@ -1,5 +1,6 @@
 /**
  * 科目（カテゴリ）選択コンポーネント
+ * 11科目の個別選択と全選択/全解除機能を提供
  */
 
 import React from 'react';
@@ -17,15 +18,6 @@ const CategorySelector: React.FC<CategorySelectorProps> = ({
   onChange,
   disabled = false,
 }) => {
-  // 全選択/全解除
-  const handleSelectAll = () => {
-    if (selectedCategories.length === CATEGORY_LIST.length) {
-      onChange([]);
-    } else {
-      onChange([...CATEGORY_LIST]);
-    }
-  };
-
   // 個別の科目を選択/解除
   const handleToggleCategory = (categoryId: CategoryId) => {
     const isCurrentlySelected = selectedCategories.includes(categoryId);
@@ -42,43 +34,6 @@ const CategorySelector: React.FC<CategorySelectorProps> = ({
       onChange([...selectedCategories, categoryId]);
     }
   };
-
-  // 科目グループ（午前系・午後系）
-  // 注意: judo_therapy（柔道整復理論）は午前・午後両方に含まれる
-  // 午前のみの科目: 関係法規、解剖学、生理学、運動学、病理学概論
-  // 午後のみの科目: 衛生学、リハビリテーション医学、一般臨床医学、外科学概論、整形外科学
-  // 両方: 柔道整復理論
-  const gozenCategories: CategoryId[] = ['judo_therapy', 'law', 'anatomy', 'physiology', 'kinesiology', 'pathology'];
-  const gogoCategories: CategoryId[] = ['judo_therapy', 'hygiene', 'rehabilitation', 'clinical_general', 'surgery', 'orthopedics'];
-
-  // グループ選択
-  const handleSelectGozen = () => {
-    const newSelection = new Set(selectedCategories);
-    const allGozenSelected = gozenCategories.every(c => selectedCategories.includes(c));
-
-    if (allGozenSelected) {
-      gozenCategories.forEach(c => newSelection.delete(c));
-    } else {
-      gozenCategories.forEach(c => newSelection.add(c));
-    }
-    onChange(Array.from(newSelection));
-  };
-
-  const handleSelectGogo = () => {
-    const newSelection = new Set(selectedCategories);
-    const allGogoSelected = gogoCategories.every(c => selectedCategories.includes(c));
-
-    if (allGogoSelected) {
-      gogoCategories.forEach(c => newSelection.delete(c));
-    } else {
-      gogoCategories.forEach(c => newSelection.add(c));
-    }
-    onChange(Array.from(newSelection));
-  };
-
-  const isAllSelected = selectedCategories.length === CATEGORY_LIST.length;
-  const isGozenAllSelected = gozenCategories.every(c => selectedCategories.includes(c));
-  const isGogoAllSelected = gogoCategories.every(c => selectedCategories.includes(c));
 
   // 色のマッピング
   const getColorClasses = (category: CategoryInfo, isSelected: boolean) => {
@@ -106,44 +61,26 @@ const CategorySelector: React.FC<CategorySelectorProps> = ({
 
   return (
     <div className={`space-y-4 ${disabled ? 'opacity-50 pointer-events-none' : ''}`}>
-      {/* クイック選択ボタン */}
-      <div className="flex flex-wrap gap-2">
+      {/* 全選択/全解除リンク */}
+      <div className="flex items-center gap-2">
         <button
           type="button"
-          onClick={handleSelectAll}
-          className={`px-3 py-1.5 rounded-lg text-sm font-medium transition-colors ${
-            isAllSelected
-              ? 'bg-blue-600 text-white'
-              : 'bg-gray-200 text-gray-700 hover:bg-gray-300'
-          }`}
+          onClick={() => onChange([...CATEGORY_LIST])}
+          className="text-sm text-blue-600 hover:text-blue-800 underline"
         >
-          {isAllSelected ? '全て選択中' : '全科目を選択'}
+          全て選択
         </button>
+        <span className="text-gray-300">|</span>
         <button
           type="button"
-          onClick={handleSelectGozen}
-          className={`px-3 py-1.5 rounded-lg text-sm font-medium transition-colors ${
-            isGozenAllSelected
-              ? 'bg-green-600 text-white'
-              : 'bg-gray-200 text-gray-700 hover:bg-gray-300'
-          }`}
+          onClick={() => onChange([])}
+          className="text-sm text-blue-600 hover:text-blue-800 underline"
         >
-          午前科目
-        </button>
-        <button
-          type="button"
-          onClick={handleSelectGogo}
-          className={`px-3 py-1.5 rounded-lg text-sm font-medium transition-colors ${
-            isGogoAllSelected
-              ? 'bg-purple-600 text-white'
-              : 'bg-gray-200 text-gray-700 hover:bg-gray-300'
-          }`}
-        >
-          午後科目
+          全て解除
         </button>
       </div>
 
-      {/* 科目リスト */}
+      {/* 科目リスト（11科目の個別チェックボックス） */}
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-2">
         {CATEGORY_LIST.map(categoryId => {
           const category = CATEGORIES[categoryId];
@@ -168,25 +105,6 @@ const CategorySelector: React.FC<CategorySelectorProps> = ({
             </button>
           );
         })}
-      </div>
-
-      {/* 全選択/全解除ボタン */}
-      <div className="flex items-center gap-2">
-        <button
-          type="button"
-          onClick={() => onChange([...CATEGORY_LIST])}
-          className="text-xs text-blue-600 hover:text-blue-800 underline"
-        >
-          全て選択
-        </button>
-        <span className="text-gray-300">|</span>
-        <button
-          type="button"
-          onClick={() => onChange([])}
-          className="text-xs text-blue-600 hover:text-blue-800 underline"
-        >
-          全て解除
-        </button>
       </div>
 
       {/* 選択状態の表示 */}
