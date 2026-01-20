@@ -3,7 +3,7 @@
  * スキャン画像PDFからテキスト抽出ができない場合に使用
  */
 
-import { SessionType } from './index';
+import { SessionType, CategoryId } from './index';
 
 /**
  * JSON問題ファイルの形式
@@ -29,9 +29,16 @@ export interface QuestionDataItem {
     d: string;
     e?: string; // 選択肢eはオプショナル（4択の場合は不要）
   };
+  // 正答（単一正答の場合）
+  correctAnswer?: string; // "a", "b", "c", "d", "e"
+  // 複数正答（複数正答の場合、例：["a", "b"]）
+  // correctAnswerがある場合でもこちらが優先される
+  correctAnswers?: string[];
   // 別冊参照（該当する場合）
   bessatsuPage?: number; // 別冊PDFのページ番号（1-indexed）
   bessatsuLabel?: string; // 「別冊No.1」など
+  // カテゴリ（科目）- JSONファイルに含まれている場合
+  category?: CategoryId;
 }
 
 /**

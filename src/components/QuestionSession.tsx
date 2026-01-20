@@ -22,6 +22,7 @@ const QuestionSession: React.FC<QuestionSessionProps> = ({
     isCorrect: boolean;
     selectedAnswer: string;
     correctAnswer: string;
+    correctAnswers?: string[]; // 複数正答対応
   } | null>(null);
   const [startTime] = useState<number>(Date.now());
   const [questionStartTime, setQuestionStartTime] = useState<number>(Date.now());
@@ -101,7 +102,16 @@ const QuestionSession: React.FC<QuestionSessionProps> = ({
   // 回答処理
   const handleAnswer = (selectedAnswer: string) => {
     const question = questions[currentIndex];
-    const isCorrect = selectedAnswer === question.correctAnswer;
+
+    // 正解判定（複数正答対応）
+    // correctAnswersがある場合はそれを使用、なければcorrectAnswerを使用
+    const correctAnswerList = question.correctAnswers && question.correctAnswers.length > 0
+      ? question.correctAnswers
+      : [question.correctAnswer];
+    const isCorrect = correctAnswerList.some(
+      ca => ca.toLowerCase() === selectedAnswer.toLowerCase()
+    );
+
     const timeSpent = Math.floor((Date.now() - questionStartTime) / 1000);
 
     const answer: Answer = {
@@ -124,6 +134,7 @@ const QuestionSession: React.FC<QuestionSessionProps> = ({
       isCorrect,
       selectedAnswer,
       correctAnswer: question.correctAnswer,
+      correctAnswers: question.correctAnswers, // 複数正答を渡す
     });
     setShowFeedback(true);
   };
@@ -189,6 +200,7 @@ const QuestionSession: React.FC<QuestionSessionProps> = ({
           isCorrect={feedbackData.isCorrect}
           selectedAnswer={feedbackData.selectedAnswer}
           correctAnswer={feedbackData.correctAnswer}
+          correctAnswers={feedbackData.correctAnswers}
           onNext={moveToNext}
           mode={mode}
         />

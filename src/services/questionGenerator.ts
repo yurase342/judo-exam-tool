@@ -6,7 +6,7 @@
  * 3. PDFがスキャン画像の場合、JSONファイル作成を促すエラーを表示
  */
 
-import { Question, Choice, SessionType } from '../types';
+import { Question, Choice, SessionType, CategoryId } from '../types';
 import { parseAnswerText } from './answerParser';
 import {
   getAnswerPdfPath as getAnswerPdfPathFromConfig,
@@ -16,6 +16,7 @@ import {
 } from '../config/pdfConfig';
 import { loadQuestionsFromJson } from './jsonQuestionLoader';
 import { getQuestionDataPath } from '../types/questionData';
+import { getCategoryByQuestionNumber } from '../config/categoryConfig';
 import * as pdfjsLib from 'pdfjs-dist';
 
 // PDFテキストアイテムの型定義
@@ -541,6 +542,9 @@ JSONファイルの形式:
         }
       }
 
+      // 問題番号とセッションからカテゴリを判定（フォールバック用）
+      const category: CategoryId = getCategoryByQuestionNumber(answer.questionNumber, session);
+
       const question: Question = {
         id: questionId,
         year: examConfig.year,
@@ -563,6 +567,8 @@ JSONファイルの形式:
         // 問題ページ画像は使用しない（別冊のみ画像表示）
         questionPageImage: undefined,
         questionPageNumber: undefined,
+        // カテゴリ（科目）を設定
+        category,
       };
 
       questions.push(question);

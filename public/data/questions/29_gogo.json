@@ -13,7 +13,12 @@
         "c": "検診前の対象疾患の死亡率が低いこと",
         "d": "対象疾患に有効な治療法が存在すること"
       },
-      "category": "hygiene"
+      "category": "hygiene",
+      "correctAnswers": [
+        "b",
+        "d"
+      ],
+      "correctAnswer": "b"
     },
     {
       "questionNumber": 2,
@@ -24,7 +29,12 @@
         "c": "記述疫学 ── 症例対照研究",
         "d": "有病率 ── 一定期間の病気のかかりやすさ"
       },
-      "category": "hygiene"
+      "category": "hygiene",
+      "correctAnswers": [
+        "a",
+        "b"
+      ],
+      "correctAnswer": "a"
     },
     {
       "questionNumber": 3,
@@ -35,7 +45,8 @@
         "c": "循環器系",
         "d": "精神障害"
       },
-      "category": "hygiene"
+      "category": "hygiene",
+      "correctAnswer": "b"
     },
     {
       "questionNumber": 4,
@@ -46,7 +57,8 @@
         "c": "出生届により交付される。",
         "d": "大きさは統一されている。"
       },
-      "category": "hygiene"
+      "category": "hygiene",
+      "correctAnswer": "b"
     },
     {
       "questionNumber": 5,
@@ -57,7 +69,8 @@
         "c": "高尿酸血症",
         "d": "脂質異常症"
       },
-      "category": "hygiene"
+      "category": "hygiene",
+      "correctAnswer": "c"
     },
     {
       "questionNumber": 6,
@@ -68,7 +81,8 @@
         "c": "要介護の認定はケアマネージャーが行う。",
         "d": "要支援1、2では介護給付を受けることができる。"
       },
-      "category": "hygiene"
+      "category": "hygiene",
+      "correctAnswer": "b"
     },
     {
       "questionNumber": 7,
@@ -79,7 +93,8 @@
         "c": "家族や友人によるケア",
         "d": "事業場内産業保健スタッフによるケア"
       },
-      "category": "hygiene"
+      "category": "hygiene",
+      "correctAnswer": "c"
     },
     {
       "questionNumber": 8,
@@ -90,7 +105,8 @@
         "c": "医療給付の患者負担は原則1割である。",
         "d": "業務上傷病に対し傷病手当金が支払われる。"
       },
-      "category": "hygiene"
+      "category": "hygiene",
+      "correctAnswer": "b"
     },
     {
       "questionNumber": 9,
@@ -101,7 +117,8 @@
         "c": "アニサキス",
         "d": "フィラリア"
       },
-      "category": "hygiene"
+      "category": "hygiene",
+      "correctAnswer": "c"
     },
     {
       "questionNumber": 10,
@@ -112,7 +129,8 @@
         "c": "70%イソプロパノール ── 緑膿菌",
         "d": "次亜塩素酸ナトリウム ── ノロウイルス"
       },
-      "category": "hygiene"
+      "category": "hygiene",
+      "correctAnswer": "a"
     },
     {
       "questionNumber": 11,
@@ -123,7 +141,8 @@
         "c": "湿度が高い時に起こりやすい。",
         "d": "高齢者に起こることはまれである。"
       },
-      "category": "hygiene"
+      "category": "hygiene",
+      "correctAnswer": "c"
     },
     {
       "questionNumber": 12,
@@ -134,7 +153,8 @@
         "c": "溶存酸素",
         "d": "水素イオン濃度"
       },
-      "category": "hygiene"
+      "category": "hygiene",
+      "correctAnswer": "a"
     },
     {
       "questionNumber": 13,
@@ -145,7 +165,8 @@
         "c": "書字障害",
         "d": "趣味の喪失"
       },
-      "category": "rehabilitation"
+      "category": "rehabilitation",
+      "correctAnswer": "c"
     },
     {
       "questionNumber": 14,
@@ -156,7 +177,8 @@
         "c": "股関節 ── 外旋",
         "d": "足関節 ── 背屈"
       },
-      "category": "rehabilitation"
+      "category": "rehabilitation",
+      "correctAnswer": "c"
     },
     {
       "questionNumber": 15,
@@ -167,7 +189,8 @@
         "c": "低強度長時間運動",
         "d": "低強度短時間運動"
       },
-      "category": "rehabilitation"
+      "category": "rehabilitation",
+      "correctAnswer": "c"
     },
     {
       "questionNumber": 16,
@@ -180,7 +203,8 @@
       },
       "bessatsuPage": 2,
       "bessatsuLabel": "No.1",
-      "category": "rehabilitation"
+      "category": "rehabilitation",
+      "correctAnswer": "c"
     },
     {
       "questionNumber": 17,
@@ -191,7 +215,8 @@
         "c": "ランクB1",
         "d": "ランクB2"
       },
-      "category": "rehabilitation"
+      "category": "rehabilitation",
+      "correctAnswer": "c"
     },
     {
       "questionNumber": 18,
@@ -202,7 +227,8 @@
         "c": "失算症",
         "d": "失語症"
       },
-      "category": "rehabilitation"
+      "category": "rehabilitation",
+      "correctAnswer": "a"
     },
     {
       "questionNumber": 19,
@@ -213,7 +239,8 @@
         "c": "赤外線",
         "d": "超音波"
       },
-      "category": "rehabilitation"
+      "category": "rehabilitation",
+      "correctAnswer": "d"
     },
     {
       "questionNumber": 20,
@@ -224,7 +251,8 @@
         "c": "前方制動継手",
         "d": "クレンザック継手"
       },
-      "category": "rehabilitation"
+      "category": "rehabilitation",
+      "correctAnswer": "d"
     },
     {
       "questionNumber": 21,
@@ -235,7 +263,8 @@
         "c": "作業療法士 ── 日常生活活動訓練",
         "d": "言語聴覚士 ── 嚥下訓練"
       },
-      "category": "rehabilitation"
+      "category": "rehabilitation",
+      "correctAnswer": "a"
     },
     {
       "questionNumber": 22,
@@ -246,7 +275,8 @@
         "c": "厚生労働大臣",
         "d": "内閣総理大臣"
       },
-      "category": "rehabilitation"
+      "category": "rehabilitation",
+      "correctAnswer": "b"
     },
     {
       "questionNumber": 23,
@@ -257,7 +287,8 @@
         "c": "右手箸操作の訓練",
         "d": "利き手交換の訓練"
       },
-      "category": "rehabilitation"
+      "category": "rehabilitation",
+      "correctAnswer": "d"
     },
     {
       "questionNumber": 24,
@@ -268,7 +299,8 @@
         "c": "診断した疾患に対して治療する。",
         "d": "治療後の経過は診療録に記載する。"
       },
-      "category": "clinical_general"
+      "category": "clinical_general",
+      "correctAnswer": "b"
     },
     {
       "questionNumber": 25,
@@ -279,7 +311,8 @@
         "c": "ターナー(Turner)症候群",
         "d": "マルファン(Marfan)症候群"
       },
-      "category": "clinical_general"
+      "category": "clinical_general",
+      "correctAnswer": "d"
     },
     {
       "questionNumber": 26,
@@ -290,7 +323,8 @@
         "c": "進行性筋ジストロフィー",
         "d": "パーキンソン(Parkinson)病"
       },
-      "category": "clinical_general"
+      "category": "clinical_general",
+      "correctAnswer": "d"
     },
     {
       "questionNumber": 27,
@@ -301,7 +335,8 @@
         "c": "スプーン状爪 ── クッシング(Cushing)症候群",
         "d": "赤色皮膚線条 ── パーキンソン(Parkinson)病"
       },
-      "category": "clinical_general"
+      "category": "clinical_general",
+      "correctAnswer": "b"
     },
     {
       "questionNumber": 28,
@@ -312,7 +347,8 @@
         "c": "鼓音",
         "d": "グル音"
       },
-      "category": "clinical_general"
+      "category": "clinical_general",
+      "correctAnswer": "a"
     },
     {
       "questionNumber": 29,
@@ -323,7 +359,8 @@
         "c": "ギラン・バレー(Guillain-Barre)症候群",
         "d": "デュシェンヌ(Duchenne)型筋ジストロフィー"
       },
-      "category": "clinical_general"
+      "category": "clinical_general",
+      "correctAnswer": "d"
     },
     {
       "questionNumber": 30,
@@ -334,7 +371,8 @@
         "c": "リンパ性白血病",
         "d": "癌のリンパ節転移"
       },
-      "category": "clinical_general"
+      "category": "clinical_general",
+      "correctAnswer": "a"
     },
     {
       "questionNumber": 31,
@@ -345,7 +383,8 @@
         "c": "大腿動脈",
         "d": "足背動脈"
       },
-      "category": "clinical_general"
+      "category": "clinical_general",
+      "correctAnswer": "a"
     },
     {
       "questionNumber": 32,
@@ -356,7 +395,8 @@
         "c": "舌下神経に障害があると味覚が消失する。",
         "d": "足踏み検査で大脳の障害を検出する。"
       },
-      "category": "clinical_general"
+      "category": "clinical_general",
+      "correctAnswer": "a"
     },
     {
       "questionNumber": 33,
@@ -367,7 +407,8 @@
         "c": "回内筋反射",
         "d": "膝蓋腱反射"
       },
-      "category": "clinical_general"
+      "category": "clinical_general",
+      "correctAnswer": "c"
     },
     {
       "questionNumber": 34,
@@ -378,7 +419,8 @@
         "c": "アシュネル反射",
         "d": "チャドック反射"
       },
-      "category": "clinical_general"
+      "category": "clinical_general",
+      "correctAnswer": "d"
     },
     {
       "questionNumber": 35,
@@ -389,7 +431,8 @@
         "c": "初期に上腹部痛を認める。",
         "d": "右季肋部に圧痛を認める。"
       },
-      "category": "clinical_general"
+      "category": "clinical_general",
+      "correctAnswer": "c"
     },
     {
       "questionNumber": 36,
@@ -400,7 +443,8 @@
         "c": "A型肝炎は近年では性行為感染が多い。",
         "d": "C型肝炎は感染血液への暴露で感染する。"
       },
-      "category": "clinical_general"
+      "category": "clinical_general",
+      "correctAnswer": "d"
     },
     {
       "questionNumber": 37,
@@ -411,7 +455,8 @@
         "c": "重症例では関節内出血を起こす。",
         "d": "ヘリコバクター・ピロリ菌感染が発症に関与する。"
       },
-      "category": "clinical_general"
+      "category": "clinical_general",
+      "correctAnswer": "c"
     },
     {
       "questionNumber": 38,
@@ -422,7 +467,8 @@
         "c": "骨びらん",
         "d": "骨抜き打ち像"
       },
-      "category": "clinical_general"
+      "category": "clinical_general",
+      "correctAnswer": "c"
     },
     {
       "questionNumber": 39,
@@ -433,7 +479,8 @@
         "c": "皮膚硬化",
         "d": "ゴットロン徴候"
       },
-      "category": "clinical_general"
+      "category": "clinical_general",
+      "correctAnswer": "b"
     },
     {
       "questionNumber": 40,
@@ -444,7 +491,8 @@
         "c": "結節性多発動脈炎",
         "d": "ベーチェット(Behcet)病"
       },
-      "category": "clinical_general"
+      "category": "clinical_general",
+      "correctAnswer": "d"
     },
     {
       "questionNumber": 41,
@@ -455,7 +503,8 @@
         "c": "前立腺肥大症",
         "d": "急性糸球体腎炎"
       },
-      "category": "clinical_general"
+      "category": "clinical_general",
+      "correctAnswer": "c"
     },
     {
       "questionNumber": 42,
@@ -466,7 +515,8 @@
         "c": "前立腺癌",
         "d": "急性糸球体腎炎"
       },
-      "category": "clinical_general"
+      "category": "clinical_general",
+      "correctAnswer": "a"
     },
     {
       "questionNumber": 43,
@@ -477,7 +527,8 @@
         "c": "再発・寛解を繰り返す。",
         "d": "複視・眼瞼下垂を呈する。"
       },
-      "category": "clinical_general"
+      "category": "clinical_general",
+      "correctAnswer": "b"
     },
     {
       "questionNumber": 44,
@@ -488,7 +539,8 @@
         "c": "胸髄腫瘍",
         "d": "筋肉痛"
       },
-      "category": "clinical_general"
+      "category": "clinical_general",
+      "correctAnswer": "c"
     },
     {
       "questionNumber": 45,
@@ -499,7 +551,8 @@
         "c": "腎盂腎炎",
         "d": "慢性糸球体腎炎"
       },
-      "category": "clinical_general"
+      "category": "clinical_general",
+      "correctAnswer": "c"
     },
     {
       "questionNumber": 46,
@@ -510,7 +563,8 @@
         "c": "抗菌薬を全身投与すれば感染は生じない。",
         "d": "破傷風トキソイドの接種歴があれば破傷風に罹患しない。"
       },
-      "category": "surgery"
+      "category": "surgery",
+      "correctAnswer": "b"
     },
     {
       "questionNumber": 47,
@@ -521,7 +575,8 @@
         "c": "原発腫瘍の広がり",
         "d": "所属リンパ節転移の有無"
       },
-      "category": "surgery"
+      "category": "surgery",
+      "correctAnswer": "a"
     },
     {
       "questionNumber": 48,
@@ -532,7 +587,8 @@
         "c": "敗血症 ── 循環血液量減少性",
         "d": "重度下痢 ── 血液分布異常性"
       },
-      "category": "surgery"
+      "category": "surgery",
+      "correctAnswer": "a"
     },
     {
       "questionNumber": 49,
@@ -543,7 +599,8 @@
         "c": "低栄養",
         "d": "肝不全"
       },
-      "category": "surgery"
+      "category": "surgery",
+      "correctAnswer": "d"
     },
     {
       "questionNumber": 50,
@@ -554,7 +611,8 @@
         "c": "高圧蒸気は光学機器の滅菌に有用である。",
         "d": "滅菌はすべての微生物を死滅させることである。"
       },
-      "category": "surgery"
+      "category": "surgery",
+      "correctAnswer": "c"
     },
     {
       "questionNumber": 51,
@@ -565,7 +623,8 @@
         "c": "脳圧亢進に対するシャント術",
         "d": "直腸癌に対する人工肛門造設術"
       },
-      "category": "surgery"
+      "category": "surgery",
+      "correctAnswer": "b"
     },
     {
       "questionNumber": 52,
@@ -576,7 +635,8 @@
         "c": "胃内容誤嚥予防",
         "d": "深部静脈血栓予防"
       },
-      "category": "surgery"
+      "category": "surgery",
+      "correctAnswer": "d"
     },
     {
       "questionNumber": 53,
@@ -587,7 +647,8 @@
         "c": "腎臓",
         "d": "肝臓"
       },
-      "category": "surgery"
+      "category": "surgery",
+      "correctAnswer": "b"
     },
     {
       "questionNumber": 54,
@@ -598,7 +659,8 @@
         "c": "痛み刺激に対し払いのける動作をする。",
         "d": "痛み刺激に反応しない。"
       },
-      "category": "surgery"
+      "category": "surgery",
+      "correctAnswer": "c"
     },
     {
       "questionNumber": 55,
@@ -609,7 +671,8 @@
         "c": "肋骨骨折",
         "d": "緊張性気胸"
       },
-      "category": "surgery"
+      "category": "surgery",
+      "correctAnswer": "d"
     },
     {
       "questionNumber": 56,
@@ -620,7 +683,8 @@
         "c": "膵臓",
         "d": "脾臓"
       },
-      "category": "surgery"
+      "category": "surgery",
+      "correctAnswer": "c"
     },
     {
       "questionNumber": 57,
@@ -631,7 +695,8 @@
         "c": "鳩胸",
         "d": "肋骨隆起"
       },
-      "category": "orthopedics"
+      "category": "orthopedics",
+      "correctAnswer": "d"
     },
     {
       "questionNumber": 58,
@@ -642,7 +707,8 @@
         "c": "払い腰",
         "d": "内股"
       },
-      "category": "orthopedics"
+      "category": "orthopedics",
+      "correctAnswer": "a"
     },
     {
       "questionNumber": 59,
@@ -653,7 +719,8 @@
         "c": "孤立性骨嚢腫",
         "d": "線維性骨異形成"
       },
-      "category": "orthopedics"
+      "category": "orthopedics",
+      "correctAnswer": "b"
     },
     {
       "questionNumber": 60,
@@ -664,7 +731,8 @@
         "c": "マルファン(Marfan)症候群",
         "d": "フォン・レックリングハウゼン(Von Recklinghausen)病"
       },
-      "category": "orthopedics"
+      "category": "orthopedics",
+      "correctAnswer": "d"
     },
     {
       "questionNumber": 61,
@@ -675,7 +743,8 @@
         "c": "上肢に多く発生する。",
         "d": "表在静脈に多く発生する。"
       },
-      "category": "orthopedics"
+      "category": "orthopedics",
+      "correctAnswer": "d"
     },
     {
       "questionNumber": 62,
@@ -686,7 +755,8 @@
         "c": "母指対立運動低下",
         "d": "手指開排運動低下"
       },
-      "category": "orthopedics"
+      "category": "orthopedics",
+      "correctAnswer": "c"
     },
     {
       "questionNumber": 63,
@@ -697,7 +767,8 @@
         "c": "安静時に疼痛はない。",
         "d": "関節穿刺は禁忌である。"
       },
-      "category": "orthopedics"
+      "category": "orthopedics",
+      "correctAnswer": "b"
     },
     {
       "questionNumber": 64,
@@ -708,7 +779,8 @@
         "c": "スミス(Smith)骨折 ── 手関節掌屈位強制",
         "d": "ベネット(Bennett)骨折 ── 母指MP関節背屈位強制"
       },
-      "category": "orthopedics"
+      "category": "orthopedics",
+      "correctAnswer": "d"
     },
     {
       "questionNumber": 65,
@@ -719,7 +791,8 @@
         "c": "内反足 ── 前足部の外転を伴う。",
         "d": "扁平足 ── 踵部が内反する。"
       },
-      "category": "orthopedics"
+      "category": "orthopedics",
+      "correctAnswer": "a"
     },
     {
       "questionNumber": 66,
@@ -730,7 +803,8 @@
         "c": "踵部外反",
         "d": "外反母趾"
       },
-      "category": "orthopedics"
+      "category": "orthopedics",
+      "correctAnswer": "b"
     },
     {
       "questionNumber": 67,
@@ -741,7 +815,8 @@
         "c": "第6頸髄節",
         "d": "第7頸髄節"
       },
-      "category": "orthopedics"
+      "category": "orthopedics",
+      "correctAnswer": "b"
     },
     {
       "questionNumber": 68,
@@ -752,7 +827,8 @@
         "c": "烏口突起の1横指外側に圧痛がみられる。",
         "d": "単純エックス線画像で石灰沈着がみられる。"
       },
-      "category": "judo_therapy"
+      "category": "judo_therapy",
+      "correctAnswer": "a"
     },
     {
       "questionNumber": 69,
@@ -763,7 +839,8 @@
         "c": "上腕は外転肢位をとる。",
         "d": "すり足歩行となる。"
       },
-      "category": "judo_therapy"
+      "category": "judo_therapy",
+      "correctAnswer": "c"
     },
     {
       "questionNumber": 70,
@@ -774,7 +851,8 @@
         "c": "患者の抱いている懸念や望んでいることを聞き取る。",
         "d": "患者のプライバシーに関しての質問は慎重に行う。"
       },
-      "category": "judo_therapy"
+      "category": "judo_therapy",
+      "correctAnswer": "a"
     },
     {
       "questionNumber": 71,
@@ -785,7 +863,8 @@
         "c": "橈骨頭単独脱臼",
         "d": "足関節外側脱臼"
       },
-      "category": "judo_therapy"
+      "category": "judo_therapy",
+      "correctAnswer": "b"
     },
     {
       "questionNumber": 72,
@@ -796,7 +875,8 @@
         "c": "腫脹",
         "d": "筋萎縮"
       },
-      "category": "judo_therapy"
+      "category": "judo_therapy",
+      "correctAnswer": "d"
     },
     {
       "questionNumber": 73,
@@ -807,7 +887,8 @@
         "c": "軸索断裂では中枢側にワーラー変性が起こる。",
         "d": "自律神経障害の急性期では皮膚温が低下する。"
       },
-      "category": "judo_therapy"
+      "category": "judo_therapy",
+      "correctAnswer": "a"
     },
     {
       "questionNumber": 74,
@@ -818,7 +899,8 @@
         "c": "側方転位",
         "d": "捻転転位"
       },
-      "category": "judo_therapy"
+      "category": "judo_therapy",
+      "correctAnswer": "a"
     },
     {
       "questionNumber": 75,
@@ -829,7 +911,8 @@
         "c": "創傷部",
         "d": "腫瘍部"
       },
-      "category": "judo_therapy"
+      "category": "judo_therapy",
+      "correctAnswer": "a"
     },
     {
       "questionNumber": 76,
@@ -840,7 +923,8 @@
         "c": "治療導子は固定して使用する。",
         "d": "治療部位の深さに応じて刺激周波数を設定する。"
       },
-      "category": "judo_therapy"
+      "category": "judo_therapy",
+      "correctAnswer": "c"
     },
     {
       "questionNumber": 77,
@@ -851,7 +935,8 @@
         "c": "指関節",
         "d": "股関節"
       },
-      "category": "judo_therapy"
+      "category": "judo_therapy",
+      "correctAnswer": "a"
     },
     {
       "questionNumber": 78,
@@ -862,7 +947,8 @@
         "c": "偽関節が生じやすい。",
         "d": "頸部の屈曲強制で発生する。"
       },
-      "category": "judo_therapy"
+      "category": "judo_therapy",
+      "correctAnswer": "b"
     },
     {
       "questionNumber": 79,
@@ -873,7 +959,8 @@
         "c": "胸管損傷",
         "d": "肋骨骨折"
       },
-      "category": "judo_therapy"
+      "category": "judo_therapy",
+      "correctAnswer": "b"
     },
     {
       "questionNumber": 80,
@@ -884,7 +971,8 @@
         "c": "肩甲骨上角骨折 ── 小円筋",
         "d": "肩甲骨下角骨折 ── 大円筋"
       },
-      "category": "judo_therapy"
+      "category": "judo_therapy",
+      "correctAnswer": "c"
     },
     {
       "questionNumber": 81,
@@ -895,7 +983,8 @@
         "c": "腋窩神経損傷の合併がある。",
         "d": "介達外力によるものが多い。"
       },
-      "category": "judo_therapy"
+      "category": "judo_therapy",
+      "correctAnswer": "b"
     },
     {
       "questionNumber": 82,
@@ -906,7 +995,8 @@
         "c": "烏口下脱臼",
         "d": "月状骨脱臼"
       },
-      "category": "judo_therapy"
+      "category": "judo_therapy",
+      "correctAnswer": "b"
     },
     {
       "questionNumber": 83,
@@ -917,7 +1007,8 @@
         "c": "バートン(Barton)骨折",
         "d": "ガレアッチ(Galeazzi)骨折"
       },
-      "category": "judo_therapy"
+      "category": "judo_therapy",
+      "correctAnswer": "c"
     },
     {
       "questionNumber": 84,
@@ -928,7 +1019,8 @@
         "c": "背側部骨折は単独骨折が多い。",
         "d": "体部骨折は手関節屈曲強制によって発生する。"
       },
-      "category": "judo_therapy"
+      "category": "judo_therapy",
+      "correctAnswer": "c"
     },
     {
       "questionNumber": 85,
@@ -939,7 +1031,8 @@
         "c": "小指対立筋",
         "d": "小指外転筋"
       },
-      "category": "judo_therapy"
+      "category": "judo_therapy",
+      "correctAnswer": "a"
     },
     {
       "questionNumber": 86,
@@ -950,7 +1043,8 @@
         "c": "大腿骨大転子骨折 ── 中殿筋",
         "d": "大腿骨小転子骨折 ── 梨状筋"
       },
-      "category": "judo_therapy"
+      "category": "judo_therapy",
+      "correctAnswer": "c"
     },
     {
       "questionNumber": 87,
@@ -961,7 +1055,8 @@
         "c": "中央1/3部での骨折が多い。",
         "d": "ショックを起こすことがある。"
       },
-      "category": "judo_therapy"
+      "category": "judo_therapy",
+      "correctAnswer": "a"
     },
     {
       "questionNumber": 88,
@@ -972,7 +1067,8 @@
         "c": "膝関節拘縮 ── PTBキャストの使用",
         "d": "足関節尖足位拘縮 ── 下腿コンパートメント症候群"
       },
-      "category": "judo_therapy"
+      "category": "judo_therapy",
+      "correctAnswer": "c"
     },
     {
       "questionNumber": 89,
@@ -983,7 +1079,8 @@
         "c": "踵骨骨折",
         "d": "距骨骨折"
       },
-      "category": "judo_therapy"
+      "category": "judo_therapy",
+      "correctAnswer": "a"
     },
     {
       "questionNumber": 90,
@@ -994,7 +1091,8 @@
         "c": "二重脱臼が多い。",
         "d": "固定が困難である。"
       },
-      "category": "judo_therapy"
+      "category": "judo_therapy",
+      "correctAnswer": "c"
     },
     {
       "questionNumber": 91,
@@ -1005,7 +1103,8 @@
         "c": "階段状変形",
         "d": "患側上肢の下垂"
       },
-      "category": "judo_therapy"
+      "category": "judo_therapy",
+      "correctAnswer": "a"
     },
     {
       "questionNumber": 92,
@@ -1016,7 +1115,8 @@
         "c": "肩峰下脱臼 ── 肩関節伸展位",
         "d": "関節窩下脱臼 ── 肩関節外旋位"
       },
-      "category": "judo_therapy"
+      "category": "judo_therapy",
+      "correctAnswer": "b"
     },
     {
       "questionNumber": 93,
@@ -1027,7 +1127,8 @@
         "c": "恥骨上脱臼",
         "d": "恥骨下脱臼"
       },
-      "category": "judo_therapy"
+      "category": "judo_therapy",
+      "correctAnswer": "d"
     },
     {
       "questionNumber": 94,
@@ -1038,7 +1139,8 @@
         "c": "足背部の感覚障害",
         "d": "末梢側の循環障害"
       },
-      "category": "judo_therapy"
+      "category": "judo_therapy",
+      "correctAnswer": "d"
     },
     {
       "questionNumber": 95,
@@ -1049,7 +1151,8 @@
         "c": "趾は延長してみえる。",
         "d": "開放性脱臼となることがある。"
       },
-      "category": "judo_therapy"
+      "category": "judo_therapy",
+      "correctAnswer": "c"
     },
     {
       "questionNumber": 96,
@@ -1060,7 +1163,12 @@
         "c": "III型 ── 関節軟骨破壊",
         "d": "IV型 ── 変形性関節症"
       },
-      "category": "judo_therapy"
+      "category": "judo_therapy",
+      "correctAnswers": [
+        "b",
+        "d"
+      ],
+      "correctAnswer": "b"
     },
     {
       "questionNumber": 97,
@@ -1071,7 +1179,8 @@
         "c": "体幹の回旋で疼痛が増強する。",
         "d": "外傷性皮下気腫を合併する。"
       },
-      "category": "judo_therapy"
+      "category": "judo_therapy",
+      "correctAnswer": "c"
     },
     {
       "questionNumber": 98,
@@ -1082,7 +1191,8 @@
         "c": "脊柱起立筋損傷 ── 体幹回旋",
         "d": "棘上靱帯損傷 ── 胸腰椎後屈"
       },
-      "category": "judo_therapy"
+      "category": "judo_therapy",
+      "correctAnswer": "d"
     },
     {
       "questionNumber": 99,
@@ -1093,7 +1203,8 @@
         "c": "クランクテスト",
         "d": "リフトオフテスト"
       },
-      "category": "judo_therapy"
+      "category": "judo_therapy",
+      "correctAnswer": "d"
     },
     {
       "questionNumber": 100,
@@ -1104,7 +1215,8 @@
         "c": "上腕近位に膨隆が生じる。",
         "d": "直達外力による発生が多い。"
       },
-      "category": "judo_therapy"
+      "category": "judo_therapy",
+      "correctAnswer": "b"
     },
     {
       "questionNumber": 101,
@@ -1115,7 +1227,8 @@
         "c": "母指対立筋腱",
         "d": "母指内転筋腱"
       },
-      "category": "judo_therapy"
+      "category": "judo_therapy",
+      "correctAnswer": "d"
     },
     {
       "questionNumber": 102,
@@ -1126,7 +1239,8 @@
         "c": "狭窄部は指節間関節が多い。",
         "d": "小児は自然治癒することが多い。"
       },
-      "category": "judo_therapy"
+      "category": "judo_therapy",
+      "correctAnswer": "d"
     },
     {
       "questionNumber": 103,
@@ -1137,7 +1251,8 @@
         "c": "腸腰筋",
         "d": "大腿筋膜張筋"
       },
-      "category": "judo_therapy"
+      "category": "judo_therapy",
+      "correctAnswer": "a"
     },
     {
       "questionNumber": 104,
@@ -1148,7 +1263,8 @@
         "c": "ペルテス(Perthes)病",
         "d": "発育性股関節形成不全"
       },
-      "category": "judo_therapy"
+      "category": "judo_therapy",
+      "correctAnswer": "b"
     },
     {
       "questionNumber": 105,
@@ -1159,7 +1275,8 @@
         "c": "ランナー膝",
         "d": "前十字靱帯損傷"
       },
-      "category": "judo_therapy"
+      "category": "judo_therapy",
+      "correctAnswer": "d"
     },
     {
       "questionNumber": 106,
@@ -1170,7 +1287,8 @@
         "c": "「膝の力が入らない感じ」",
         "d": "「膝が引っかかる感じ」"
       },
-      "category": "judo_therapy"
+      "category": "judo_therapy",
+      "correctAnswer": "d"
     },
     {
       "questionNumber": 107,
@@ -1181,7 +1299,8 @@
         "c": "腓骨筋腱脱臼",
         "d": "衝突性外骨腫"
       },
-      "category": "judo_therapy"
+      "category": "judo_therapy",
+      "correctAnswer": "d"
     },
     {
       "questionNumber": 108,
@@ -1192,7 +1311,8 @@
         "c": "半膜様筋",
         "d": "大腿直筋"
       },
-      "category": "judo_therapy"
+      "category": "judo_therapy",
+      "correctAnswer": "d"
     },
     {
       "questionNumber": 109,
@@ -1203,7 +1323,8 @@
         "c": "膝窩部での拍動",
         "d": "足爪床部の圧迫"
       },
-      "category": "judo_therapy"
+      "category": "judo_therapy",
+      "correctAnswer": "d"
     },
     {
       "questionNumber": 110,
@@ -1214,7 +1335,8 @@
         "c": "斜骨折",
         "d": "横骨折"
       },
-      "category": "judo_therapy"
+      "category": "judo_therapy",
+      "correctAnswer": "b"
     },
     {
       "questionNumber": 111,
@@ -1225,7 +1347,8 @@
         "c": "肘関節伸展制限",
         "d": "前腕回旋運動制限"
       },
-      "category": "judo_therapy"
+      "category": "judo_therapy",
+      "correctAnswer": "a"
     },
     {
       "questionNumber": 112,
@@ -1236,7 +1359,8 @@
         "c": "スナッフボックスの圧痛",
         "d": "母指の屈曲内転変形"
       },
-      "category": "judo_therapy"
+      "category": "judo_therapy",
+      "correctAnswer": "a"
     },
     {
       "questionNumber": 113,
@@ -1247,7 +1371,12 @@
         "c": "腓骨の遠位1/3部",
         "d": "腓骨の近位1/3部"
       },
-      "category": "judo_therapy"
+      "category": "judo_therapy",
+      "correctAnswers": [
+        "b",
+        "d"
+      ],
+      "correctAnswer": "b"
     },
     {
       "questionNumber": 114,
@@ -1260,7 +1389,8 @@
       },
       "bessatsuPage": 3,
       "bessatsuLabel": "No.2",
-      "category": "judo_therapy"
+      "category": "judo_therapy",
+      "correctAnswer": "d"
     },
     {
       "questionNumber": 115,
@@ -1271,7 +1401,8 @@
         "c": "フランスヒール骨折",
         "d": "行軍骨折"
       },
-      "category": "judo_therapy"
+      "category": "judo_therapy",
+      "correctAnswer": "d"
     },
     {
       "questionNumber": 116,
@@ -1282,7 +1413,8 @@
         "c": "過伸展にする。",
         "d": "長軸圧をかける。"
       },
-      "category": "judo_therapy"
+      "category": "judo_therapy",
+      "correctAnswer": "c"
     },
     {
       "questionNumber": 117,
@@ -1293,7 +1425,8 @@
         "c": "スピードテスト",
         "d": "トムゼンテスト"
       },
-      "category": "judo_therapy"
+      "category": "judo_therapy",
+      "correctAnswer": "b"
     },
     {
       "questionNumber": 118,
@@ -1306,7 +1439,8 @@
       },
       "bessatsuPage": 4,
       "bessatsuLabel": "No.3A、B",
-      "category": "judo_therapy"
+      "category": "judo_therapy",
+      "correctAnswer": "b"
     },
     {
       "questionNumber": 119,
@@ -1317,7 +1451,8 @@
         "c": "SLAP損傷",
         "d": "ベネット(Bennett)損傷"
       },
-      "category": "judo_therapy"
+      "category": "judo_therapy",
+      "correctAnswer": "d"
     },
     {
       "questionNumber": 120,
@@ -1328,7 +1463,8 @@
         "c": "内側広筋の筋力低下",
         "d": "グラスピングテスト陽性"
       },
-      "category": "judo_therapy"
+      "category": "judo_therapy",
+      "correctAnswer": "c"
     },
     {
       "questionNumber": 121,
@@ -1339,7 +1475,8 @@
         "c": "ジャンパー膝",
         "d": "腸脛靱帯炎"
       },
-      "category": "judo_therapy"
+      "category": "judo_therapy",
+      "correctAnswer": "b"
     },
     {
       "questionNumber": 122,
@@ -1352,7 +1489,8 @@
       },
       "bessatsuPage": 5,
       "bessatsuLabel": "No.4",
-      "category": "judo_therapy"
+      "category": "judo_therapy",
+      "correctAnswer": "b"
     }
   ]
 }

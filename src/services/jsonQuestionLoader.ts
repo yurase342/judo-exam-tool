@@ -22,12 +22,36 @@ export async function loadQuestionsFromJson(
 
   try {
     const response = await fetch(jsonPath);
+
+    // レスポンスのステータスを詳細にログ出力
+    console.log(`[jsonQuestionLoader] fetch応答: status=${response.status}, ok=${response.ok}, statusText=${response.statusText}`);
+
     if (!response.ok) {
-      console.warn(`[jsonQuestionLoader] JSONファイルが見つかりません: ${jsonPath}`);
+      console.warn(`[jsonQuestionLoader] JSONファイルが見つかりません: ${jsonPath} (status: ${response.status})`);
       return [];
     }
 
-    const data: QuestionDataFile = await response.json();
+    // Content-Typeを確認
+    const contentType = response.headers.get('Content-Type');
+    console.log(`[jsonQuestionLoader] Content-Type: ${contentType}`);
+
+    // HTMLが返ってきた場合（rewrite設定ミス）の検出
+    const text = await response.text();
+    if (text.trim().startsWith('<!DOCTYPE') || text.trim().startsWith('<html')) {
+      console.error(`[jsonQuestionLoader] エラー: JSONではなくHTMLが返されました。vercel.jsonのrewrite設定を確認してください。`);
+      console.error(`[jsonQuestionLoader] 返されたコンテンツの先頭: ${text.substring(0, 200)}`);
+      return [];
+    }
+
+    // JSONをパース
+    let data: QuestionDataFile;
+    try {
+      data = JSON.parse(text);
+    } catch (parseError) {
+      console.error(`[jsonQuestionLoader] JSONパースエラー:`, parseError);
+      console.error(`[jsonQuestionLoader] 返されたコンテンツの先頭: ${text.substring(0, 500)}`);
+      return [];
+    }
 
     // 正答データを読み込む
     const correctAnswers = await loadCorrectAnswers(examNumber, session);
@@ -37,7 +61,15 @@ export async function loadQuestionsFromJson(
       convertToQuestion(item, data.examNumber, data.year, data.session, correctAnswers)
     );
 
-    console.log(`[jsonQuestionLoader] ${questions.length}問を読み込み完了`);
+    // カテゴリ情報の確認ログ
+    const categoryCounts: Record<string, number> = {};
+    questions.forEach(q => {
+      if (q.category) {
+        categoryCounts[q.category] = (categoryCounts[q.category] || 0) + 1;
+      }
+    });
+    console.log(`[jsonQuestionLoader] ${questions.length}問を読み込み完了 (カテゴリ別:`, categoryCounts, ')');
+
     return questions;
   } catch (error) {
     console.error(`[jsonQuestionLoader] 読み込みエラー:`, error);
@@ -125,13 +157,18 @@ async function extractTextFromPDF(blob: Blob): Promise<string> {
 
 /**
  * QuestionDataItemをQuestion型に変換
+ *
+ * 正答の優先順位:
+ * 1. JSONファイル内のcorrectAnswers（複数正答）
+ * 2. JSONファイル内のcorrectAnswer（単一正答）
+ * 3. PDFから抽出した正答（フォールバック）
  */
 function convertToQuestion(
   item: QuestionDataItem,
   examNumber: number,
   year: number,
   session: SessionType,
-  correctAnswers: Map<number, string[]>
+  pdfCorrectAnswers: Map<number, string[]>
 ): Question {
   const id = `${examNumber}-${session}-${item.questionNumber}`;
 
@@ -151,10 +188,27 @@ function convertToQuestion(
   // 空の選択肢を除外
   const filteredChoices = choices.filter(c => c.text !== '');
 
-  const correctAnswerList = correctAnswers.get(item.questionNumber) || [];
+  // 正答を決定（JSONファイル内の値を優先、なければPDFからのデータを使用）
+  let correctAnswer: string;
+  let correctAnswers: string[] | undefined;
+
+  if (item.correctAnswers && item.correctAnswers.length > 0) {
+    // JSONに複数正答が指定されている場合
+    correctAnswer = item.correctAnswers[0];
+    correctAnswers = item.correctAnswers.length > 1 ? item.correctAnswers : undefined;
+  } else if (item.correctAnswer) {
+    // JSONに単一正答が指定されている場合
+    correctAnswer = item.correctAnswer;
+    correctAnswers = undefined;
+  } else {
+    // JSONに正答がない場合、PDFから取得した正答を使用（フォールバック）
+    const pdfAnswerList = pdfCorrectAnswers.get(item.questionNumber) || [];
+    correctAnswer = pdfAnswerList[0] || '';
+    correctAnswers = pdfAnswerList.length > 1 ? pdfAnswerList : undefined;
+  }
 
   // カテゴリを取得（JSONに含まれている場合はそれを使用、なければ問題番号から判定）
-  const category: CategoryId = (item as any).category || getCategoryByQuestionNumber(item.questionNumber, session);
+  const category: CategoryId = item.category || getCategoryByQuestionNumber(item.questionNumber, session);
 
   return {
     id,
@@ -164,8 +218,8 @@ function convertToQuestion(
     questionNumber: item.questionNumber,
     questionText: item.questionText.trim(),
     choices: filteredChoices,
-    correctAnswer: correctAnswerList[0] || '',
-    correctAnswers: correctAnswerList.length > 1 ? correctAnswerList : undefined,
+    correctAnswer,
+    correctAnswers,
     explanation: '',
     sourceFile: `${examNumber}_${session}.json`,
     hasSupplementImage: !!item.bessatsuPage,

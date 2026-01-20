@@ -13,7 +13,8 @@
         "c": "保護と権利",
         "d": "説明と同意"
       },
-      "category": "judo_therapy"
+      "category": "judo_therapy",
+      "correctAnswer": "d"
     },
     {
       "questionNumber": 2,
@@ -24,7 +25,8 @@
         "c": "遵守",
         "d": "不足"
       },
-      "category": "judo_therapy"
+      "category": "judo_therapy",
+      "correctAnswer": "c"
     },
     {
       "questionNumber": 3,
@@ -35,7 +37,8 @@
         "c": "直達外力による発生が多い。",
         "d": "肩関節運動で疼痛が強くなる。"
       },
-      "category": "judo_therapy"
+      "category": "judo_therapy",
+      "correctAnswer": "d"
     },
     {
       "questionNumber": 4,
@@ -46,7 +49,8 @@
         "c": "後外方",
         "d": "後下方"
       },
-      "category": "judo_therapy"
+      "category": "judo_therapy",
+      "correctAnswer": "c"
     },
     {
       "questionNumber": 5,
@@ -57,7 +61,8 @@
         "c": "肩関節外旋位",
         "d": "肩関節外転位"
       },
-      "category": "judo_therapy"
+      "category": "judo_therapy",
+      "correctAnswer": "b"
     },
     {
       "questionNumber": 6,
@@ -68,7 +73,8 @@
         "c": "患者の胸郭を拡大させる。",
         "d": "患側の前腕と手指を保持する。"
       },
-      "category": "judo_therapy"
+      "category": "judo_therapy",
+      "correctAnswer": "b"
     },
     {
       "questionNumber": 7,
@@ -79,7 +85,8 @@
         "c": "(2)→(1)→(3)",
         "d": "(3)→(2)→(1)"
       },
-      "category": "judo_therapy"
+      "category": "judo_therapy",
+      "correctAnswer": "d"
     },
     {
       "questionNumber": 8,
@@ -90,7 +97,8 @@
         "c": "嵌合骨折では自動運動が可能である。",
         "d": "皮下出血斑は上腕内側部から前胸部に出現する。"
       },
-      "category": "judo_therapy"
+      "category": "judo_therapy",
+      "correctAnswer": "a"
     },
     {
       "questionNumber": 9,
@@ -101,7 +109,8 @@
         "c": "遠位骨片を過伸展させる。",
         "d": "遠位骨片を回内させる。"
       },
-      "category": "judo_therapy"
+      "category": "judo_therapy",
+      "correctAnswer": "c"
     },
     {
       "questionNumber": 10,
@@ -112,7 +121,8 @@
         "c": "固定材料がずれないようにさせる。",
         "d": "術者が操作しやすい位置で患肢を保持させる。"
       },
-      "category": "judo_therapy"
+      "category": "judo_therapy",
+      "correctAnswer": "b"
     },
     {
       "questionNumber": 11,
@@ -123,7 +133,8 @@
         "c": "運動性神経機能評価のために爪圧迫検査をしたか。",
         "d": "帰宅後緊縛包帯の症状が現れた場合の処置を指導したか。"
       },
-      "category": "judo_therapy"
+      "category": "judo_therapy",
+      "correctAnswer": "c"
     },
     {
       "questionNumber": 12,
@@ -134,7 +145,8 @@
         "c": "手関節の固定は屈曲位とする。",
         "d": "固定範囲は前腕遠位からPIP関節までとする。"
       },
-      "category": "judo_therapy"
+      "category": "judo_therapy",
+      "correctAnswer": "a"
     },
     {
       "questionNumber": 13,
@@ -145,7 +157,8 @@
         "c": "固定中は爪面の向きを隣接指と比較する。",
         "d": "軽度な屈曲転位の残存でも動作時痛が生じる。"
       },
-      "category": "judo_therapy"
+      "category": "judo_therapy",
+      "correctAnswer": "c"
     },
     {
       "questionNumber": 14,
@@ -156,7 +169,8 @@
         "c": "バストバンド",
         "d": "非伸縮性絆創膏"
       },
-      "category": "judo_therapy"
+      "category": "judo_therapy",
+      "correctAnswer": "b"
     },
     {
       "questionNumber": 15,
@@ -167,7 +181,8 @@
         "c": "叩打痛はみられない。",
         "d": "動揺性胸郭となる。"
       },
-      "category": "judo_therapy"
+      "category": "judo_therapy",
+      "correctAnswer": "a"
     },
     {
       "questionNumber": 16,
@@ -178,7 +193,8 @@
         "c": "吸気状態で息を止めさせて行う。",
         "d": "深呼吸ができるように固定する。"
       },
-      "category": "judo_therapy"
+      "category": "judo_therapy",
+      "correctAnswer": "b"
     },
     {
       "questionNumber": 17,
@@ -189,7 +205,8 @@
         "c": "左から脱がせ、左から着せる。",
         "d": "左から脱がせ、右から着せる。"
       },
-      "category": "judo_therapy"
+      "category": "judo_therapy",
+      "correctAnswer": "d"
     },
     {
       "questionNumber": 18,
@@ -200,7 +217,8 @@
         "c": "枕子で鎖骨近位端を下方へ圧迫する。",
         "d": "上腕を長軸方向に持ち上げて固定する。"
       },
-      "category": "judo_therapy"
+      "category": "judo_therapy",
+      "correctAnswer": "d"
     },
     {
       "questionNumber": 19,
@@ -211,7 +229,8 @@
         "c": "鎖骨遠位端骨折",
         "d": "上腕骨小結節骨折"
       },
-      "category": "judo_therapy"
+      "category": "judo_therapy",
+      "correctAnswer": "b"
     },
     {
       "questionNumber": 20,
@@ -222,7 +241,8 @@
         "c": "両手で上腕遠位部を把持する。",
         "d": "肩関節を外転、外旋位に牽引する。"
       },
-      "category": "judo_therapy"
+      "category": "judo_therapy",
+      "correctAnswer": "c"
     },
     {
       "questionNumber": 21,
@@ -233,7 +253,8 @@
         "c": "軽度外転、30度水平屈曲、内旋位",
         "d": "軽度外転、60度水平伸展、外旋位"
       },
-      "category": "judo_therapy"
+      "category": "judo_therapy",
+      "correctAnswer": "c"
     },
     {
       "questionNumber": 22,
@@ -244,7 +265,8 @@
         "c": "上腕二頭筋腱の索状隆起を触れる。",
         "d": "肘関節は30〜40度の屈曲位となる。"
       },
-      "category": "judo_therapy"
+      "category": "judo_therapy",
+      "correctAnswer": "d"
     },
     {
       "questionNumber": 23,
@@ -255,7 +277,8 @@
         "c": "上腕骨内側上顆骨折",
         "d": "肘関節外側側副靱帯損傷"
       },
-      "category": "judo_therapy"
+      "category": "judo_therapy",
+      "correctAnswer": "c"
     },
     {
       "questionNumber": 24,
@@ -266,7 +289,8 @@
         "c": "前腕に回外力が加わり発生する。",
         "d": "輪状靱帯の嵌頓では整復困難となる。"
       },
-      "category": "judo_therapy"
+      "category": "judo_therapy",
+      "correctAnswer": "d"
     },
     {
       "questionNumber": 25,
@@ -277,7 +301,8 @@
         "c": "関節面断裂",
         "d": "滑液包面断裂"
       },
-      "category": "judo_therapy"
+      "category": "judo_therapy",
+      "correctAnswer": "b"
     },
     {
       "questionNumber": 26,
@@ -288,7 +313,8 @@
         "c": "リトルリーガー肩",
         "d": "上腕二頭筋長頭腱炎"
       },
-      "category": "judo_therapy"
+      "category": "judo_therapy",
+      "correctAnswer": "d"
     },
     {
       "questionNumber": 27,
@@ -299,7 +325,8 @@
         "c": "ヤーガソンテスト",
         "d": "ドロップアームサイン"
       },
-      "category": "judo_therapy"
+      "category": "judo_therapy",
+      "correctAnswer": "a"
     },
     {
       "questionNumber": 28,
@@ -310,7 +337,8 @@
         "c": "膝関節伸展位で側方動揺性がみられる。",
         "d": "膝関節屈曲5度で側方動揺性がみられる。"
       },
-      "category": "judo_therapy"
+      "category": "judo_therapy",
+      "correctAnswer": "b"
     },
     {
       "questionNumber": 29,
@@ -321,7 +349,8 @@
         "c": "グラスピングテスト",
         "d": "牽引アプライテスト"
       },
-      "category": "judo_therapy"
+      "category": "judo_therapy",
+      "correctAnswer": "c"
     },
     {
       "questionNumber": 30,
@@ -332,7 +361,8 @@
         "c": "競技レベルが低いほど発生のリスクが高くなる。",
         "d": "接触型損傷は膝関節に外反力が作用し発生する。"
       },
-      "category": "judo_therapy"
+      "category": "judo_therapy",
+      "correctAnswer": "c"
     },
     {
       "questionNumber": 31,
@@ -343,7 +373,8 @@
         "c": "プラガードテスト",
         "d": "Nテスト"
       },
-      "category": "judo_therapy"
+      "category": "judo_therapy",
+      "correctAnswer": "d"
     },
     {
       "questionNumber": 32,
@@ -354,7 +385,8 @@
         "c": "ロッキング",
         "d": "裂隙部の陥凹"
       },
-      "category": "judo_therapy"
+      "category": "judo_therapy",
+      "correctAnswer": "d"
     },
     {
       "questionNumber": 33,
@@ -365,7 +397,8 @@
         "c": "トンプソンテスト",
         "d": "ケンプテスト"
       },
-      "category": "judo_therapy"
+      "category": "judo_therapy",
+      "correctAnswer": "a"
     },
     {
       "questionNumber": 34,
@@ -376,7 +409,8 @@
         "c": "動揺があれば免荷を指示する。",
         "d": "回復期には大腿四頭筋の運動療法を指示する。"
       },
-      "category": "judo_therapy"
+      "category": "judo_therapy",
+      "correctAnswer": "b"
     },
     {
       "questionNumber": 35,
@@ -387,7 +421,8 @@
         "c": "足関節の自動的な底屈で疼痛が増強する。",
         "d": "足関節の他動的な背屈で疼痛が増強する。"
       },
-      "category": "judo_therapy"
+      "category": "judo_therapy",
+      "correctAnswer": "b"
     },
     {
       "questionNumber": 36,
@@ -398,7 +433,8 @@
         "c": "固定期間中は足趾を動かさないでください。",
         "d": "足関節の固定肢位は徐々に背屈させていきます。"
       },
-      "category": "judo_therapy"
+      "category": "judo_therapy",
+      "correctAnswer": "d"
     },
     {
       "questionNumber": 37,
@@ -409,7 +445,8 @@
         "c": "底屈10度",
         "d": "底屈20度"
       },
-      "category": "judo_therapy"
+      "category": "judo_therapy",
+      "correctAnswer": "b"
     },
     {
       "questionNumber": 38,
@@ -420,7 +457,8 @@
         "c": "コンパートメント症候群",
         "d": "ズデック(Sudeck)骨萎縮"
       },
-      "category": "judo_therapy"
+      "category": "judo_therapy",
+      "correctAnswer": "c"
     },
     {
       "questionNumber": 39,
@@ -431,7 +469,12 @@
         "c": "6裂 ── 約6cm",
         "d": "8裂 ── 約3.5cm"
       },
-      "category": "judo_therapy"
+      "category": "judo_therapy",
+      "correctAnswers": [
+        "c",
+        "d"
+      ],
+      "correctAnswer": "c"
     },
     {
       "questionNumber": 40,
@@ -442,7 +485,8 @@
         "c": "蛇行帯",
         "d": "螺旋帯"
       },
-      "category": "judo_therapy"
+      "category": "judo_therapy",
+      "correctAnswer": "b"
     },
     {
       "questionNumber": 41,
@@ -453,7 +497,8 @@
         "c": "国民健康保険",
         "d": "共済"
       },
-      "category": "law"
+      "category": "law",
+      "correctAnswer": "c"
     },
     {
       "questionNumber": 42,
@@ -464,7 +509,8 @@
         "c": "試験合格の年月",
         "d": "本籍地都道府県名"
       },
-      "category": "law"
+      "category": "law",
+      "correctAnswer": "b"
     },
     {
       "questionNumber": 43,
@@ -475,7 +521,8 @@
         "c": "捻挫",
         "d": "擦過傷"
       },
-      "category": "law"
+      "category": "law",
+      "correctAnswer": "a"
     },
     {
       "questionNumber": 44,
@@ -486,7 +533,8 @@
         "c": "構造設備の平面図",
         "d": "業務に従事する柔道整復師の氏名"
       },
-      "category": "law"
+      "category": "law",
+      "correctAnswer": "a"
     },
     {
       "questionNumber": 45,
@@ -497,7 +545,8 @@
         "c": "学会の理事",
         "d": "予約施術の実施"
       },
-      "category": "law"
+      "category": "law",
+      "correctAnswer": "c"
     },
     {
       "questionNumber": 46,
@@ -508,7 +557,8 @@
         "c": "医療法",
         "d": "薬事法"
       },
-      "category": "law"
+      "category": "law",
+      "correctAnswer": "a"
     },
     {
       "questionNumber": 47,
@@ -519,7 +569,8 @@
         "c": "無診察でも処方箋は交付できる。",
         "d": "診療録の保存期間は10年である。"
       },
-      "category": "law"
+      "category": "law",
+      "correctAnswer": "b"
     },
     {
       "questionNumber": 48,
@@ -530,7 +581,8 @@
         "c": "作業療法士",
         "d": "診療放射線技師"
       },
-      "category": "law"
+      "category": "law",
+      "correctAnswer": "c"
     },
     {
       "questionNumber": 49,
@@ -541,7 +593,8 @@
         "c": "捻挫部位の施術",
         "d": "義肢の調整"
       },
-      "category": "law"
+      "category": "law",
+      "correctAnswer": "b"
     },
     {
       "questionNumber": 50,
@@ -552,7 +605,8 @@
         "c": "療養病床",
         "d": "感染症病床"
       },
-      "category": "law"
+      "category": "law",
+      "correctAnswer": "b"
     },
     {
       "questionNumber": 51,
@@ -563,7 +617,8 @@
         "c": "単層円柱上皮 ── 血管",
         "d": "単層扁平上皮 ── 皮膚"
       },
-      "category": "anatomy"
+      "category": "anatomy",
+      "correctAnswer": "a"
     },
     {
       "questionNumber": 52,
@@ -574,7 +629,8 @@
         "c": "耳介",
         "d": "恥骨結合"
       },
-      "category": "anatomy"
+      "category": "anatomy",
+      "correctAnswer": "d"
     },
     {
       "questionNumber": 53,
@@ -585,7 +641,8 @@
         "c": "腎臓",
         "d": "脊髄"
       },
-      "category": "anatomy"
+      "category": "anatomy",
+      "correctAnswer": "a"
     },
     {
       "questionNumber": 54,
@@ -596,7 +653,8 @@
         "c": "側頭骨",
         "d": "後頭骨"
       },
-      "category": "anatomy"
+      "category": "anatomy",
+      "correctAnswer": "b"
     },
     {
       "questionNumber": 55,
@@ -607,7 +665,8 @@
         "c": "上橈尺関節 ── 楕円関節",
         "d": "橈骨手根関節 ── 球関節"
       },
-      "category": "anatomy"
+      "category": "anatomy",
+      "correctAnswer": "b"
     },
     {
       "questionNumber": 56,
@@ -618,7 +677,8 @@
         "c": "錐体筋",
         "d": "腹直筋"
       },
-      "category": "anatomy"
+      "category": "anatomy",
+      "correctAnswer": "b"
     },
     {
       "questionNumber": 57,
@@ -629,7 +689,8 @@
         "c": "小円筋 ── 肩甲下神経",
         "d": "大胸筋 ── 胸背神経"
       },
-      "category": "anatomy"
+      "category": "anatomy",
+      "correctAnswer": "b"
     },
     {
       "questionNumber": 58,
@@ -640,7 +701,8 @@
         "c": "半腱様筋",
         "d": "半膜様筋"
       },
-      "category": "anatomy"
+      "category": "anatomy",
+      "correctAnswer": "a"
     },
     {
       "questionNumber": 59,
@@ -651,7 +713,8 @@
         "c": "尺側手根屈筋",
         "d": "長母指外転筋"
       },
-      "category": "anatomy"
+      "category": "anatomy",
+      "correctAnswer": "a"
     },
     {
       "questionNumber": 60,
@@ -662,7 +725,8 @@
         "c": "閉鎖神経",
         "d": "閉鎖動脈"
       },
-      "category": "anatomy"
+      "category": "anatomy",
+      "correctAnswer": "b"
     },
     {
       "questionNumber": 61,
@@ -673,7 +737,8 @@
         "c": "右総頚動脈",
         "d": "左総頚動脈"
       },
-      "category": "anatomy"
+      "category": "anatomy",
+      "correctAnswer": "d"
     },
     {
       "questionNumber": 62,
@@ -684,7 +749,8 @@
         "c": "横行結腸",
         "d": "下行結腸"
       },
-      "category": "anatomy"
+      "category": "anatomy",
+      "correctAnswer": "a"
     },
     {
       "questionNumber": 63,
@@ -695,7 +761,8 @@
         "c": "胆嚢管",
         "d": "副膵管"
       },
-      "category": "anatomy"
+      "category": "anatomy",
+      "correctAnswer": "b"
     },
     {
       "questionNumber": 64,
@@ -706,7 +773,8 @@
         "c": "舌咽神経",
         "d": "迷走神経"
       },
-      "category": "anatomy"
+      "category": "anatomy",
+      "correctAnswer": "d"
     },
     {
       "questionNumber": 65,
@@ -717,7 +785,8 @@
         "c": "右肺の上葉と下葉の間",
         "d": "左肺の上葉と下葉の間"
       },
-      "category": "anatomy"
+      "category": "anatomy",
+      "correctAnswer": "a"
     },
     {
       "questionNumber": 66,
@@ -728,7 +797,8 @@
         "c": "左右の壁側胸膜の間",
         "d": "肺胸膜と壁側胸膜の間"
       },
-      "category": "anatomy"
+      "category": "anatomy",
+      "correctAnswer": "d"
     },
     {
       "questionNumber": 67,
@@ -739,7 +809,8 @@
         "c": "子宮頚に卵管が開口する。",
         "d": "子宮体に粘膜が存在する。"
       },
-      "category": "anatomy"
+      "category": "anatomy",
+      "correctAnswer": "d"
     },
     {
       "questionNumber": 68,
@@ -750,7 +821,8 @@
         "c": "副腎皮質",
         "d": "卵巣"
       },
-      "category": "anatomy"
+      "category": "anatomy",
+      "correctAnswer": "b"
     },
     {
       "questionNumber": 69,
@@ -761,7 +833,8 @@
         "c": "濾胞で構成される。",
         "d": "主細胞と酸好性細胞からなる。"
       },
-      "category": "anatomy"
+      "category": "anatomy",
+      "correctAnswer": "d"
     },
     {
       "questionNumber": 70,
@@ -772,7 +845,8 @@
         "c": "尾状核",
         "d": "レンズ核"
       },
-      "category": "anatomy"
+      "category": "anatomy",
+      "correctAnswer": "b"
     },
     {
       "questionNumber": 71,
@@ -783,7 +857,8 @@
         "c": "側頭葉",
         "d": "後頭葉"
       },
-      "category": "anatomy"
+      "category": "anatomy",
+      "correctAnswer": "c"
     },
     {
       "questionNumber": 72,
@@ -794,7 +869,8 @@
         "c": "舌咽神経",
         "d": "舌下神経"
       },
-      "category": "anatomy"
+      "category": "anatomy",
+      "correctAnswer": "d"
     },
     {
       "questionNumber": 73,
@@ -805,7 +881,8 @@
         "c": "第7頚神経",
         "d": "第1胸神経"
       },
-      "category": "anatomy"
+      "category": "anatomy",
+      "correctAnswer": "b"
     },
     {
       "questionNumber": 74,
@@ -816,7 +893,8 @@
         "c": "腰神経叢 ── 恥骨筋",
         "d": "仙骨神経叢 ── 外閉鎖筋"
       },
-      "category": "anatomy"
+      "category": "anatomy",
+      "correctAnswer": "c"
     },
     {
       "questionNumber": 75,
@@ -827,7 +905,8 @@
         "c": "外側前腕皮神経",
         "d": "内側前腕皮神経"
       },
-      "category": "anatomy"
+      "category": "anatomy",
+      "correctAnswer": "c"
     },
     {
       "questionNumber": 76,
@@ -838,7 +917,8 @@
         "c": "瞳孔散大筋",
         "d": "毛様体筋"
       },
-      "category": "anatomy"
+      "category": "anatomy",
+      "correctAnswer": "c"
     },
     {
       "questionNumber": 77,
@@ -849,7 +929,8 @@
         "c": "恥骨結節",
         "d": "上前腸骨棘"
       },
-      "category": "anatomy"
+      "category": "anatomy",
+      "correctAnswer": "a"
     },
     {
       "questionNumber": 78,
@@ -860,7 +941,8 @@
         "c": "広背筋",
         "d": "僧帽筋"
       },
-      "category": "anatomy"
+      "category": "anatomy",
+      "correctAnswer": "c"
     },
     {
       "questionNumber": 79,
@@ -871,7 +953,8 @@
         "c": "上腕静脈",
         "d": "腕頭静脈"
       },
-      "category": "anatomy"
+      "category": "anatomy",
+      "correctAnswer": "b"
     },
     {
       "questionNumber": 80,
@@ -882,7 +965,8 @@
         "c": "大腿動脈",
         "d": "閉鎖動脈"
       },
-      "category": "anatomy"
+      "category": "anatomy",
+      "correctAnswer": "d"
     },
     {
       "questionNumber": 81,
@@ -893,7 +977,8 @@
         "c": "リソソーム",
         "d": "ミトコンドリア"
       },
-      "category": "physiology"
+      "category": "physiology",
+      "correctAnswer": "d"
     },
     {
       "questionNumber": 82,
@@ -904,7 +989,8 @@
         "c": "自律神経やホルモンの影響を受ける。",
         "d": "心筋細胞はシナプスを介して結合している。"
       },
-      "category": "physiology"
+      "category": "physiology",
+      "correctAnswer": "d"
     },
     {
       "questionNumber": 83,
@@ -915,7 +1001,8 @@
         "c": "ノルアドレナリン",
         "d": "ガンマアミノ酪酸(GABA)"
       },
-      "category": "physiology"
+      "category": "physiology",
+      "correctAnswer": "d"
     },
     {
       "questionNumber": 84,
@@ -926,7 +1013,8 @@
         "c": "膵臓",
         "d": "唾液腺"
       },
-      "category": "physiology"
+      "category": "physiology",
+      "correctAnswer": "a"
     },
     {
       "questionNumber": 85,
@@ -937,7 +1025,8 @@
         "c": "筋を刺激することで発生する。",
         "d": "振幅の大きさは電気刺激強度に比例する。"
       },
-      "category": "physiology"
+      "category": "physiology",
+      "correctAnswer": "a"
     },
     {
       "questionNumber": 86,
@@ -948,7 +1037,8 @@
         "c": "伸張反射",
         "d": "立ち直り反射"
       },
-      "category": "physiology"
+      "category": "physiology",
+      "correctAnswer": "d"
     },
     {
       "questionNumber": 87,
@@ -959,7 +1049,8 @@
         "c": "脳幹",
         "d": "脊髄"
       },
-      "category": "physiology"
+      "category": "physiology",
+      "correctAnswer": "b"
     },
     {
       "questionNumber": 88,
@@ -970,7 +1061,8 @@
         "c": "触覚",
         "d": "聴覚"
       },
-      "category": "physiology"
+      "category": "physiology",
+      "correctAnswer": "c"
     },
     {
       "questionNumber": 89,
@@ -981,7 +1073,8 @@
         "c": "近視では網膜の後方で焦点を結ぶ。",
         "d": "杆体の視物質はロドプシンである。"
       },
-      "category": "physiology"
+      "category": "physiology",
+      "correctAnswer": "d"
     },
     {
       "questionNumber": 90,
@@ -992,7 +1085,8 @@
         "c": "サイロキシン",
         "d": "バゾプレッシン"
       },
-      "category": "physiology"
+      "category": "physiology",
+      "correctAnswer": "b"
     },
     {
       "questionNumber": 91,
@@ -1003,7 +1097,8 @@
         "c": "サイロキシンの生理活性は弱い。",
         "d": "甲状腺刺激ホルモンの分泌を抑制する。"
       },
-      "category": "physiology"
+      "category": "physiology",
+      "correctAnswer": "a"
     },
     {
       "questionNumber": 92,
@@ -1014,7 +1109,8 @@
         "c": "オキシトシン",
         "d": "プロゲステロン"
       },
-      "category": "physiology"
+      "category": "physiology",
+      "correctAnswer": "c"
     },
     {
       "questionNumber": 93,
@@ -1025,7 +1121,8 @@
         "c": "血小板の凝集",
         "d": "二酸化炭素の運搬"
       },
-      "category": "physiology"
+      "category": "physiology",
+      "correctAnswer": "c"
     },
     {
       "questionNumber": 94,
@@ -1036,7 +1133,8 @@
         "c": "好塩基球",
         "d": "樹状細胞"
       },
-      "category": "physiology"
+      "category": "physiology",
+      "correctAnswer": "c"
     },
     {
       "questionNumber": 95,
@@ -1047,7 +1145,8 @@
         "c": "成長ホルモン",
         "d": "副甲状腺ホルモン"
       },
-      "category": "physiology"
+      "category": "physiology",
+      "correctAnswer": "d"
     },
     {
       "questionNumber": 96,
@@ -1058,7 +1157,8 @@
         "c": "白血球",
         "d": "アルブミン"
       },
-      "category": "physiology"
+      "category": "physiology",
+      "correctAnswer": "b"
     },
     {
       "questionNumber": 97,
@@ -1069,7 +1169,8 @@
         "c": "右腋窩リンパ節",
         "d": "右鼠径リンパ節"
       },
-      "category": "physiology"
+      "category": "physiology",
+      "correctAnswer": "c"
     },
     {
       "questionNumber": 98,
@@ -1080,7 +1181,8 @@
         "c": "椎骨動脈",
         "d": "鎖骨下動脈"
       },
-      "category": "physiology"
+      "category": "physiology",
+      "correctAnswer": "b"
     },
     {
       "questionNumber": 99,
@@ -1091,7 +1193,8 @@
         "c": "1回換気量",
         "d": "予備吸気量"
       },
-      "category": "physiology"
+      "category": "physiology",
+      "correctAnswer": "a"
     },
     {
       "questionNumber": 100,
@@ -1102,7 +1205,8 @@
         "c": "動脈血",
         "d": "肺胞気"
       },
-      "category": "physiology"
+      "category": "physiology",
+      "correctAnswer": "b"
     },
     {
       "questionNumber": 101,
@@ -1113,7 +1217,8 @@
         "c": "ナトリウム",
         "d": "パラアミノ馬尿酸"
       },
-      "category": "physiology"
+      "category": "physiology",
+      "correctAnswer": "b"
     },
     {
       "questionNumber": 102,
@@ -1124,7 +1229,8 @@
         "c": "カルシトニンの分泌を促進する。",
         "d": "腸管のカルシウムイオン吸収を促進する。"
       },
-      "category": "physiology"
+      "category": "physiology",
+      "correctAnswer": "d"
     },
     {
       "questionNumber": 103,
@@ -1135,7 +1241,8 @@
         "c": "コレシストキニンは胆汁排泄を促進する。",
         "d": "胆汁酸はタンパク質とミセルを形成する。"
       },
-      "category": "physiology"
+      "category": "physiology",
+      "correctAnswer": "c"
     },
     {
       "questionNumber": 104,
@@ -1146,7 +1253,8 @@
         "c": "橋",
         "d": "延髄"
       },
-      "category": "physiology"
+      "category": "physiology",
+      "correctAnswer": "b"
     },
     {
       "questionNumber": 105,
@@ -1157,7 +1265,8 @@
         "c": "歩行率の増加",
         "d": "遊脚期の延長"
       },
-      "category": "physiology"
+      "category": "physiology",
+      "correctAnswer": "b"
     },
     {
       "questionNumber": 106,
@@ -1168,7 +1277,8 @@
         "c": "外旋",
         "d": "外がえし"
       },
-      "category": "kinesiology"
+      "category": "kinesiology",
+      "correctAnswer": "b"
     },
     {
       "questionNumber": 107,
@@ -1179,7 +1289,8 @@
         "c": "顆状関節",
         "d": "平面関節"
       },
-      "category": "kinesiology"
+      "category": "kinesiology",
+      "correctAnswer": "c"
     },
     {
       "questionNumber": 108,
@@ -1190,7 +1301,8 @@
         "c": "粗大な動きをする筋では密度が高い。",
         "d": "筋の自動伸展時にインパルスを発射する。"
       },
-      "category": "kinesiology"
+      "category": "kinesiology",
+      "correctAnswer": "a"
     },
     {
       "questionNumber": 109,
@@ -1201,7 +1313,8 @@
         "c": "足関節の底屈",
         "d": "趾(指)の屈曲"
       },
-      "category": "kinesiology"
+      "category": "kinesiology",
+      "correctAnswer": "b"
     },
     {
       "questionNumber": 110,
@@ -1212,7 +1325,8 @@
         "c": "大胸筋",
         "d": "小円筋"
       },
-      "category": "kinesiology"
+      "category": "kinesiology",
+      "correctAnswer": "d"
     },
     {
       "questionNumber": 111,
@@ -1223,7 +1337,8 @@
         "c": "外側縦アーチの中心となるのは舟状骨である。",
         "d": "内側縦アーチを構成する靱帯として長足底靱帯がある。"
       },
-      "category": "kinesiology"
+      "category": "kinesiology",
+      "correctAnswer": "b"
     },
     {
       "questionNumber": 112,
@@ -1234,7 +1349,8 @@
         "c": "胸鎖乳突筋",
         "d": "脊柱起立筋"
       },
-      "category": "kinesiology"
+      "category": "kinesiology",
+      "correctAnswer": "c"
     },
     {
       "questionNumber": 113,
@@ -1245,7 +1361,8 @@
         "c": "支持基底が狭い。",
         "d": "分節構造をとる。"
       },
-      "category": "kinesiology"
+      "category": "kinesiology",
+      "correctAnswer": "b"
     },
     {
       "questionNumber": 114,
@@ -1257,7 +1374,8 @@
         "d": "D"
       },
       "bessatsuPage": 2,
-      "category": "kinesiology"
+      "category": "kinesiology",
+      "correctAnswer": "c"
     },
     {
       "questionNumber": 115,
@@ -1268,7 +1386,8 @@
         "c": "足底把握反射",
         "d": "非対称性緊張性頚反射"
       },
-      "category": "kinesiology"
+      "category": "kinesiology",
+      "correctAnswer": "c"
     },
     {
       "questionNumber": 116,
@@ -1279,7 +1398,8 @@
         "c": "治療効果の検討",
         "d": "犯罪性の立証"
       },
-      "category": "pathology"
+      "category": "pathology",
+      "correctAnswer": "d"
     },
     {
       "questionNumber": 117,
@@ -1290,7 +1410,8 @@
         "c": "疼痛",
         "d": "脾腫"
       },
-      "category": "pathology"
+      "category": "pathology",
+      "correctAnswer": "d"
     },
     {
       "questionNumber": 118,
@@ -1301,7 +1422,12 @@
         "c": "肝機能",
         "d": "皮下脂肪量"
       },
-      "category": "pathology"
+      "category": "pathology",
+      "correctAnswers": [
+        "a",
+        "b"
+      ],
+      "correctAnswer": "a"
     },
     {
       "questionNumber": 119,
@@ -1312,7 +1438,8 @@
         "c": "無為性萎縮 ── 腎臓",
         "d": "内分泌性萎縮 ── 胸腺"
       },
-      "category": "pathology"
+      "category": "pathology",
+      "correctAnswer": "a"
     },
     {
       "questionNumber": 120,
@@ -1323,7 +1450,8 @@
         "c": "新生児メレナ ── ビタミンC欠乏",
         "d": "特発性血小板減少性紫斑病 ── 血管壁脆弱"
       },
-      "category": "pathology"
+      "category": "pathology",
+      "correctAnswer": "b"
     },
     {
       "questionNumber": 121,
@@ -1334,7 +1462,8 @@
         "c": "尿崩症による多尿",
         "d": "運動後の水道水大量摂取"
       },
-      "category": "pathology"
+      "category": "pathology",
+      "correctAnswer": "d"
     },
     {
       "questionNumber": 122,
@@ -1345,7 +1474,8 @@
         "c": "中枢神経",
         "d": "胃粘膜上皮"
       },
-      "category": "pathology"
+      "category": "pathology",
+      "correctAnswer": "d"
     },
     {
       "questionNumber": 123,
@@ -1356,7 +1486,8 @@
         "c": "偽膜性大腸炎",
         "d": "アレルギー性鼻炎"
       },
-      "category": "pathology"
+      "category": "pathology",
+      "correctAnswer": "a"
     },
     {
       "questionNumber": 124,
@@ -1367,7 +1498,8 @@
         "c": "重症複合型免疫不全症(SCID)",
         "d": "ディジョージ(Di George)症候群"
       },
-      "category": "pathology"
+      "category": "pathology",
+      "correctAnswer": "a"
     },
     {
       "questionNumber": 125,
@@ -1378,7 +1510,8 @@
         "c": "接触性皮膚炎",
         "d": "自己免疫性溶血性貧血"
       },
-      "category": "pathology"
+      "category": "pathology",
+      "correctAnswer": "b"
     },
     {
       "questionNumber": 126,
@@ -1389,7 +1522,8 @@
         "c": "CEA ── 喉頭癌",
         "d": "PSA ── 膵癌"
       },
-      "category": "pathology"
+      "category": "pathology",
+      "correctAnswer": "b"
     },
     {
       "questionNumber": 127,
@@ -1400,7 +1534,8 @@
         "c": "組織学的には腺癌が多い。",
         "d": "男性にも発生する。"
       },
-      "category": "pathology"
+      "category": "pathology",
+      "correctAnswer": "a"
     },
     {
       "questionNumber": 128,
@@ -1411,7 +1546,8 @@
         "c": "マルファン(Marfan)症候群 ── 伴性劣性",
         "d": "フェニルケトン尿症 ── 多因子性"
       },
-      "category": "pathology"
+      "category": "pathology",
+      "correctAnswer": "a"
     }
   ]
 }

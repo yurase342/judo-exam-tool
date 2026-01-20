@@ -404,6 +404,15 @@ const ResultView: FC<ResultViewProps> = ({
                     </div>
                   </div>
 
+                  {/* 複数正答のメッセージ（学習・テスト両モードで表示） */}
+                  {question.correctAnswers && question.correctAnswers.length > 1 && (
+                    <div className="mt-3 p-3 bg-yellow-50 border border-yellow-200 rounded-lg print:bg-white print:border-yellow-400">
+                      <p className="text-sm text-yellow-800">
+                        📝 この問題は「{question.correctAnswers.map(a => a.toUpperCase()).join('」または「')}」のどちらでも正解です。
+                      </p>
+                    </div>
+                  )}
+
                   {/* 全選択肢（不正解の場合に表示） */}
                   {!isCorrect && (
                     <div className="mt-4 pt-3 border-t border-gray-300">
