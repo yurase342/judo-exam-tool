@@ -1,0 +1,1360 @@
+{
+  "examNumber": 30,
+  "year": 2022,
+  "session": "gogo",
+  "totalQuestions": 122,
+  "questions": [
+    {
+      "questionNumber": 1,
+      "questionText": "WHO憲章に述べられている健康で正しいのはどれか。",
+      "choices": {
+        "a": "身体だけでなく精神的にも完全な状態である。",
+        "b": "健康の向上において公衆の積極的な関与は重要ではない。",
+        "c": "最高の健康水準を享受することは万人の基本的権利である。",
+        "d": "享受できる健康水準に対する権利は国の事情によって異なる。"
+      },
+      "category": "hygiene"
+    },
+    {
+      "questionNumber": 2,
+      "questionText": "プライマリヘルスケアにあてはまらないのはどれか。",
+      "choices": {
+        "a": "疾病の予防",
+        "b": "先進医療の提供",
+        "c": "地域住民の健康管理",
+        "d": "専門病院との連携機能の保持"
+      },
+      "category": "hygiene"
+    },
+    {
+      "questionNumber": 3,
+      "questionText": "疫学研究方法でエビデンスのレベルが最も高いのはどれか。",
+      "choices": {
+        "a": "介入研究",
+        "b": "症例報告",
+        "c": "横断研究",
+        "d": "症例対照研究"
+      },
+      "category": "hygiene"
+    },
+    {
+      "questionNumber": 4,
+      "questionText": "総患者数が最も多いのはどれか。",
+      "choices": {
+        "a": "悪性新生物",
+        "b": "高血圧性疾患",
+        "c": "糖尿病",
+        "d": "脳血管疾患"
+      },
+      "category": "hygiene"
+    },
+    {
+      "questionNumber": 5,
+      "questionText": "介護認定審査会で正しいのはどれか。",
+      "choices": {
+        "a": "介護支援専門員の意見書を提出する。",
+        "b": "都道府県に設置される。",
+        "c": "二次判定を行う。",
+        "d": "要支援の判定は行わない。"
+      },
+      "category": "hygiene"
+    },
+    {
+      "questionNumber": 6,
+      "questionText": "衛生行政と所管する官庁の組合せで誤っているのはどれか。",
+      "choices": {
+        "a": "一般衛生行政 ── 厚生労働省",
+        "b": "学校保健行政 ── 文部科学省",
+        "c": "環境衛生行政 ── 環境省",
+        "d": "労働衛生行政 ── 経済産業省"
+      },
+      "category": "hygiene"
+    },
+    {
+      "questionNumber": 7,
+      "questionText": "世界保健機関(WHO)の主な活動内容はどれか。2つ選べ。",
+      "choices": {
+        "a": "地球温暖化対策",
+        "b": "保健統計の収集",
+        "c": "薬品のモニタリング",
+        "d": "途上国への経済支援"
+      },
+      "category": "hygiene"
+    },
+    {
+      "questionNumber": 8,
+      "questionText": "不活化ワクチンはどれか。",
+      "choices": {
+        "a": "インフルエンザワクチン",
+        "b": "水痘ワクチン",
+        "c": "風疹ワクチン",
+        "d": "BCGワクチン"
+      },
+      "category": "hygiene"
+    },
+    {
+      "questionNumber": 9,
+      "questionText": "金属器具に使用できない消毒薬はどれか。",
+      "choices": {
+        "a": "クロルヘキシジン",
+        "b": "グルタラール",
+        "c": "消毒用エタノール",
+        "d": "次亜塩素酸ナトリウム"
+      },
+      "category": "hygiene"
+    },
+    {
+      "questionNumber": 10,
+      "questionText": "手指の消毒で正しいのはどれか。",
+      "choices": {
+        "a": "最初にブラシで擦る。",
+        "b": "流水による手洗いでは温水より冷水の方がよい。",
+        "c": "術前の手洗いは指先から各指、手掌の順で洗う。",
+        "d": "速乾性擦式消毒薬は30秒以上かけて手にすり込む。"
+      },
+      "category": "hygiene"
+    },
+    {
+      "questionNumber": 11,
+      "questionText": "住居の採光と換気で正しいのはどれか。",
+      "choices": {
+        "a": "室内の照度分布の目安に均斉度を用いる。",
+        "b": "昼光率は日中と夜間の照度の比率である。",
+        "c": "室内空気の汚染の尺度に一酸化炭素の濃度を用いる。",
+        "d": "室内での燃料使用においてホルムアルデヒドの発生に注意する。"
+      },
+      "category": "hygiene"
+    },
+    {
+      "questionNumber": 12,
+      "questionText": "上水で正しいのはどれか。2つ選べ。",
+      "choices": {
+        "a": "上水の基準は環境基本法による。",
+        "b": "上水には大腸菌を検出してはならない。",
+        "c": "上水末端においては塩素が残留してはならない。",
+        "d": "上水処理中に発生したトリハロメタンは発がん物質である。"
+      },
+      "category": "hygiene"
+    },
+    {
+      "questionNumber": 13,
+      "questionText": "WHO国際生活機能分類(ICF)の4つの分野における第一レベル分類で環境因子の項目はどれか。",
+      "choices": {
+        "a": "家庭生活",
+        "b": "対人関係",
+        "c": "支援と関係",
+        "d": "コミュニケーション"
+      },
+      "category": "rehabilitation"
+    },
+    {
+      "questionNumber": 14,
+      "questionText": "神経伝導検査の所見でないのはどれか。",
+      "choices": {
+        "a": "陽性鋭波",
+        "b": "潜時遅延",
+        "c": "伝導ブロック",
+        "d": "持続時間の延長"
+      },
+      "category": "rehabilitation"
+    },
+    {
+      "questionNumber": 15,
+      "questionText": "機能的自立評価法(FIM)に含まれるが、バーセル指数には含まれない評価項目はどれか。",
+      "choices": {
+        "a": "理解",
+        "b": "食事",
+        "c": "更衣",
+        "d": "整容"
+      },
+      "category": "rehabilitation"
+    },
+    {
+      "questionNumber": 16,
+      "questionText": "他動的に関節を動かした際、全可動域で抵抗感があるが運動は容易であった。痙縮の程度を評価するアッシュワーススケールで正しいのはどれか。",
+      "choices": {
+        "a": "1",
+        "b": "2",
+        "c": "3",
+        "d": "4"
+      },
+      "category": "rehabilitation"
+    },
+    {
+      "questionNumber": 17,
+      "questionText": "職種と役割の組合せで誤っているのはどれか。",
+      "choices": {
+        "a": "理学療法士 ── 運動療法",
+        "b": "作業療法士 ── 日常生活活動訓練",
+        "c": "言語聴覚士 ── 摂食機能療法",
+        "d": "臨床心理士 ── 社会復帰援助"
+      },
+      "category": "rehabilitation"
+    },
+    {
+      "questionNumber": 18,
+      "questionText": "脳卒中のリハビリテーション治療で積極的な練習を行ってよいのはどれか。",
+      "choices": {
+        "a": "安静時収縮期血圧 160mmHg",
+        "b": "安静時拡張期血圧 130mmHg",
+        "c": "安静時脈拍 130回/分",
+        "d": "体温 39.0℃"
+      },
+      "category": "rehabilitation"
+    },
+    {
+      "questionNumber": 19,
+      "questionText": "車いすのバックサポートにおける腋窩からの高さで、適切なのはどれか。",
+      "choices": {
+        "a": "0〜5cm",
+        "b": "5〜10cm",
+        "c": "10〜15cm",
+        "d": "15〜20cm"
+      },
+      "category": "rehabilitation"
+    },
+    {
+      "questionNumber": 20,
+      "questionText": "脳卒中で右上下肢とも中等度麻痺を呈している。通常使わない補装具はどれか。",
+      "choices": {
+        "a": "T字杖",
+        "b": "前輪歩行器",
+        "c": "短下肢装具",
+        "d": "普通型車いす"
+      },
+      "category": "rehabilitation"
+    },
+    {
+      "questionNumber": 21,
+      "questionText": "脳卒中片麻痺患者の急性期にみられないのはどれか。",
+      "choices": {
+        "a": "排尿障害",
+        "b": "嚥下障害",
+        "c": "沈下性肺炎",
+        "d": "肩手症候群"
+      },
+      "category": "rehabilitation"
+    },
+    {
+      "questionNumber": 22,
+      "questionText": "高齢者の姿勢バランスをファンクショナルリーチテストで見る場合、正常とみなされる境界到達距離はどれか。",
+      "choices": {
+        "a": "5cm",
+        "b": "10cm",
+        "c": "15cm",
+        "d": "20cm"
+      },
+      "category": "rehabilitation"
+    },
+    {
+      "questionNumber": 23,
+      "questionText": "64歳の男性。脳梗塞を発症後、コミュニケーション障害が生じた。口数が少なく、「痛いところはありますか」と尋ねると、「う、ん」と答え、「どこですか」と尋ねると何か言おうとするものの言葉にならないようである。「ボールペンと言ってください」と指示すると、「ボーボ…」と途中まで言いかけてあきらめてしまった。「左手でじゃんけんのチョキをしてください」という指示には間違いなく従える。考えられる症状はどれか。",
+      "choices": {
+        "a": "全失語",
+        "b": "伝導失語",
+        "c": "ブローカ失語",
+        "d": "ウェルニッケ失語"
+      },
+      "category": "rehabilitation"
+    },
+    {
+      "questionNumber": 24,
+      "questionText": "頭痛を主訴に来院した患者で現病歴に記載されるのはどれか。",
+      "choices": {
+        "a": "「10歳時に上腕骨を骨折した」",
+        "b": "「父親がくも膜下出血で亡くなった」",
+        "c": "「コレステロールを下げる薬を飲んでいる」",
+        "d": "「ギザギザした光が見えてから頭が痛くなる」"
+      },
+      "category": "clinical_general"
+    },
+    {
+      "questionNumber": 25,
+      "questionText": "翼状頸をきたす疾患はどれか。",
+      "choices": {
+        "a": "クッシング(Cushing)症候群",
+        "b": "バセドウ(Basedow)病",
+        "c": "ターナー(Turner)症候群",
+        "d": "パーキンソン(Parkinson)病"
+      },
+      "category": "clinical_general"
+    },
+    {
+      "questionNumber": 26,
+      "questionText": "腹壁静脈の怒張をきたす疾患はどれか。",
+      "choices": {
+        "a": "肝硬変",
+        "b": "胆嚢炎",
+        "c": "虫垂炎",
+        "d": "膀胱炎"
+      },
+      "category": "clinical_general"
+    },
+    {
+      "questionNumber": 27,
+      "questionText": "体幹・四肢の視診の組合せで正しいのはどれか。",
+      "choices": {
+        "a": "扁平胸 ── マルファン(Marfan)症候群",
+        "b": "内反膝 ── 腓骨神経麻痺",
+        "c": "くも状指 ── 尺骨神経麻痺",
+        "d": "腹部皮膚線条 ── 妊娠を経験した女性"
+      },
+      "category": "clinical_general"
+    },
+    {
+      "questionNumber": 28,
+      "questionText": "圧痛点と疾患の組合せで正しいのはどれか。",
+      "choices": {
+        "a": "ムンロー点 ── 三叉神経痛",
+        "b": "ボアス点 ── 胃潰瘍",
+        "c": "オトガイ点 ── 虫垂炎",
+        "d": "マックバーネ点 ── 胆嚢炎"
+      },
+      "category": "clinical_general"
+    },
+    {
+      "questionNumber": 29,
+      "questionText": "血圧測定で正しいのはどれか。",
+      "choices": {
+        "a": "血圧は静脈の血管内圧を指す。",
+        "b": "触診法は聴診法より高く測定される。",
+        "c": "触診法でも拡張期血圧の測定ができる。",
+        "d": "拍動音が聞こえ始めた点が収縮期血圧である。"
+      },
+      "category": "clinical_general"
+    },
+    {
+      "questionNumber": 30,
+      "questionText": "脊髄後索の病変で障害されるのはどれか。",
+      "choices": {
+        "a": "味覚",
+        "b": "痛覚",
+        "c": "温度覚",
+        "d": "振動覚"
+      },
+      "category": "clinical_general"
+    },
+    {
+      "questionNumber": 31,
+      "questionText": "陽性のとき錐体路障害を示唆するのはどれか。",
+      "choices": {
+        "a": "腹壁反射",
+        "b": "足底反射",
+        "c": "アシュネル(Aschner)反射",
+        "d": "チャドック(Chaddock)反射"
+      },
+      "category": "clinical_general"
+    },
+    {
+      "questionNumber": 32,
+      "questionText": "羽ばたき振戦を呈する疾患はどれか。",
+      "choices": {
+        "a": "神経症",
+        "b": "肝性脳症",
+        "c": "低カルシウム血症",
+        "d": "甲状腺機能亢進症"
+      },
+      "category": "clinical_general"
+    },
+    {
+      "questionNumber": 33,
+      "questionText": "気管支喘息で正しいのはどれか。",
+      "choices": {
+        "a": "IgA抗体が上昇する。",
+        "b": "気道狭窄は不可逆性である。",
+        "c": "発作時には呼気延長がある。",
+        "d": "日中に発作を起こしやすい。"
+      },
+      "category": "clinical_general"
+    },
+    {
+      "questionNumber": 34,
+      "questionText": "肺血栓塞栓症で誤っているのはどれか。",
+      "choices": {
+        "a": "肺静脈に血栓を認める。",
+        "b": "悪性腫瘍に合併しやすい。",
+        "c": "突然の呼吸困難で発症する。",
+        "d": "下肢深部静脈の血栓が原因となる。"
+      },
+      "category": "clinical_general"
+    },
+    {
+      "questionNumber": 35,
+      "questionText": "心房細動で誤っているのはどれか。",
+      "choices": {
+        "a": "左房内血栓を生じやすい。",
+        "b": "脳梗塞を起こしやすい。",
+        "c": "脈は規則的である。",
+        "d": "高齢者に多い。"
+      },
+      "category": "clinical_general"
+    },
+    {
+      "questionNumber": 36,
+      "questionText": "頭蓋骨の骨打ち抜き像がみられるのはどれか。",
+      "choices": {
+        "a": "血友病",
+        "b": "悪性リンパ腫",
+        "c": "多発性骨髄腫",
+        "d": "再生不良性貧血"
+      },
+      "category": "clinical_general"
+    },
+    {
+      "questionNumber": 37,
+      "questionText": "皮膚・粘膜の色素沈着が認められるのはどれか。",
+      "choices": {
+        "a": "橋本病",
+        "b": "アジソン(Addison)病",
+        "c": "バセドウ(Basedow)病",
+        "d": "クッシング(Cushing)症候群"
+      },
+      "category": "clinical_general"
+    },
+    {
+      "questionNumber": 38,
+      "questionText": "関節リウマチで正しいのはどれか。",
+      "choices": {
+        "a": "男性に多い。",
+        "b": "近位指節間関節に好発する。",
+        "c": "関節以外には症状はみられない。",
+        "d": "リウマトイド因子陽性ならば関節リウマチである。"
+      },
+      "category": "clinical_general"
+    },
+    {
+      "questionNumber": 39,
+      "questionText": "皮膚筋炎の症状で誤っているのはどれか。",
+      "choices": {
+        "a": "近位筋の筋力低下",
+        "b": "ヘリオトロープ疹",
+        "c": "蝶形紅斑",
+        "d": "筋肉痛"
+      },
+      "category": "clinical_general"
+    },
+    {
+      "questionNumber": 40,
+      "questionText": "急性腎盂腎炎でみられないのはどれか。",
+      "choices": {
+        "a": "黄疸",
+        "b": "発熱",
+        "c": "頻尿",
+        "d": "肋骨・脊椎角部(CVA)の叩打痛"
+      },
+      "category": "clinical_general"
+    },
+    {
+      "questionNumber": 41,
+      "questionText": "パーキンソン(Parkinson)病に特徴的にみられるのはどれか。",
+      "choices": {
+        "a": "姿勢反射障害",
+        "b": "痙性対麻痺",
+        "c": "体幹失調",
+        "d": "平衡障害"
+      },
+      "category": "clinical_general"
+    },
+    {
+      "questionNumber": 42,
+      "questionText": "病変部位と神経症状の組合せで正しいのはどれか。",
+      "choices": {
+        "a": "後頭葉 ── ふらつき",
+        "b": "錐体外路系 ── 感覚低下",
+        "c": "錐体路系 ── 麻痺",
+        "d": "小脳系 ── 失語"
+      },
+      "category": "clinical_general"
+    },
+    {
+      "questionNumber": 43,
+      "questionText": "梅毒の症状で正しいのはどれか。",
+      "choices": {
+        "a": "子宮頸管炎",
+        "b": "尿道分泌物",
+        "c": "免疫不全",
+        "d": "ゴム腫"
+      },
+      "category": "clinical_general"
+    },
+    {
+      "questionNumber": 44,
+      "questionText": "35歳の男性。7月の日曜日に会社の野球チームの練習に参加していた。当日は晴天で気温32℃、湿度80%であった。守備中に頭痛と倦怠感を訴えて倒れ、救護室に運ばれた。意識はあるが、体は熱く、多量の発汗を認めた。正しい対応はどれか。",
+      "choices": {
+        "a": "酸素吸入を行う。",
+        "b": "身体を毛布で温める。",
+        "c": "ブドウ糖を補給する。",
+        "d": "ナトリウムを含んだ水分を補給する。"
+      },
+      "category": "clinical_general"
+    },
+    {
+      "questionNumber": 45,
+      "questionText": "60歳の男性。糖尿病で1日4回インスリン注射を行っている。施術中に眠気を訴え生あくびをするようになった。皮膚は湿潤し、頻脈が認められた。まず行うべきことはどれか。",
+      "choices": {
+        "a": "昼寝",
+        "b": "飲水",
+        "c": "砂糖服用",
+        "d": "インスリン自己注射"
+      },
+      "category": "clinical_general"
+    },
+    {
+      "questionNumber": 46,
+      "questionText": "広範囲熱傷の処置で誤っているのはどれか。",
+      "choices": {
+        "a": "無菌的な操作",
+        "b": "壊死組織の切除",
+        "c": "植皮による創閉鎖",
+        "d": "抗菌薬の全身投与"
+      },
+      "category": "surgery"
+    },
+    {
+      "questionNumber": 47,
+      "questionText": "急性炎症の症状で誤っているのはどれか。",
+      "choices": {
+        "a": "発赤",
+        "b": "腫脹",
+        "c": "疼痛",
+        "d": "冷感"
+      },
+      "category": "surgery"
+    },
+    {
+      "questionNumber": 48,
+      "questionText": "蜂窩織炎で正しいのはどれか。",
+      "choices": {
+        "a": "発赤を伴わない。",
+        "b": "真菌感染が多い。",
+        "c": "びまん性化膿性炎症である。",
+        "d": "切開排膿が基本となる。"
+      },
+      "category": "surgery"
+    },
+    {
+      "questionNumber": 49,
+      "questionText": "腫瘍診断の検査の組合せで正しいのはどれか。",
+      "choices": {
+        "a": "細胞診 ── 悪性度判定",
+        "b": "超音波検査 ── 侵襲的検査",
+        "c": "MRI検査 ── 放射線被曝",
+        "d": "腫瘍マーカー ── 早期癌検出"
+      },
+      "category": "surgery"
+    },
+    {
+      "questionNumber": 50,
+      "questionText": "輸血する際の指標で誤っているのはどれか。",
+      "choices": {
+        "a": "血圧",
+        "b": "呼吸数",
+        "c": "尿量",
+        "d": "中心静脈圧"
+      },
+      "category": "surgery"
+    },
+    {
+      "questionNumber": 51,
+      "questionText": "基本的外科手技で誤っているのはどれか。",
+      "choices": {
+        "a": "外科結びは女結びより緩みにくい。",
+        "b": "人工血管吻合に吸収性縫合糸を用いる。",
+        "c": "抜糸の時期は顔面の方が体幹部より早い。",
+        "d": "消化管吻合に自動吻合器が使用されることが多い。"
+      },
+      "category": "surgery"
+    },
+    {
+      "questionNumber": 52,
+      "questionText": "組織適合性抗原がすべて同じである2個体間での移植はどれか。",
+      "choices": {
+        "a": "自家移植",
+        "b": "同系移植",
+        "c": "同種移植",
+        "d": "異種移植"
+      },
+      "category": "surgery"
+    },
+    {
+      "questionNumber": 53,
+      "questionText": "誤っている組合せはどれか。",
+      "choices": {
+        "a": "下部消化管出血 ── タール便",
+        "b": "静脈性出血 ── 非拍動性",
+        "c": "鼻出血 ── キーゼルバッハ",
+        "d": "血尿 ── 尿管結石"
+      },
+      "category": "surgery"
+    },
+    {
+      "questionNumber": 54,
+      "questionText": "回転性めまい、ふらつき、頭痛を訴えた場合、脳内出血の部位で疑うのはどれか。",
+      "choices": {
+        "a": "被殻",
+        "b": "視床",
+        "c": "小脳",
+        "d": "くも膜下"
+      },
+      "category": "surgery"
+    },
+    {
+      "questionNumber": 55,
+      "questionText": "腹部外傷で誤っているのはどれか。",
+      "choices": {
+        "a": "鈍的外傷の多くは交通事故が原因である。",
+        "b": "脾損傷の治療に血管塞栓術がある。",
+        "c": "肝損傷で腹腔内フリーエアーがみられる。",
+        "d": "腹部外傷では多発外傷のことが多い。"
+      },
+      "category": "surgery"
+    },
+    {
+      "questionNumber": 56,
+      "questionText": "28歳の男性。バイク走行中に転倒し右側腹部を打撲した。意識清明、自立歩行可能で救急車にて来院した。待っている間に、冷汗が生じ顔面が蒼白となった。下腿浮腫はみられない。収縮期血圧60mmHg、脈拍126/分であった。考えられるのはどれか。",
+      "choices": {
+        "a": "心原性ショック",
+        "b": "アナフィラキシーショック",
+        "c": "敗血症性ショック",
+        "d": "出血性ショック"
+      },
+      "category": "surgery"
+    },
+    {
+      "questionNumber": 57,
+      "questionText": "異常歩行と要因の組合せで正しいのはどれか。",
+      "choices": {
+        "a": "鶏歩 ── 大腿神経麻痺",
+        "b": "失調性歩行 ── 腰部脊柱管狭窄症",
+        "c": "分回し歩行 ── 脳性麻痺",
+        "d": "トレンデレンブルグ歩行 ── 変形性股関節症"
+      },
+      "category": "orthopedics"
+    },
+    {
+      "questionNumber": 58,
+      "questionText": "小児骨折で誤っているのはどれか。",
+      "choices": {
+        "a": "回旋変形は自家矯正される。",
+        "b": "若木骨折は特徴的な骨折である。",
+        "c": "骨端線損傷は剪断力が加わることで起こりやすい。",
+        "d": "ソルター・ハリス分類のタイプIIでは予後は良い。"
+      },
+      "category": "orthopedics"
+    },
+    {
+      "questionNumber": 59,
+      "questionText": "急性のスポーツ外傷で正しいのはどれか。",
+      "choices": {
+        "a": "足関節が多い。",
+        "b": "陸上競技で多い。",
+        "c": "打撲が捻挫よりも多い。",
+        "d": "繰り返し外力で生じる。"
+      },
+      "category": "orthopedics"
+    },
+    {
+      "questionNumber": 60,
+      "questionText": "骨関節結核で最も多い部位はどれか。",
+      "choices": {
+        "a": "肩関節",
+        "b": "脊椎",
+        "c": "股関節",
+        "d": "膝関節"
+      },
+      "category": "orthopedics"
+    },
+    {
+      "questionNumber": 61,
+      "questionText": "骨形成不全症で正しいのはどれか。",
+      "choices": {
+        "a": "視覚障害を合併する。",
+        "b": "ステロイド薬が有効である。",
+        "c": "骨折の癒合は比較的良好である。",
+        "d": "II型コラーゲンの形成異常が原因である。"
+      },
+      "category": "orthopedics"
+    },
+    {
+      "questionNumber": 62,
+      "questionText": "キーンベック(Kienbock)病で正しいのはどれか。",
+      "choices": {
+        "a": "保存療法は無効である。",
+        "b": "舟状骨の壊死性疾患である。",
+        "c": "手関節掌側の腫脹がみられる。",
+        "d": "進行すると手根骨の配列異常がみられる。"
+      },
+      "category": "orthopedics"
+    },
+    {
+      "questionNumber": 63,
+      "questionText": "頸椎後縦靱帯骨化症で正しいのはどれか。",
+      "choices": {
+        "a": "女性に多い。",
+        "b": "骨化の進行は早い。",
+        "c": "糖尿病を合併することが多い。",
+        "d": "進行すると弛緩性麻痺を呈する。"
+      },
+      "category": "orthopedics"
+    },
+    {
+      "questionNumber": 64,
+      "questionText": "モンテギア(Monteggia)骨折で正しいのはどれか。",
+      "choices": {
+        "a": "尺骨神経麻痺を伴う。",
+        "b": "橈骨頭の前方脱臼を伴う。",
+        "c": "尺骨の遠位1/3で骨折する。",
+        "d": "成人では外固定法が適応となる。"
+      },
+      "category": "orthopedics"
+    },
+    {
+      "questionNumber": 65,
+      "questionText": "手指伸筋腱皮下断裂の原因で誤っているのはどれか。",
+      "choices": {
+        "a": "手関節ガングリオン",
+        "b": "変形性手関節症",
+        "c": "関節リウマチ",
+        "d": "コーレス(Colles)骨折"
+      },
+      "category": "orthopedics"
+    },
+    {
+      "questionNumber": 66,
+      "questionText": "特発性大腿骨頭壊死で正しいのはどれか。",
+      "choices": {
+        "a": "初期の免荷は不要である。",
+        "b": "成長期の血流障害が背景となる。",
+        "c": "CT検査は確定診断に有用である。",
+        "d": "ステロイド薬服用が関係している。"
+      },
+      "category": "orthopedics"
+    },
+    {
+      "questionNumber": 67,
+      "questionText": "16歳の女子。バレーボールの試合中、ジャンプで着地した際に左膝に激痛が走った。試合は続行できたが、痛みが引かないため来所した。来所時、ラックマンテストが陽性であった。来所時の対応で誤っているのはどれか。",
+      "choices": {
+        "a": "膝蓋跳動の有無を確認する。",
+        "b": "MRI検査を勧める。",
+        "c": "早期からスクワット訓練を指導する。",
+        "d": "発症予防プログラムが有効である。"
+      },
+      "category": "orthopedics"
+    },
+    {
+      "questionNumber": 68,
+      "questionText": "高齢者の骨折で誤っているのはどれか。",
+      "choices": {
+        "a": "緻密骨に多く起こる。",
+        "b": "転倒で生じやすい。",
+        "c": "軽度の外力で生じる。",
+        "d": "自家矯正能が乏しい。"
+      },
+      "category": "judo_therapy"
+    },
+    {
+      "questionNumber": 69,
+      "questionText": "高所から転落した患者の単純エックス線像(別冊No.1)を別に示す。合併症で考えられないのはどれか。",
+      "choices": {
+        "a": "椎体圧迫骨折",
+        "b": "複合性局所疼痛症候群タイプI",
+        "c": "阻血性壊死",
+        "d": "腓骨筋腱炎"
+      },
+      "bessatsuPage": 2,
+      "bessatsuLabel": "別冊No.1",
+      "category": "judo_therapy"
+    },
+    {
+      "questionNumber": 70,
+      "questionText": "外傷性脱臼の発生要因で正しいのはどれか。",
+      "choices": {
+        "a": "非感染性の炎症",
+        "b": "関節包の断裂",
+        "c": "弛緩性の麻痺",
+        "d": "関節面の破壊"
+      },
+      "category": "judo_therapy"
+    },
+    {
+      "questionNumber": 71,
+      "questionText": "柔道整復療養費の受領委任に係る施術録の取り扱いで誤っているのはどれか。",
+      "choices": {
+        "a": "SOAPで記載する。",
+        "b": "自費治療の施術録とは別とする。",
+        "c": "施術開始日から5年間保管する。",
+        "d": "同一保険同一施術録とする。"
+      },
+      "category": "judo_therapy"
+    },
+    {
+      "questionNumber": 72,
+      "questionText": "高齢者の外傷予防におけるエクササイズと目的の組合せで正しいのはどれか。",
+      "choices": {
+        "a": "片足立ち ── 柔軟性の改善",
+        "b": "ストレッチ ── 骨密度の増加",
+        "c": "ジョギング ── バランスの向上",
+        "d": "スクワット ── 筋力の増強"
+      },
+      "category": "judo_therapy"
+    },
+    {
+      "questionNumber": 73,
+      "questionText": "競技者の外傷予防で誤っているのはどれか。",
+      "choices": {
+        "a": "競技の特性を理解する。",
+        "b": "選手の技術レベルを把握する。",
+        "c": "精神論を重視する。",
+        "d": "環境整備に留意する。"
+      },
+      "category": "judo_therapy"
+    },
+    {
+      "questionNumber": 74,
+      "questionText": "成長期の外傷予防で誤っているのはどれか。",
+      "choices": {
+        "a": "筋力強化を積極的に行う。",
+        "b": "筋の柔軟性を獲得する。",
+        "c": "用具の整備を行う。",
+        "d": "練習量を調整する。"
+      },
+      "category": "judo_therapy"
+    },
+    {
+      "questionNumber": 75,
+      "questionText": "腱板断裂患者の日常生活上の指導で誤っているのはどれか。",
+      "choices": {
+        "a": "就寝時に患側が下になるよう指導する。",
+        "b": "不具合は遠慮なく訴えるよう指導する。",
+        "c": "トイレでの清拭は健側使用を指導する。",
+        "d": "重い物を患側で持たないよう指導する。"
+      },
+      "category": "judo_therapy"
+    },
+    {
+      "questionNumber": 76,
+      "questionText": "頭蓋底骨折で誤っているのはどれか。",
+      "choices": {
+        "a": "介達外力の発生が多い。",
+        "b": "小児では陥凹骨折が多い。",
+        "c": "眼窩周辺に皮下出血斑がみられる。",
+        "d": "バトル徴候がみられる。"
+      },
+      "category": "judo_therapy"
+    },
+    {
+      "questionNumber": 77,
+      "questionText": "スポーツと肋骨骨折の好発部位の組合せで正しいのはどれか。",
+      "choices": {
+        "a": "ゴルフ ── 第3・4肋骨",
+        "b": "長距離走 ── 第1・2肋骨",
+        "c": "相撲 ── 第10〜12肋骨",
+        "d": "ウエイトリフティング ── 第7〜9肋骨"
+      },
+      "category": "judo_therapy"
+    },
+    {
+      "questionNumber": 78,
+      "questionText": "上腕骨顆上骨折の整復で側面評価に用いるのはどれか。",
+      "choices": {
+        "a": "キャリング角",
+        "b": "バウマン角",
+        "c": "ベーラー角",
+        "d": "ティルティング角"
+      },
+      "category": "judo_therapy"
+    },
+    {
+      "questionNumber": 79,
+      "questionText": "前腕屈筋の牽引で発症する骨折はどれか。",
+      "choices": {
+        "a": "1",
+        "b": "2",
+        "c": "3",
+        "d": "4"
+      },
+      "category": "judo_therapy"
+    },
+    {
+      "questionNumber": 80,
+      "questionText": "発生頻度の最も高いのはどれか。",
+      "choices": {
+        "a": "末節骨骨折",
+        "b": "中節骨骨折",
+        "c": "基節骨骨折",
+        "d": "中手骨骨折"
+      },
+      "category": "judo_therapy"
+    },
+    {
+      "questionNumber": 81,
+      "questionText": "棘果長に左右差がみられないのはどれか。",
+      "choices": {
+        "a": "股関節後方脱臼",
+        "b": "大腿骨頸部骨折",
+        "c": "デュベルニー(Duverney)骨折",
+        "d": "マルゲーニュ(Malgaigne)骨折"
+      },
+      "category": "judo_therapy"
+    },
+    {
+      "questionNumber": 82,
+      "questionText": "大腿骨小転子骨折でみられるのはどれか。",
+      "choices": {
+        "a": "トレンデレンブルグ徴候",
+        "b": "ドレーマン徴候",
+        "c": "ナウマン徴候",
+        "d": "ルドロフ徴候"
+      },
+      "category": "judo_therapy"
+    },
+    {
+      "questionNumber": 83,
+      "questionText": "大腿骨骨幹部骨折で誤っているのはどれか。",
+      "choices": {
+        "a": "下肢の機能が全廃する。",
+        "b": "介達外力では斜骨折となる。",
+        "c": "異常膨隆がみられる。",
+        "d": "高齢者に好発する。"
+      },
+      "category": "judo_therapy"
+    },
+    {
+      "questionNumber": 84,
+      "questionText": "大腿骨骨幹部骨折固定除去後の後療法で注意するのはどれか。2つ選べ。",
+      "choices": {
+        "a": "回旋変形",
+        "b": "関節強直",
+        "c": "骨化性筋炎",
+        "d": "挫滅症候群"
+      },
+      "category": "judo_therapy"
+    },
+    {
+      "questionNumber": 85,
+      "questionText": "下腿骨近位端部骨折と原因の組合せで誤っているのはどれか。",
+      "choices": {
+        "a": "脛骨顆部骨折 ── 長軸方向の圧迫",
+        "b": "腓骨頭単独骨折 ── 膝関節の外転",
+        "c": "脛骨粗面骨折 ── 大腿四頭筋の収縮",
+        "d": "脛骨顆間隆起骨折 ── 前十字靱帯の牽引"
+      },
+      "category": "judo_therapy"
+    },
+    {
+      "questionNumber": 86,
+      "questionText": "図に示した機序で生じるのはどれか。2つ選べ。",
+      "choices": {
+        "a": "チロー(Tillaux)骨折",
+        "b": "腓骨裂離骨折",
+        "c": "脛骨内果斜骨折",
+        "d": "距骨頸部骨折"
+      },
+      "category": "judo_therapy"
+    },
+    {
+      "questionNumber": 87,
+      "questionText": "後脛骨筋によって裂離骨折を起こすのはどれか。",
+      "choices": {
+        "a": "距骨",
+        "b": "内側楔状骨",
+        "c": "立方骨",
+        "d": "舟状骨"
+      },
+      "category": "judo_therapy"
+    },
+    {
+      "questionNumber": 88,
+      "questionText": "第5中足骨基部裂離骨折で誤っているのはどれか。",
+      "choices": {
+        "a": "骨癒合は不良である。",
+        "b": "リスフラン関節捻挫との鑑別を要する。",
+        "c": "下駄骨折と呼ばれる。",
+        "d": "短腓骨筋の急激な収縮で発生する。"
+      },
+      "category": "judo_therapy"
+    },
+    {
+      "questionNumber": 89,
+      "questionText": "写真(別冊No.2)を別に示す。肩鎖関節上方脱臼の発生で外力が加わる部位はどれか。",
+      "choices": {
+        "a": "a",
+        "b": "b",
+        "c": "c",
+        "d": "d"
+      },
+      "bessatsuPage": 3,
+      "bessatsuLabel": "別冊No.2",
+      "category": "judo_therapy"
+    },
+    {
+      "questionNumber": 90,
+      "questionText": "肘関節後方脱臼で正しいのはどれか。",
+      "choices": {
+        "a": "肘頭骨折を伴いやすい。",
+        "b": "ヒューター三角が乱れる。",
+        "c": "上腕二頭筋が索状に触れる。",
+        "d": "肘関節90度で弾発性固定される。"
+      },
+      "category": "judo_therapy"
+    },
+    {
+      "questionNumber": 91,
+      "questionText": "末梢牽引の禁忌はどれか。",
+      "choices": {
+        "a": "PIP関節背側脱臼",
+        "b": "CM関節脱臼",
+        "c": "月状骨脱臼",
+        "d": "遠位橈尺関節脱臼"
+      },
+      "category": "judo_therapy"
+    },
+    {
+      "questionNumber": 92,
+      "questionText": "股関節後方脱臼の症状で誤っているのはどれか。",
+      "choices": {
+        "a": "下肢長延長",
+        "b": "弾発性固定",
+        "c": "股関節部空虚",
+        "d": "殿部膨隆"
+      },
+      "category": "judo_therapy"
+    },
+    {
+      "questionNumber": 93,
+      "questionText": "膝蓋骨外側脱臼で正しいのはどれか。",
+      "choices": {
+        "a": "徒手整復は困難である。",
+        "b": "4週の免荷が必要である。",
+        "c": "内側広筋の強化は再発を予防する。",
+        "d": "不十分な固定によって習慣性脱臼に移行する。"
+      },
+      "category": "judo_therapy"
+    },
+    {
+      "questionNumber": 94,
+      "questionText": "肩関節を90度外転、90度外旋で行う検査法はどれか。",
+      "choices": {
+        "a": "ルース",
+        "b": "アドソン",
+        "c": "モーリー",
+        "d": "エデン"
+      },
+      "category": "judo_therapy"
+    },
+    {
+      "questionNumber": 95,
+      "questionText": "疾患と病態の組合せで誤っているのはどれか。",
+      "choices": {
+        "a": "スラップ損傷 ── 上方関節唇損傷",
+        "b": "ベネット(Bennett)損傷 ── 腱板疎部損傷",
+        "c": "少年野球肩 ── 上腕骨近位骨端軟骨損傷",
+        "d": "肩峰下滑液包炎 ── インピンジメント"
+      },
+      "category": "judo_therapy"
+    },
+    {
+      "questionNumber": 96,
+      "questionText": "前腕コンパートメント症候群で正しいのはどれか。",
+      "choices": {
+        "a": "4つの区画に分かれる。",
+        "b": "橈側伸筋群に好発する。",
+        "c": "急性型は組織間液が減少する。",
+        "d": "慢性型は筋膜の肥厚がみられる。"
+      },
+      "category": "judo_therapy"
+    },
+    {
+      "questionNumber": 97,
+      "questionText": "腱鞘炎はどれか。",
+      "choices": {
+        "a": "弾発指",
+        "b": "槌指",
+        "c": "スキーヤー母指",
+        "d": "ロッキングフィンガー"
+      },
+      "category": "judo_therapy"
+    },
+    {
+      "questionNumber": 98,
+      "questionText": "鼠径部痛症候群で誤っているのはどれか。",
+      "choices": {
+        "a": "スポーツに関連して発生する。",
+        "b": "股関節唇の損傷である。",
+        "c": "内転筋近位部に痛みが生じる。",
+        "d": "保存療法が基本である。"
+      },
+      "category": "judo_therapy"
+    },
+    {
+      "questionNumber": 99,
+      "questionText": "病名の組合せで誤っているのはどれか。",
+      "choices": {
+        "a": "発育性股関節形成不全 ── オブザベーションヒップ",
+        "b": "腸脛靱帯炎 ── ランナーズニー",
+        "c": "下腿三頭筋肉離れ ── テニスレッグ",
+        "d": "第1MTP関節変形性関節症 ── 強剛母趾"
+      },
+      "category": "judo_therapy"
+    },
+    {
+      "questionNumber": 100,
+      "questionText": "シンスプリントで誤っているのはどれか。",
+      "choices": {
+        "a": "骨膜に炎症が生ずる。",
+        "b": "脛骨内側に好発する。",
+        "c": "扁平足は誘因となる。",
+        "d": "単純エックス線像で異常がみられる。"
+      },
+      "category": "judo_therapy"
+    },
+    {
+      "questionNumber": 101,
+      "questionText": "有痛性外脛骨で誤っているのはどれか。",
+      "choices": {
+        "a": "若年者に好発する。",
+        "b": "足背部の骨折が原因である。",
+        "c": "靴による圧迫で痛みを訴える。",
+        "d": "アーチに異常がみられる。"
+      },
+      "category": "judo_therapy"
+    },
+    {
+      "questionNumber": 102,
+      "questionText": "外反母趾で誤っているのはどれか。",
+      "choices": {
+        "a": "第1MTP関節が外反変形する。",
+        "b": "足底板の挿入を指導する。",
+        "c": "第2・3MTP関節底側に胼胝を形成する。",
+        "d": "第5中足骨頭の外側にバニオンが生じる。"
+      },
+      "category": "judo_therapy"
+    },
+    {
+      "questionNumber": 103,
+      "questionText": "80歳の女性。玄関で転倒し手を衝き左手首が変形したため来所した。別に外観写真(別冊No.3 a、b)と手関節背側より長軸方向を観察した超音波画像(別冊No.3 c)を示す。施術する際の注意点で誤っているのはどれか。",
+      "choices": {
+        "a": "全身状態を確認する。",
+        "b": "解剖学的治癒を主眼に置く。",
+        "c": "尺骨茎状突起骨折の合併を疑う。",
+        "d": "固定部以外の自動運動を早期より行う。"
+      },
+      "bessatsuPage": 4,
+      "bessatsuLabel": "別冊No.3 a、b、c",
+      "category": "judo_therapy"
+    },
+    {
+      "questionNumber": 104,
+      "questionText": "70歳の男性。2週前から足関節捻挫で通所中である。痛みが引かないとクレームを言ってきた。普段から態度が威圧的である。施術にあたり正しいのはどれか。",
+      "choices": {
+        "a": "施術を中止する。",
+        "b": "患者の態度をいさめる。",
+        "c": "施術に対する希望を尋ねる。",
+        "d": "優遇して施術する。"
+      },
+      "category": "judo_therapy"
+    },
+    {
+      "questionNumber": 105,
+      "questionText": "18歳の男子。柔道の練習中に足払いを頻回に受けた際、下腿部に疼痛を感じた。下袴に血液の付着がみられたが、そのまま練習を継続した。3日後、疼痛および腫脹が増強し来所した。来所時、下腿部に発赤を伴う腫脹、熱感がみられ体温は38.5℃であった。考えられるのはどれか。2つ選べ。",
+      "choices": {
+        "a": "蜂窩織炎",
+        "b": "シンスプリント",
+        "c": "脛骨悪性骨腫瘍",
+        "d": "急性コンパートメント症候群"
+      },
+      "category": "judo_therapy"
+    },
+    {
+      "questionNumber": 106,
+      "questionText": "20歳の男性。大学ラグビーの試合中にタックルを受け転倒し頭部を打った。最初に確認しなければならないのはどれか。",
+      "choices": {
+        "a": "頭部陥凹",
+        "b": "耳鼻出血",
+        "c": "意識障害",
+        "d": "打撃部腫脹"
+      },
+      "category": "judo_therapy"
+    },
+    {
+      "questionNumber": 107,
+      "questionText": "32歳の女性。百日咳のため咳が数週間続いている。激しい咳をしたとき右側胸部に激痛を自覚した。患部に腫脹はないが右第7肋骨に限局性圧痛がみられた。他に考えられる症状はどれか。",
+      "choices": {
+        "a": "軋轢音",
+        "b": "屈曲変形",
+        "c": "皮下出血斑",
+        "d": "上肢運動時痛"
+      },
+      "category": "judo_therapy"
+    },
+    {
+      "questionNumber": 108,
+      "questionText": "20歳の男性。サッカーの練習中転倒し左手掌を強く衝いた。翌日、疼痛が強くなり来所した。母指・示指に軸圧を加えたり手関節橈背屈で疼痛の増悪がみられた。考えられないのはどれか。",
+      "choices": {
+        "a": "有鈎骨骨折",
+        "b": "手根中央関節脱臼",
+        "c": "月状骨脱臼",
+        "d": "舟状骨骨折"
+      },
+      "category": "judo_therapy"
+    },
+    {
+      "questionNumber": 109,
+      "questionText": "72歳の女性。歯科医院にて治療中、閉口困難を訴えた。半開口位のままで開閉はわずかに可能である。下顎歯列は上顎歯列の前方に偏位し、顎部も左側にやや偏位していた。考えられるのはどれか。",
+      "choices": {
+        "a": "右顎関節前方脱臼",
+        "b": "左顎関節側方脱臼",
+        "c": "両側顎関節前方脱臼",
+        "d": "両側顎関節後方脱臼"
+      },
+      "category": "judo_therapy"
+    },
+    {
+      "questionNumber": 110,
+      "questionText": "65歳の女性。足を滑らせ右肩関節外転・伸展で手を衝き負傷した。来所時、右肩関節が水平位で弾発性固定し上腕は短縮して見えた。考えられるのはどれか。",
+      "choices": {
+        "a": "腋窩脱臼",
+        "b": "鎖骨下脱臼",
+        "c": "肩峰下脱臼",
+        "d": "烏口下脱臼"
+      },
+      "category": "judo_therapy"
+    },
+    {
+      "questionNumber": 111,
+      "questionText": "23歳の女性。自宅の階段を踏み外して右膝関節を捻った。受傷直後は膝関節外側部に膨隆がみられたが、来所時には膨隆が消失していた。これまでも同じような症状が繰り返しあった。考えられるのはどれか。",
+      "choices": {
+        "a": "サギングがみられる。",
+        "b": "前方引き出しテストが陽性である。",
+        "c": "アプリヘンションサインがみられる。",
+        "d": "膝蓋骨外側部に圧痛がある。"
+      },
+      "category": "judo_therapy"
+    },
+    {
+      "questionNumber": 112,
+      "questionText": "14歳の女子。ソフトボール部活動中、左投げで遠投をしたところ「ガクッ」と音とともに肩に違和感を自覚し来所した。左上腕を下方へ引き下げたところ、肩峰と上腕との間に間隙ができた。考えられるのはどれか。",
+      "choices": {
+        "a": "動揺性肩関節症",
+        "b": "リトルリーガー肩",
+        "c": "ベネット(Bennett)損傷",
+        "d": "肩峰下インピンジメント症候群"
+      },
+      "category": "judo_therapy"
+    },
+    {
+      "questionNumber": 113,
+      "questionText": "13歳の男子。野球部の投手で右投げである。2週前から右肘関節内側に痛みを自覚した。診断は右肘内側側副靱帯損傷であった。一番負担のかかっていた投球動作区分はどれか。",
+      "choices": {
+        "a": "ワインドアップ期",
+        "b": "加速期",
+        "c": "フォロースルー期",
+        "d": "リリース期"
+      },
+      "category": "judo_therapy"
+    },
+    {
+      "questionNumber": 114,
+      "questionText": "30歳の男性。職業はプログラマーである。10日程前から前腕外側に腫脹と圧痛を自覚して来所した。来所時、母指を自動運動させると痛みが増強し握雪音が聴取できた。考えられるのはどれか。",
+      "choices": {
+        "a": "回内筋症候群",
+        "b": "狭窄性腱鞘炎",
+        "c": "腱交叉症候群",
+        "d": "三角線維軟骨複合体損傷"
+      },
+      "category": "judo_therapy"
+    },
+    {
+      "questionNumber": 115,
+      "questionText": "20歳の男性。中華料理店でアルバイトをしている。最近、中華鍋を振る際、左手関節橈側付近に激しい痛みを自覚したため来所した。患部に熱感と腫脹がみられ、フィンケルスタインテストは陽性であった。物理療法で適切なのはどれか。",
+      "choices": {
+        "a": "ホットパック療法",
+        "b": "マイクロ波療法",
+        "c": "局所浴療法",
+        "d": "寒冷療法"
+      },
+      "category": "judo_therapy"
+    },
+    {
+      "questionNumber": 116,
+      "questionText": "35歳の女性。3週前に手関節の掌側に膨隆を見つけ来所した。環指・小指のしびれと疼痛を自覚し、感覚障害が手掌尺側にみられた。徒手検査で陽性になるのはどれか。",
+      "choices": {
+        "a": "ファーレンテスト",
+        "b": "フローマン徴候",
+        "c": "尺屈回外テスト",
+        "d": "パーフェクトOテスト"
+      },
+      "category": "judo_therapy"
+    },
+    {
+      "questionNumber": 117,
+      "questionText": "52歳の男性。工事現場で仕事をしている。明らかな原因はないが数日前から下腿外側から足背にかけてしびれを自覚している。腰部に圧痛はないが、大殿筋の筋力低下がみられた。確認すべき圧痛部位はどれか。",
+      "choices": {
+        "a": "上前腸骨棘内側部",
+        "b": "梨状筋部",
+        "c": "内転筋管出口部",
+        "d": "腓骨頭後方部"
+      },
+      "category": "judo_therapy"
+    },
+    {
+      "questionNumber": 118,
+      "questionText": "18歳の男子。高校でハードルの選手である。2か月前にハムストリングス1度損傷を発症した。患者から「『肉離れはくせになる』とSNSで見たのですが、再発予防はどうしたらいいですか?」と質問があった。説明で誤っているのはどれか。",
+      "choices": {
+        "a": "筋の硬さとの関連を説明した。",
+        "b": "持続的な負荷への注意を説明した。",
+        "c": "ストレッチの重要性を説明した。",
+        "d": "踵殿距離(HBD)との関連を説明した。"
+      },
+      "category": "judo_therapy"
+    },
+    {
+      "questionNumber": 119,
+      "questionText": "22歳の女性。バスケットボールの試合でジャンプシュート時、体幹を捻じりながら着地した瞬間に右膝が崩れ断裂音を自覚した。膝関節屈曲制限と荷重不能で試合続行は不可能であった。考えられる靱帯損傷はどれか。",
+      "choices": {
+        "a": "内側側副靱帯",
+        "b": "外側側副靱帯",
+        "c": "前十字靱帯",
+        "d": "後十字靱帯"
+      },
+      "category": "judo_therapy"
+    },
+    {
+      "questionNumber": 120,
+      "questionText": "45歳の男性。フットサル中、左下腿下部後面に蹴られたような痛みを自覚し、翌日来所した。来所時の写真(別冊No.4)を別に示す。本人の希望によって保存的に施術することにした。固定肢位はどれか。",
+      "choices": {
+        "a": "膝関節伸展、足関節背屈",
+        "b": "膝関節伸展、足関節底屈",
+        "c": "膝関節屈曲、足関節背屈",
+        "d": "膝関節屈曲、足関節底屈"
+      },
+      "bessatsuPage": 5,
+      "bessatsuLabel": "別冊No.4",
+      "category": "judo_therapy"
+    },
+    {
+      "questionNumber": 121,
+      "questionText": "20歳の男性。柔道の乱取り中、右足部外返しで踏ん張った際、足関節部の疼痛を自覚し来所した。圧痛部(別冊No.5)を別に示す。足関節を他動的に背屈、外旋させると疼痛が増強した。考えられるのはどれか。",
+      "choices": {
+        "a": "前距腓靱帯損傷",
+        "b": "二分靱帯損傷",
+        "c": "三角靱帯損傷",
+        "d": "前脛腓靱帯損傷"
+      },
+      "bessatsuPage": 6,
+      "bessatsuLabel": "別冊No.5",
+      "category": "judo_therapy"
+    },
+    {
+      "questionNumber": 122,
+      "questionText": "21歳の男性。サッカー練習中に左足関節を捻り来所した。足関節の前面に疼痛があり、背屈強制で疼痛は増強した。数回の足関節外側靱帯損傷の既往がある。考えられるのはどれか。",
+      "choices": {
+        "a": "足根洞症候群",
+        "b": "衝突性外骨腫",
+        "c": "足関節三角骨障害",
+        "d": "腓骨筋腱脱臼"
+      },
+      "category": "judo_therapy"
+    }
+  ]
+}

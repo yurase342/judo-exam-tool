@@ -1,0 +1,1417 @@
+{
+  "examNumber": 33,
+  "year": 2025,
+  "session": "gozen",
+  "totalQuestions": 128,
+  "questions": [
+    {
+      "questionNumber": 1,
+      "questionText": "インフォームド・コンセントを示すのはどれか。",
+      "choices": {
+        "a": "誓いと義務",
+        "b": "個人と守秘",
+        "c": "保護と権利",
+        "d": "説明と同意"
+      },
+      "category": "judo_therapy"
+    },
+    {
+      "questionNumber": 2,
+      "questionText": "人為的なインシデントでないのはどれか。",
+      "choices": {
+        "a": "欠陥",
+        "b": "錯覚",
+        "c": "遵守",
+        "d": "不足"
+      },
+      "category": "judo_therapy"
+    },
+    {
+      "questionNumber": 3,
+      "questionText": "定型的鎖骨骨折で正しいのはどれか。",
+      "choices": {
+        "a": "転位は軽度なことが多い。",
+        "b": "皮下出血斑は生じにくい。",
+        "c": "直達外力による発生が多い。",
+        "d": "肩関節運動で疼痛が強くなる。"
+      },
+      "category": "judo_therapy"
+    },
+    {
+      "questionNumber": 4,
+      "questionText": "定型的鎖骨骨折の坐位整復法で第1助手が行う肩部の牽引方向はどれか。",
+      "choices": {
+        "a": "前上方",
+        "b": "上内方",
+        "c": "後外方",
+        "d": "後下方"
+      },
+      "category": "judo_therapy"
+    },
+    {
+      "questionNumber": 5,
+      "questionText": "定型的鎖骨骨折の固定肢位はどれか。",
+      "choices": {
+        "a": "肩甲骨下垂位",
+        "b": "肩甲骨内転位",
+        "c": "肩関節外旋位",
+        "d": "肩関節外転位"
+      },
+      "category": "judo_therapy"
+    },
+    {
+      "questionNumber": 6,
+      "questionText": "定型的鎖骨骨折の坐位整復法で第2助手が行うのはどれか。",
+      "choices": {
+        "a": "骨折部に直圧を加える。",
+        "b": "患者の顔色の変化をみる。",
+        "c": "患者の胸郭を拡大させる。",
+        "d": "患側の前腕と手指を保持する。"
+      },
+      "category": "judo_therapy"
+    },
+    {
+      "questionNumber": 7,
+      "questionText": "上腕骨外科頚外転型骨折の診察で誘導後の手順はどれか。",
+      "choices": {
+        "a": "(1)→(2)→(3)",
+        "b": "(1)→(3)→(2)",
+        "c": "(2)→(1)→(3)",
+        "d": "(3)→(2)→(1)"
+      },
+      "category": "judo_therapy"
+    },
+    {
+      "questionNumber": 8,
+      "questionText": "上腕骨外科頚外転型骨折で誤っているのはどれか。",
+      "choices": {
+        "a": "三角筋の膨隆は消失する。",
+        "b": "上腕軸の骨折端部は内方へ向く。",
+        "c": "嵌合骨折では自動運動が可能である。",
+        "d": "皮下出血斑は上腕内側部から前胸部に出現する。"
+      },
+      "category": "judo_therapy"
+    },
+    {
+      "questionNumber": 9,
+      "questionText": "コーレス(Colles)骨折の牽引直圧整復法で誤っているのはどれか。",
+      "choices": {
+        "a": "転位軽度な骨折に対して行う。",
+        "b": "遠位骨片背側から圧をかける。",
+        "c": "遠位骨片を過伸展させる。",
+        "d": "遠位骨片を回内させる。"
+      },
+      "category": "judo_therapy"
+    },
+    {
+      "questionNumber": 10,
+      "questionText": "コーレス(Colles)骨折の固定の際に、助手への指示で誤っているのはどれか。",
+      "choices": {
+        "a": "整復位を維持させる。",
+        "b": "再転位がないか確認させる。",
+        "c": "固定材料がずれないようにさせる。",
+        "d": "術者が操作しやすい位置で患肢を保持させる。"
+      },
+      "category": "judo_therapy"
+    },
+    {
+      "questionNumber": 11,
+      "questionText": "コーレス(Colles)骨折の固定後の確認で誤っているのはどれか。",
+      "choices": {
+        "a": "固定具の圧迫による疼痛の増加がないか。",
+        "b": "MP関節とIP関節の運動が可能であるか。",
+        "c": "運動性神経機能評価のために爪圧迫検査をしたか。",
+        "d": "帰宅後緊縛包帯の症状が現れた場合の処置を指導したか。"
+      },
+      "category": "judo_therapy"
+    },
+    {
+      "questionNumber": 12,
+      "questionText": "第5中手骨頚部骨折の副子固定で正しいのはどれか。",
+      "choices": {
+        "a": "綿花は背側にあてる。",
+        "b": "固定期間は2週とする。",
+        "c": "手関節の固定は屈曲位とする。",
+        "d": "固定範囲は前腕遠位からPIP関節までとする。"
+      },
+      "category": "judo_therapy"
+    },
+    {
+      "questionNumber": 13,
+      "questionText": "第5中手骨頚部骨折で正しいのはどれか。",
+      "choices": {
+        "a": "骨頭に牽引をかけて固定する。",
+        "b": "整復後は尺骨動脈の拍動を確認する。",
+        "c": "固定中は爪面の向きを隣接指と比較する。",
+        "d": "軽度な屈曲転位の残存でも動作時痛が生じる。"
+      },
+      "category": "judo_therapy"
+    },
+    {
+      "questionNumber": 14,
+      "questionText": "肋骨骨折の固定材料で適切でないのはどれか。",
+      "choices": {
+        "a": "さらし",
+        "b": "ギプス包帯",
+        "c": "バストバンド",
+        "d": "非伸縮性絆創膏"
+      },
+      "category": "judo_therapy"
+    },
+    {
+      "questionNumber": 15,
+      "questionText": "単数の肋骨骨折で正しいのはどれか。",
+      "choices": {
+        "a": "深呼吸で疼痛が増悪する。",
+        "b": "軋轢音は生じにくい。",
+        "c": "叩打痛はみられない。",
+        "d": "動揺性胸郭となる。"
+      },
+      "category": "judo_therapy"
+    },
+    {
+      "questionNumber": 16,
+      "questionText": "肋骨骨折の固定で正しいのはどれか。",
+      "choices": {
+        "a": "固定期間は6週とする。",
+        "b": "助手は患者の前方に立つ。",
+        "c": "吸気状態で息を止めさせて行う。",
+        "d": "深呼吸ができるように固定する。"
+      },
+      "category": "judo_therapy"
+    },
+    {
+      "questionNumber": 17,
+      "questionText": "右肩鎖関節上方脱臼患者の衣服着脱の介助で正しいのはどれか。",
+      "choices": {
+        "a": "右から脱がせ、左から着せる。",
+        "b": "右から脱がせ、右から着せる。",
+        "c": "左から脱がせ、左から着せる。",
+        "d": "左から脱がせ、右から着せる。"
+      },
+      "category": "judo_therapy"
+    },
+    {
+      "questionNumber": 18,
+      "questionText": "肩鎖関節脱臼の固定で正しいのはどれか。",
+      "choices": {
+        "a": "絆創膏固定法では肩峰を圧迫する。",
+        "b": "包帯固定では胸十字帯法を用いる。",
+        "c": "枕子で鎖骨近位端を下方へ圧迫する。",
+        "d": "上腕を長軸方向に持ち上げて固定する。"
+      },
+      "category": "judo_therapy"
+    },
+    {
+      "questionNumber": 19,
+      "questionText": "肩関節烏口下脱臼と受傷時の外観が類似するのはどれか。",
+      "choices": {
+        "a": "肩峰骨折",
+        "b": "肩甲骨頚部骨折",
+        "c": "鎖骨遠位端骨折",
+        "d": "上腕骨小結節骨折"
+      },
+      "category": "judo_therapy"
+    },
+    {
+      "questionNumber": 20,
+      "questionText": "肩関節烏口下脱臼に対するヒポクラテス法で誤っているのはどれか。",
+      "choices": {
+        "a": "足の外側縁を腋窩に当てる。",
+        "b": "肩関節を内転、内旋で終える。",
+        "c": "両手で上腕遠位部を把持する。",
+        "d": "肩関節を外転、外旋位に牽引する。"
+      },
+      "category": "judo_therapy"
+    },
+    {
+      "questionNumber": 21,
+      "questionText": "肩関節烏口下脱臼整復後の固定肢位はどれか。",
+      "choices": {
+        "a": "軽度内転、30度水平伸展、内旋位",
+        "b": "軽度内転、60度水平屈曲、外旋位",
+        "c": "軽度外転、30度水平屈曲、内旋位",
+        "d": "軽度外転、60度水平伸展、外旋位"
+      },
+      "category": "judo_therapy"
+    },
+    {
+      "questionNumber": 22,
+      "questionText": "肘関節後方脱臼で正しいのはどれか。",
+      "choices": {
+        "a": "前腕長は延長してみえる。",
+        "b": "肘頭は前側方へ変形突出する。",
+        "c": "上腕二頭筋腱の索状隆起を触れる。",
+        "d": "肘関節は30〜40度の屈曲位となる。"
+      },
+      "category": "judo_therapy"
+    },
+    {
+      "questionNumber": 23,
+      "questionText": "肘関節後方脱臼に併発しやすいのはどれか。",
+      "choices": {
+        "a": "肘頭骨折",
+        "b": "上腕三頭筋損傷",
+        "c": "上腕骨内側上顆骨折",
+        "d": "肘関節外側側副靱帯損傷"
+      },
+      "category": "judo_therapy"
+    },
+    {
+      "questionNumber": 24,
+      "questionText": "肘内障で正しいのはどれか。",
+      "choices": {
+        "a": "8〜10歳に好発する。",
+        "b": "肘関節外側が腫脹する。",
+        "c": "前腕に回外力が加わり発生する。",
+        "d": "輪状靱帯の嵌頓では整復困難となる。"
+      },
+      "category": "judo_therapy"
+    },
+    {
+      "questionNumber": 25,
+      "questionText": "肩腱板の完全断裂はどれか。",
+      "choices": {
+        "a": "腱内断裂",
+        "b": "全層断裂",
+        "c": "関節面断裂",
+        "d": "滑液包面断裂"
+      },
+      "category": "judo_therapy"
+    },
+    {
+      "questionNumber": 26,
+      "questionText": "圧痛が上腕骨近位前方に限局するのはどれか。",
+      "choices": {
+        "a": "SLAP損傷",
+        "b": "動揺性肩関節",
+        "c": "リトルリーガー肩",
+        "d": "上腕二頭筋長頭腱炎"
+      },
+      "category": "judo_therapy"
+    },
+    {
+      "questionNumber": 27,
+      "questionText": "伸長性収縮を評価するのはどれか。",
+      "choices": {
+        "a": "スピードテスト",
+        "b": "ホーキンスサイン",
+        "c": "ヤーガソンテスト",
+        "d": "ドロップアームサイン"
+      },
+      "category": "judo_therapy"
+    },
+    {
+      "questionNumber": 28,
+      "questionText": "膝関節側副靱帯の第I度損傷で正しいのはどれか。",
+      "choices": {
+        "a": "機能障害は生じない。",
+        "b": "靱帯線維の微小損傷である。",
+        "c": "膝関節伸展位で側方動揺性がみられる。",
+        "d": "膝関節屈曲5度で側方動揺性がみられる。"
+      },
+      "category": "judo_therapy"
+    },
+    {
+      "questionNumber": 29,
+      "questionText": "膝関節内側側副靱帯損傷の検査でないのはどれか。",
+      "choices": {
+        "a": "グラビティテスト",
+        "b": "外反ストレステスト",
+        "c": "グラスピングテスト",
+        "d": "牽引アプライテスト"
+      },
+      "category": "judo_therapy"
+    },
+    {
+      "questionNumber": 30,
+      "questionText": "前十字靱帯損傷で誤っているのはどれか。",
+      "choices": {
+        "a": "非接触型損傷は女性に好発する。",
+        "b": "急性期には関節血症で可動域が制限される。",
+        "c": "競技レベルが低いほど発生のリスクが高くなる。",
+        "d": "接触型損傷は膝関節に外反力が作用し発生する。"
+      },
+      "category": "judo_therapy"
+    },
+    {
+      "questionNumber": 31,
+      "questionText": "膝関節90度屈曲位から下腿内旋、膝関節外反のストレスをかけながら膝関節を伸展させて、膝関節15〜30度付近で脛骨の前方への亜脱臼を確認するのはどれか。",
+      "choices": {
+        "a": "ピボットシフトテスト",
+        "b": "ラックマンテスト",
+        "c": "プラガードテスト",
+        "d": "Nテスト"
+      },
+      "category": "judo_therapy"
+    },
+    {
+      "questionNumber": 32,
+      "questionText": "膝関節半月板損傷の所見で誤っているのはどれか。",
+      "choices": {
+        "a": "腫脹",
+        "b": "荷重時痛",
+        "c": "ロッキング",
+        "d": "裂隙部の陥凹"
+      },
+      "category": "judo_therapy"
+    },
+    {
+      "questionNumber": 33,
+      "questionText": "膝関節半月板損傷の検査はどれか。",
+      "choices": {
+        "a": "マックマレーテスト",
+        "b": "前方引き出しテスト",
+        "c": "トンプソンテスト",
+        "d": "ケンプテスト"
+      },
+      "category": "judo_therapy"
+    },
+    {
+      "questionNumber": 34,
+      "questionText": "膝関節内側側副靱帯損傷の治療で誤っているのはどれか。",
+      "choices": {
+        "a": "急性期にはRICE処置を行う。",
+        "b": "固定を膝関節伸展位で行う。",
+        "c": "動揺があれば免荷を指示する。",
+        "d": "回復期には大腿四頭筋の運動療法を指示する。"
+      },
+      "category": "judo_therapy"
+    },
+    {
+      "questionNumber": 35,
+      "questionText": "下腿三頭筋肉離れで誤っているのはどれか。",
+      "choices": {
+        "a": "足関節底屈の筋力が低下する。",
+        "b": "マットレステストが陽性となる。",
+        "c": "足関節の自動的な底屈で疼痛が増強する。",
+        "d": "足関節の他動的な背屈で疼痛が増強する。"
+      },
+      "category": "judo_therapy"
+    },
+    {
+      "questionNumber": 36,
+      "questionText": "アキレス腱断裂の保存療法時の患者への説明で正しいのはどれか。",
+      "choices": {
+        "a": "固定期間は約12週です。",
+        "b": "就寝時に固定を外してもかまいません。",
+        "c": "固定期間中は足趾を動かさないでください。",
+        "d": "足関節の固定肢位は徐々に背屈させていきます。"
+      },
+      "category": "judo_therapy"
+    },
+    {
+      "questionNumber": 37,
+      "questionText": "足関節外側靱帯損傷の足関節固定肢位はどれか。",
+      "choices": {
+        "a": "背屈10度",
+        "b": "背屈0度",
+        "c": "底屈10度",
+        "d": "底屈20度"
+      },
+      "category": "judo_therapy"
+    },
+    {
+      "questionNumber": 38,
+      "questionText": "下腿骨骨幹部骨折で起こりやすいのはどれか。",
+      "choices": {
+        "a": "過成長",
+        "b": "骨壊死",
+        "c": "コンパートメント症候群",
+        "d": "ズデック(Sudeck)骨萎縮"
+      },
+      "category": "judo_therapy"
+    },
+    {
+      "questionNumber": 39,
+      "questionText": "巻軸包帯のサイズの組合せで正しいのはどれか。",
+      "choices": {
+        "a": "4裂 ── 約10cm",
+        "b": "5裂 ── 約7.5cm",
+        "c": "6裂 ── 約6cm",
+        "d": "8裂 ── 約3.5cm"
+      },
+      "category": "judo_therapy"
+    },
+    {
+      "questionNumber": 40,
+      "questionText": "太さが一定でない部位に適した包帯法はどれか。",
+      "choices": {
+        "a": "亀甲帯",
+        "b": "折転帯",
+        "c": "蛇行帯",
+        "d": "螺旋帯"
+      },
+      "category": "judo_therapy"
+    },
+    {
+      "questionNumber": 41,
+      "questionText": "被用者保険でないのはどれか。",
+      "choices": {
+        "a": "全国健康保険協会管掌健康保険(協会けんぽ)",
+        "b": "組合管掌健康保険(組合健保)",
+        "c": "国民健康保険",
+        "d": "共済"
+      },
+      "category": "law"
+    },
+    {
+      "questionNumber": 42,
+      "questionText": "柔道整復師名簿の登録事項でないのはどれか。",
+      "choices": {
+        "a": "性別",
+        "b": "婚姻の有無",
+        "c": "試験合格の年月",
+        "d": "本籍地都道府県名"
+      },
+      "category": "law"
+    },
+    {
+      "questionNumber": 43,
+      "questionText": "応急の手当を除き医師の同意を要するのはどれか。",
+      "choices": {
+        "a": "骨折",
+        "b": "打撲",
+        "c": "捻挫",
+        "d": "擦過傷"
+      },
+      "category": "law"
+    },
+    {
+      "questionNumber": 44,
+      "questionText": "施術所の届出事項でないのはどれか。",
+      "choices": {
+        "a": "施術の方法",
+        "b": "開設者の住所",
+        "c": "構造設備の平面図",
+        "d": "業務に従事する柔道整復師の氏名"
+      },
+      "category": "law"
+    },
+    {
+      "questionNumber": 45,
+      "questionText": "柔道整復師法で広告できないのはどれか。",
+      "choices": {
+        "a": "経路案内",
+        "b": "駐車料金",
+        "c": "学会の理事",
+        "d": "予約施術の実施"
+      },
+      "category": "law"
+    },
+    {
+      "questionNumber": 46,
+      "questionText": "医師の守秘義務違反が規定されているのはどれか。",
+      "choices": {
+        "a": "刑法",
+        "b": "医師法",
+        "c": "医療法",
+        "d": "薬事法"
+      },
+      "category": "law"
+    },
+    {
+      "questionNumber": 47,
+      "questionText": "医師法で規定されているのはどれか。",
+      "choices": {
+        "a": "応招義務はない。",
+        "b": "未成年者には免許を与えない。",
+        "c": "無診察でも処方箋は交付できる。",
+        "d": "診療録の保存期間は10年である。"
+      },
+      "category": "law"
+    },
+    {
+      "questionNumber": 48,
+      "questionText": "業務独占がない資格はどれか。",
+      "choices": {
+        "a": "医師",
+        "b": "薬剤師",
+        "c": "作業療法士",
+        "d": "診療放射線技師"
+      },
+      "category": "law"
+    },
+    {
+      "questionNumber": 49,
+      "questionText": "理学療法士法における業はどれか。",
+      "choices": {
+        "a": "音声機能の維持向上",
+        "b": "治療体操の実施",
+        "c": "捻挫部位の施術",
+        "d": "義肢の調整"
+      },
+      "category": "law"
+    },
+    {
+      "questionNumber": 50,
+      "questionText": "医療法上の病床でないのはどれか。",
+      "choices": {
+        "a": "精神病床",
+        "b": "特養病床",
+        "c": "療養病床",
+        "d": "感染症病床"
+      },
+      "category": "law"
+    },
+    {
+      "questionNumber": 51,
+      "questionText": "上皮組織と臓器の組合せで正しいのはどれか。",
+      "choices": {
+        "a": "移行上皮 ── 膀胱",
+        "b": "重層扁平上皮 ── 肺",
+        "c": "単層円柱上皮 ── 血管",
+        "d": "単層扁平上皮 ── 皮膚"
+      },
+      "category": "anatomy"
+    },
+    {
+      "questionNumber": 52,
+      "questionText": "線維軟骨がみられるのはどれか。",
+      "choices": {
+        "a": "気管",
+        "b": "喉頭蓋",
+        "c": "耳介",
+        "d": "恥骨結合"
+      },
+      "category": "anatomy"
+    },
+    {
+      "questionNumber": 53,
+      "questionText": "内胚葉に由来するのはどれか。",
+      "choices": {
+        "a": "気管",
+        "b": "心臓",
+        "c": "腎臓",
+        "d": "脊髄"
+      },
+      "category": "anatomy"
+    },
+    {
+      "questionNumber": 54,
+      "questionText": "トルコ鞍があるのはどれか。",
+      "choices": {
+        "a": "篩骨",
+        "b": "蝶形骨",
+        "c": "側頭骨",
+        "d": "後頭骨"
+      },
+      "category": "anatomy"
+    },
+    {
+      "questionNumber": 55,
+      "questionText": "関節と分類の組合せで正しいのはどれか。",
+      "choices": {
+        "a": "肩関節 ── 鞍関節",
+        "b": "腕尺関節 ── 蝶番関節",
+        "c": "上橈尺関節 ── 楕円関節",
+        "d": "橈骨手根関節 ── 球関節"
+      },
+      "category": "anatomy"
+    },
+    {
+      "questionNumber": 56,
+      "questionText": "精巣挙筋に移行するのはどれか。",
+      "choices": {
+        "a": "外腹斜筋",
+        "b": "内腹斜筋",
+        "c": "錐体筋",
+        "d": "腹直筋"
+      },
+      "category": "anatomy"
+    },
+    {
+      "questionNumber": 57,
+      "questionText": "筋と支配神経の組合せで正しいのはどれか。",
+      "choices": {
+        "a": "肩甲下筋 ── 肩甲上神経",
+        "b": "三角筋 ── 腋窩神経",
+        "c": "小円筋 ── 肩甲下神経",
+        "d": "大胸筋 ── 胸背神経"
+      },
+      "category": "anatomy"
+    },
+    {
+      "questionNumber": 58,
+      "questionText": "総腓骨神経が支配するのはどれか。",
+      "choices": {
+        "a": "大腿二頭筋短頭",
+        "b": "大腿二頭筋長頭",
+        "c": "半腱様筋",
+        "d": "半膜様筋"
+      },
+      "category": "anatomy"
+    },
+    {
+      "questionNumber": 59,
+      "questionText": "正中神経が支配するのはどれか。",
+      "choices": {
+        "a": "円回内筋",
+        "b": "腕橈骨筋",
+        "c": "尺側手根屈筋",
+        "d": "長母指外転筋"
+      },
+      "category": "anatomy"
+    },
+    {
+      "questionNumber": 60,
+      "questionText": "内転筋管を通過するのはどれか。",
+      "choices": {
+        "a": "大腿神経",
+        "b": "大腿動脈",
+        "c": "閉鎖神経",
+        "d": "閉鎖動脈"
+      },
+      "category": "anatomy"
+    },
+    {
+      "questionNumber": 61,
+      "questionText": "大動脈弓から分岐するのはどれか。",
+      "choices": {
+        "a": "左冠状動脈",
+        "b": "右鎖骨下動脈",
+        "c": "右総頚動脈",
+        "d": "左総頚動脈"
+      },
+      "category": "anatomy"
+    },
+    {
+      "questionNumber": 62,
+      "questionText": "括約筋を有するのはどれか。",
+      "choices": {
+        "a": "胃",
+        "b": "空腸",
+        "c": "横行結腸",
+        "d": "下行結腸"
+      },
+      "category": "anatomy"
+    },
+    {
+      "questionNumber": 63,
+      "questionText": "大十二指腸乳頭に開口するのはどれか。",
+      "choices": {
+        "a": "総肝管",
+        "b": "総胆管",
+        "c": "胆嚢管",
+        "d": "副膵管"
+      },
+      "category": "anatomy"
+    },
+    {
+      "questionNumber": 64,
+      "questionText": "声帯筋を支配するのはどれか。",
+      "choices": {
+        "a": "副神経",
+        "b": "三叉神経",
+        "c": "舌咽神経",
+        "d": "迷走神経"
+      },
+      "category": "anatomy"
+    },
+    {
+      "questionNumber": 65,
+      "questionText": "水平裂はどれか。",
+      "choices": {
+        "a": "右肺の上葉と中葉の間",
+        "b": "右肺の中葉と下葉の間",
+        "c": "右肺の上葉と下葉の間",
+        "d": "左肺の上葉と下葉の間"
+      },
+      "category": "anatomy"
+    },
+    {
+      "questionNumber": 66,
+      "questionText": "胸膜腔の説明で正しいのはどれか。",
+      "choices": {
+        "a": "肺と肺胸膜の間",
+        "b": "左右の肺胸膜の間",
+        "c": "左右の壁側胸膜の間",
+        "d": "肺胸膜と壁側胸膜の間"
+      },
+      "category": "anatomy"
+    },
+    {
+      "questionNumber": 67,
+      "questionText": "子宮で正しいのはどれか。",
+      "choices": {
+        "a": "直腸の後面に位置する。",
+        "b": "子宮底は腟に包まれる。",
+        "c": "子宮頚に卵管が開口する。",
+        "d": "子宮体に粘膜が存在する。"
+      },
+      "category": "anatomy"
+    },
+    {
+      "questionNumber": 68,
+      "questionText": "卵胞刺激ホルモンを分泌するのはどれか。",
+      "choices": {
+        "a": "視床下部",
+        "b": "下垂体前葉",
+        "c": "副腎皮質",
+        "d": "卵巣"
+      },
+      "category": "anatomy"
+    },
+    {
+      "questionNumber": 69,
+      "questionText": "上皮小体(副甲状腺)で正しいのはどれか。",
+      "choices": {
+        "a": "体表から触知できる。",
+        "b": "甲状腺の頭側に位置する。",
+        "c": "濾胞で構成される。",
+        "d": "主細胞と酸好性細胞からなる。"
+      },
+      "category": "anatomy"
+    },
+    {
+      "questionNumber": 70,
+      "questionText": "大脳白質(大脳髄質)はどれか。",
+      "choices": {
+        "a": "海馬",
+        "b": "脳梁",
+        "c": "尾状核",
+        "d": "レンズ核"
+      },
+      "category": "anatomy"
+    },
+    {
+      "questionNumber": 71,
+      "questionText": "感覚性言語中枢が局在するのはどれか。",
+      "choices": {
+        "a": "前頭葉",
+        "b": "頭頂葉",
+        "c": "側頭葉",
+        "d": "後頭葉"
+      },
+      "category": "anatomy"
+    },
+    {
+      "questionNumber": 72,
+      "questionText": "舌の運動を支配するのはどれか。",
+      "choices": {
+        "a": "三叉神経",
+        "b": "顔面神経",
+        "c": "舌咽神経",
+        "d": "舌下神経"
+      },
+      "category": "anatomy"
+    },
+    {
+      "questionNumber": 73,
+      "questionText": "横隔神経の構成要素になるのはどれか。",
+      "choices": {
+        "a": "第1頚神経",
+        "b": "第4頚神経",
+        "c": "第7頚神経",
+        "d": "第1胸神経"
+      },
+      "category": "anatomy"
+    },
+    {
+      "questionNumber": 74,
+      "questionText": "神経叢と支配筋の組合せで正しいのはどれか。",
+      "choices": {
+        "a": "頚神経叢 ── 肩甲挙筋",
+        "b": "腕神経叢 ── 僧帽筋",
+        "c": "腰神経叢 ── 恥骨筋",
+        "d": "仙骨神経叢 ── 外閉鎖筋"
+      },
+      "category": "anatomy"
+    },
+    {
+      "questionNumber": 75,
+      "questionText": "筋皮神経の枝はどれか。",
+      "choices": {
+        "a": "後上腕皮神経",
+        "b": "内側上腕皮神経",
+        "c": "外側前腕皮神経",
+        "d": "内側前腕皮神経"
+      },
+      "category": "anatomy"
+    },
+    {
+      "questionNumber": 76,
+      "questionText": "交感神経で支配されるのはどれか。",
+      "choices": {
+        "a": "上眼瞼挙筋",
+        "b": "瞳孔括約筋",
+        "c": "瞳孔散大筋",
+        "d": "毛様体筋"
+      },
+      "category": "anatomy"
+    },
+    {
+      "questionNumber": 77,
+      "questionText": "骨盤で触知できないのはどれか。",
+      "choices": {
+        "a": "坐骨棘",
+        "b": "坐骨結節",
+        "c": "恥骨結節",
+        "d": "上前腸骨棘"
+      },
+      "category": "anatomy"
+    },
+    {
+      "questionNumber": 78,
+      "questionText": "聴診三角と腰三角の両方の構成に関わるのはどれか。",
+      "choices": {
+        "a": "外腹斜筋",
+        "b": "大菱形筋",
+        "c": "広背筋",
+        "d": "僧帽筋"
+      },
+      "category": "anatomy"
+    },
+    {
+      "questionNumber": 79,
+      "questionText": "三角筋胸筋溝を通るのはどれか。",
+      "choices": {
+        "a": "尺側皮静脈",
+        "b": "橈側皮静脈",
+        "c": "上腕静脈",
+        "d": "腕頭静脈"
+      },
+      "category": "anatomy"
+    },
+    {
+      "questionNumber": 80,
+      "questionText": "触知できないのはどれか。",
+      "choices": {
+        "a": "膝窩動脈",
+        "b": "足背動脈",
+        "c": "大腿動脈",
+        "d": "閉鎖動脈"
+      },
+      "category": "anatomy"
+    },
+    {
+      "questionNumber": 81,
+      "questionText": "ATPを産生するのはどれか。",
+      "choices": {
+        "a": "ゴルジ装置",
+        "b": "粗面小胞体",
+        "c": "リソソーム",
+        "d": "ミトコンドリア"
+      },
+      "category": "physiology"
+    },
+    {
+      "questionNumber": 82,
+      "questionText": "心筋で誤っているのはどれか。",
+      "choices": {
+        "a": "横紋筋である。",
+        "b": "不随意筋である。",
+        "c": "自律神経やホルモンの影響を受ける。",
+        "d": "心筋細胞はシナプスを介して結合している。"
+      },
+      "category": "physiology"
+    },
+    {
+      "questionNumber": 83,
+      "questionText": "抑制性シナプスの神経伝達物質はどれか。",
+      "choices": {
+        "a": "グルタミン酸",
+        "b": "アセチルコリン",
+        "c": "ノルアドレナリン",
+        "d": "ガンマアミノ酪酸(GABA)"
+      },
+      "category": "physiology"
+    },
+    {
+      "questionNumber": 84,
+      "questionText": "自律神経の二重支配を受けないのはどれか。",
+      "choices": {
+        "a": "汗腺",
+        "b": "心臓",
+        "c": "膵臓",
+        "d": "唾液腺"
+      },
+      "category": "physiology"
+    },
+    {
+      "questionNumber": 85,
+      "questionText": "誘発筋電図のH波で正しいのはどれか。",
+      "choices": {
+        "a": "脊髄が介在して発生する。",
+        "b": "M波より短い潜時で発生する。",
+        "c": "筋を刺激することで発生する。",
+        "d": "振幅の大きさは電気刺激強度に比例する。"
+      },
+      "category": "physiology"
+    },
+    {
+      "questionNumber": 86,
+      "questionText": "脳幹を介するのはどれか。",
+      "choices": {
+        "a": "筋性防御",
+        "b": "屈曲反射",
+        "c": "伸張反射",
+        "d": "立ち直り反射"
+      },
+      "category": "physiology"
+    },
+    {
+      "questionNumber": 87,
+      "questionText": "協調した滑らかな動作や運動を学習するのに重要なのはどれか。",
+      "choices": {
+        "a": "大脳辺縁系",
+        "b": "大脳基底核",
+        "c": "脳幹",
+        "d": "脊髄"
+      },
+      "category": "physiology"
+    },
+    {
+      "questionNumber": 88,
+      "questionText": "特殊感覚でないのはどれか。",
+      "choices": {
+        "a": "嗅覚",
+        "b": "視覚",
+        "c": "触覚",
+        "d": "聴覚"
+      },
+      "category": "physiology"
+    },
+    {
+      "questionNumber": 89,
+      "questionText": "視覚で正しいのはどれか。",
+      "choices": {
+        "a": "黄斑部には視覚がない。",
+        "b": "明順応には数十分を必要とする。",
+        "c": "近視では網膜の後方で焦点を結ぶ。",
+        "d": "杆体の視物質はロドプシンである。"
+      },
+      "category": "physiology"
+    },
+    {
+      "questionNumber": 90,
+      "questionText": "ステロイドホルモンに分類されるのはどれか。",
+      "choices": {
+        "a": "アドレナリン",
+        "b": "アンドロゲン",
+        "c": "サイロキシン",
+        "d": "バゾプレッシン"
+      },
+      "category": "physiology"
+    },
+    {
+      "questionNumber": 91,
+      "questionText": "甲状腺ホルモンで誤っているのはどれか。",
+      "choices": {
+        "a": "基礎代謝を下げる。",
+        "b": "合成にヨウ素が必要である。",
+        "c": "サイロキシンの生理活性は弱い。",
+        "d": "甲状腺刺激ホルモンの分泌を抑制する。"
+      },
+      "category": "physiology"
+    },
+    {
+      "questionNumber": 92,
+      "questionText": "子宮復古に関与するのはどれか。",
+      "choices": {
+        "a": "アンドロゲン",
+        "b": "エストロゲン",
+        "c": "オキシトシン",
+        "d": "プロゲステロン"
+      },
+      "category": "physiology"
+    },
+    {
+      "questionNumber": 93,
+      "questionText": "赤血球の働きで誤っているのはどれか。",
+      "choices": {
+        "a": "pHの緩衝",
+        "b": "酸素の運搬",
+        "c": "血小板の凝集",
+        "d": "二酸化炭素の運搬"
+      },
+      "category": "physiology"
+    },
+    {
+      "questionNumber": 94,
+      "questionText": "IgEの受容体を有するのはどれか。",
+      "choices": {
+        "a": "単球",
+        "b": "好中球",
+        "c": "好塩基球",
+        "d": "樹状細胞"
+      },
+      "category": "physiology"
+    },
+    {
+      "questionNumber": 95,
+      "questionText": "腎臓でカルシウムイオンの再吸収を促進するのはどれか。",
+      "choices": {
+        "a": "アルドステロン",
+        "b": "カルシトニン",
+        "c": "成長ホルモン",
+        "d": "副甲状腺ホルモン"
+      },
+      "category": "physiology"
+    },
+    {
+      "questionNumber": 96,
+      "questionText": "毛細血管から間質に拡散するのはどれか。",
+      "choices": {
+        "a": "抗体",
+        "b": "酸素",
+        "c": "白血球",
+        "d": "アルブミン"
+      },
+      "category": "physiology"
+    },
+    {
+      "questionNumber": 97,
+      "questionText": "リンパが胸管に注ぎ込まないのはどれか。",
+      "choices": {
+        "a": "乳び槽",
+        "b": "腹部リンパ節",
+        "c": "右腋窩リンパ節",
+        "d": "右鼠径リンパ節"
+      },
+      "category": "physiology"
+    },
+    {
+      "questionNumber": 98,
+      "questionText": "血圧が低下した際に働く受容器が存在するのはどれか。",
+      "choices": {
+        "a": "冠状動脈",
+        "b": "頚動脈洞",
+        "c": "椎骨動脈",
+        "d": "鎖骨下動脈"
+      },
+      "category": "physiology"
+    },
+    {
+      "questionNumber": 99,
+      "questionText": "スパイロメーターで直接測れないのはどれか。",
+      "choices": {
+        "a": "残気量",
+        "b": "肺活量",
+        "c": "1回換気量",
+        "d": "予備吸気量"
+      },
+      "category": "physiology"
+    },
+    {
+      "questionNumber": 100,
+      "questionText": "酸素分圧が最も低いのはどれか。",
+      "choices": {
+        "a": "呼気",
+        "b": "静脈血",
+        "c": "動脈血",
+        "d": "肺胞気"
+      },
+      "category": "physiology"
+    },
+    {
+      "questionNumber": 101,
+      "questionText": "糸球体濾過率の推定に使用されるのはどれか。",
+      "choices": {
+        "a": "グルコース",
+        "b": "クレアチニン",
+        "c": "ナトリウム",
+        "d": "パラアミノ馬尿酸"
+      },
+      "category": "physiology"
+    },
+    {
+      "questionNumber": 102,
+      "questionText": "ビタミンDで正しいのはどれか。",
+      "choices": {
+        "a": "骨形成を抑制する。",
+        "b": "皮膚で分解される。",
+        "c": "カルシトニンの分泌を促進する。",
+        "d": "腸管のカルシウムイオン吸収を促進する。"
+      },
+      "category": "physiology"
+    },
+    {
+      "questionNumber": 103,
+      "questionText": "胆汁で正しいのはどれか。",
+      "choices": {
+        "a": "胆汁酸は胆嚢で合成される。",
+        "b": "セクレチンは胆汁排泄を抑制する。",
+        "c": "コレシストキニンは胆汁排泄を促進する。",
+        "d": "胆汁酸はタンパク質とミセルを形成する。"
+      },
+      "category": "physiology"
+    },
+    {
+      "questionNumber": 104,
+      "questionText": "体温調節中枢があるのはどれか。",
+      "choices": {
+        "a": "視床",
+        "b": "視床下部",
+        "c": "橋",
+        "d": "延髄"
+      },
+      "category": "physiology"
+    },
+    {
+      "questionNumber": 105,
+      "questionText": "高齢者の歩行変化で正しいのはどれか。",
+      "choices": {
+        "a": "歩幅の拡大",
+        "b": "歩隔の拡大",
+        "c": "歩行率の増加",
+        "d": "遊脚期の延長"
+      },
+      "category": "physiology"
+    },
+    {
+      "questionNumber": 106,
+      "questionText": "前方面・水平矢状軸の動きで体節が身体から遠ざかる運動はどれか。",
+      "choices": {
+        "a": "屈曲",
+        "b": "外転",
+        "c": "外旋",
+        "d": "外がえし"
+      },
+      "category": "kinesiology"
+    },
+    {
+      "questionNumber": 107,
+      "questionText": "2軸性はどれか。",
+      "choices": {
+        "a": "蝶番関節",
+        "b": "車軸関節",
+        "c": "顆状関節",
+        "d": "平面関節"
+      },
+      "category": "kinesiology"
+    },
+    {
+      "questionNumber": 108,
+      "questionText": "筋紡錘で正しいのはどれか。",
+      "choices": {
+        "a": "深部感覚受容器である。",
+        "b": "筋腱移行部に存在する。",
+        "c": "粗大な動きをする筋では密度が高い。",
+        "d": "筋の自動伸展時にインパルスを発射する。"
+      },
+      "category": "kinesiology"
+    },
+    {
+      "questionNumber": 109,
+      "questionText": "屈筋共同運動に含まれるのはどれか。",
+      "choices": {
+        "a": "股関節の内転",
+        "b": "膝関節の屈曲",
+        "c": "足関節の底屈",
+        "d": "趾(指)の屈曲"
+      },
+      "category": "kinesiology"
+    },
+    {
+      "questionNumber": 110,
+      "questionText": "肩関節の外旋に作用するのはどれか。",
+      "choices": {
+        "a": "肩甲下筋",
+        "b": "大円筋",
+        "c": "大胸筋",
+        "d": "小円筋"
+      },
+      "category": "kinesiology"
+    },
+    {
+      "questionNumber": 111,
+      "questionText": "足のアーチで正しいのはどれか。",
+      "choices": {
+        "a": "横アーチは2歳で完成する。",
+        "b": "足部骨格配列は上方に隆起した彎曲を示す。",
+        "c": "外側縦アーチの中心となるのは舟状骨である。",
+        "d": "内側縦アーチを構成する靱帯として長足底靱帯がある。"
+      },
+      "category": "kinesiology"
+    },
+    {
+      "questionNumber": 112,
+      "questionText": "頭部を対側に回旋させるのはどれか。",
+      "choices": {
+        "a": "板状筋",
+        "b": "後頭下筋",
+        "c": "胸鎖乳突筋",
+        "d": "脊柱起立筋"
+      },
+      "category": "kinesiology"
+    },
+    {
+      "questionNumber": 113,
+      "questionText": "立位姿勢が安定するのはどれか。",
+      "choices": {
+        "a": "重心が高い。",
+        "b": "質量が大きい。",
+        "c": "支持基底が狭い。",
+        "d": "分節構造をとる。"
+      },
+      "category": "kinesiology"
+    },
+    {
+      "questionNumber": 114,
+      "questionText": "正常歩行時の筋活動を測定した図を示す。前脛骨筋はどれか。",
+      "choices": {
+        "a": "A",
+        "b": "B",
+        "c": "C",
+        "d": "D"
+      },
+      "bessatsuPage": 2,
+      "category": "kinesiology"
+    },
+    {
+      "questionNumber": 115,
+      "questionText": "正常な10か月の乳児でみられるのはどれか。",
+      "choices": {
+        "a": "モロー反射",
+        "b": "ガラント反射",
+        "c": "足底把握反射",
+        "d": "非対称性緊張性頚反射"
+      },
+      "category": "kinesiology"
+    },
+    {
+      "questionNumber": 116,
+      "questionText": "病理解剖の目的でないのはどれか。",
+      "choices": {
+        "a": "生前の疾患の正確な診断",
+        "b": "疾患の本態解明",
+        "c": "治療効果の検討",
+        "d": "犯罪性の立証"
+      },
+      "category": "pathology"
+    },
+    {
+      "questionNumber": 117,
+      "questionText": "他覚的所見はどれか。",
+      "choices": {
+        "a": "悪心",
+        "b": "動悸",
+        "c": "疼痛",
+        "d": "脾腫"
+      },
+      "category": "pathology"
+    },
+    {
+      "questionNumber": 118,
+      "questionText": "メタボリック症候群の診断基準項目はどれか。2つ選べ。",
+      "choices": {
+        "a": "血圧",
+        "b": "血糖",
+        "c": "肝機能",
+        "d": "皮下脂肪量"
+      },
+      "category": "pathology"
+    },
+    {
+      "questionNumber": 119,
+      "questionText": "萎縮と臓器の組合せで正しいのはどれか。",
+      "choices": {
+        "a": "圧迫性萎縮 ── 肝臓",
+        "b": "神経性萎縮 ── 副腎",
+        "c": "無為性萎縮 ── 腎臓",
+        "d": "内分泌性萎縮 ── 胸腺"
+      },
+      "category": "pathology"
+    },
+    {
+      "questionNumber": 120,
+      "questionText": "疾患と原因の組合せで正しいのはどれか。",
+      "choices": {
+        "a": "壊血病 ── ビタミンK欠乏",
+        "b": "血友病A ── 第VIII因子欠乏",
+        "c": "新生児メレナ ── ビタミンC欠乏",
+        "d": "特発性血小板減少性紫斑病 ── 血管壁脆弱"
+      },
+      "category": "pathology"
+    },
+    {
+      "questionNumber": 121,
+      "questionText": "低張性脱水をきたすのはどれか。",
+      "choices": {
+        "a": "大量の発汗",
+        "b": "起立性の低血圧",
+        "c": "尿崩症による多尿",
+        "d": "運動後の水道水大量摂取"
+      },
+      "category": "pathology"
+    },
+    {
+      "questionNumber": 122,
+      "questionText": "常時再生しているのはどれか。",
+      "choices": {
+        "a": "心筋",
+        "b": "血管内皮",
+        "c": "中枢神経",
+        "d": "胃粘膜上皮"
+      },
+      "category": "pathology"
+    },
+    {
+      "questionNumber": 123,
+      "questionText": "肉芽腫性炎を引き起こすのはどれか。",
+      "choices": {
+        "a": "梅毒",
+        "b": "間質性肺炎",
+        "c": "偽膜性大腸炎",
+        "d": "アレルギー性鼻炎"
+      },
+      "category": "pathology"
+    },
+    {
+      "questionNumber": 124,
+      "questionText": "細胞性免疫が低下しないのはどれか。",
+      "choices": {
+        "a": "伴性無ガンマグロブリン血症",
+        "b": "後天性免疫不全症候群(AIDS)",
+        "c": "重症複合型免疫不全症(SCID)",
+        "d": "ディジョージ(Di George)症候群"
+      },
+      "category": "pathology"
+    },
+    {
+      "questionNumber": 125,
+      "questionText": "I型アレルギーはどれか。",
+      "choices": {
+        "a": "血清病",
+        "b": "気管支喘息",
+        "c": "接触性皮膚炎",
+        "d": "自己免疫性溶血性貧血"
+      },
+      "category": "pathology"
+    },
+    {
+      "questionNumber": 126,
+      "questionText": "腫瘍マーカーと腫瘍の組合せで正しいのはどれか。",
+      "choices": {
+        "a": "AFP ── 絨毛癌",
+        "b": "CA19-9 ── 胆管癌",
+        "c": "CEA ── 喉頭癌",
+        "d": "PSA ── 膵癌"
+      },
+      "category": "pathology"
+    },
+    {
+      "questionNumber": 127,
+      "questionText": "乳癌で誤っているのはどれか。",
+      "choices": {
+        "a": "HER2の過剰発現は予後良好因子とされる。",
+        "b": "近年日本では若年者に増加している。",
+        "c": "組織学的には腺癌が多い。",
+        "d": "男性にも発生する。"
+      },
+      "category": "pathology"
+    },
+    {
+      "questionNumber": 128,
+      "questionText": "疾患と遺伝形式の組合せで正しいのはどれか。",
+      "choices": {
+        "a": "家族性大腸ポリポーシス ── 常染色体優性",
+        "b": "血友病 ── 常染色体劣性",
+        "c": "マルファン(Marfan)症候群 ── 伴性劣性",
+        "d": "フェニルケトン尿症 ── 多因子性"
+      },
+      "category": "pathology"
+    }
+  ]
+}
