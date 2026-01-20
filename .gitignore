@@ -41,6 +41,9 @@ dist/
 
 # Large PDF files (exceed GitHub 100MB limit)
 05_柔道整復学・理論編/
+# 問題PDFと正答PDFは除外（サイズが大きいため）
 public/pdfs/*.pdf
 public/answers/*.pdf
+# 別冊PDFファイルは含める（サイズが小さいため）
+!public/pdfs/*_bessatsu.pdf
 .env*.local
