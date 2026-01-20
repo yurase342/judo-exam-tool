@@ -38,4 +38,9 @@ out/
 release/
 dist/
 .vercel
+
+# Large PDF files (exceed GitHub 100MB limit)
+05_柔道整復学・理論編/
+public/pdfs/*.pdf
+public/answers/*.pdf
 .env*.local
