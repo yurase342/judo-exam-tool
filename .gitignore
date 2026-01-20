@@ -38,3 +38,4 @@ out/
 release/
 dist/
 .vercel
+.env*.local
