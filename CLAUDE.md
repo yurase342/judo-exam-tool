@@ -92,14 +92,15 @@ src/types/
 - `src/components/ResultView.tsx` - 結果画面表示
 - `public/data/questions/*.json` - 全問題に正答追加（34問が複数正答）
 
-### 2. 科目選択UIのシンプル化
-- 「全科目選択」「午前科目」「午後科目」ボタンを削除
-- 「全て選択」「全て解除」リンクと11科目の個別チェックボックスのみに
-- カテゴリフィルタを常に厳密に適用
+### 2. UI全体の大幅シンプル化
+- メイン画面: 「すぐに始める」「設定を変えて始める」の2ボタンのみ
+- 「すぐに始める」で10問・全科目で即開始
+- 「設定を変えて始める」で詳細設定画面へ
+- 設定画面: モード・出題数・回次・科目を選択して開始
 
 **変更ファイル**:
-- `src/components/CategorySelector.tsx` - ボタン削除
-- `src/components/Home.tsx` - フィルタリングロジック修正
+- `src/components/Home.tsx` - 完全に書き直し（2画面構成に）
+- `src/components/CategorySelector.tsx` - 不要になった（Home.tsxに統合）
 
 ---
 
