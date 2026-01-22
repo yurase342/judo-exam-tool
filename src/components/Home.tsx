@@ -10,6 +10,9 @@ interface HomeProps {
   onStartSession: (questions: Question[], settings: SessionSettings) => void;
 }
 
+// 本番モードの制限時間（秒）
+const EXAM_TIME_LIMIT = 150 * 60; // 2時間30分 = 150分 = 9000秒
+
 const Home: FC<HomeProps> = ({ onStartSession }) => {
   const {
     isLoading,
@@ -22,14 +25,20 @@ const Home: FC<HomeProps> = ({ onStartSession }) => {
   const [availableExamNumbers, setAvailableExamNumbers] = useState<number[]>([]);
   const [allLoadedQuestions, setAllLoadedQuestions] = useState<Question[]>([]);
 
-  // 設定画面を開いているかどうか
-  const [showSettings, setShowSettings] = useState(false);
+  // 画面の状態
+  type ScreenState = 'main' | 'settings' | 'exam-select' | 'exam-session-select';
+  const [currentScreen, setCurrentScreen] = useState<ScreenState>('main');
 
   // 設定値
   const [selectedMode, setSelectedMode] = useState<Mode>('learning');
   const [selectedExamNumbers, setSelectedExamNumbers] = useState<number[]>([]);
   const [selectedCategories, setSelectedCategories] = useState<CategoryId[]>([...CATEGORY_LIST]);
   const [questionCount, setQuestionCount] = useState(10);
+
+  // 本番モード用の状態
+  const [examModeExamNumber, setExamModeExamNumber] = useState<number | null>(null);
+  const [examModeShuffle, setExamModeShuffle] = useState(false);
+  const [examModeShuffleChoices, setExamModeShuffleChoices] = useState(false);
 
   // 利用可能な正答PDFの回次
   const availableAnswerExams = useMemo(() => getAvailableExamNumbers(), []);
@@ -103,7 +112,7 @@ const Home: FC<HomeProps> = ({ onStartSession }) => {
     startSession(selectedMode, questionCount, selectedCategories, selectedExamNumbers);
   };
 
-  // セッション開始の共通処理
+  // セッション開始の共通処理（練習・小テストモード）
   const startSession = async (
     mode: Mode,
     count: number,
@@ -160,12 +169,74 @@ const Home: FC<HomeProps> = ({ onStartSession }) => {
         shuffle: true,
         shuffleChoices: true,
         timeLimit: mode === 'test' ? finalQuestions.length * 75 : undefined,
+        isExamMode: false,
       };
 
       updateSettings(settings);
       onStartSession(finalQuestions, settings);
     } catch (error: any) {
       console.error('[startSession] エラー:', error);
+      setLoadError(`問題の読み込みに失敗しました: ${error.message}`);
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  // 本番モード開始処理
+  const startExamMode = async (session: SessionType) => {
+    if (examModeExamNumber === null) {
+      alert('回次を選択してください');
+      return;
+    }
+
+    setLoading(true);
+    setLoadError(null);
+
+    try {
+      // 指定された回次・セッションの問題を取得
+      let examQuestions = allLoadedQuestions.filter(q =>
+        q.examNumber === examModeExamNumber && q.session === session
+      );
+
+      if (examQuestions.length === 0) {
+        const dbQuestions = await getQuestions([examModeExamNumber], [session]);
+        examQuestions = dbQuestions;
+      }
+
+      if (examQuestions.length === 0) {
+        setLoadError(`第${examModeExamNumber}回 ${session === 'gozen' ? '午前' : '午後'}の問題が見つかりませんでした。`);
+        setLoading(false);
+        return;
+      }
+
+      // 問題番号順にソート（デフォルト）
+      let finalQuestions = [...examQuestions].sort((a, b) => a.questionNumber - b.questionNumber);
+
+      // シャッフル設定に応じて処理
+      if (examModeShuffle) {
+        finalQuestions = [...finalQuestions].sort(() => Math.random() - 0.5);
+      }
+
+      if (examModeShuffleChoices) {
+        finalQuestions = shuffleAllChoices(finalQuestions);
+      }
+
+      const settings: SessionSettings = {
+        mode: 'exam',
+        questionCount: finalQuestions.length,
+        examNumbers: [examModeExamNumber],
+        sessions: [session],
+        categories: [...CATEGORY_LIST], // 全科目
+        shuffle: examModeShuffle,
+        shuffleChoices: examModeShuffleChoices,
+        timeLimit: EXAM_TIME_LIMIT, // 2時間30分
+        isExamMode: true,
+      };
+
+      updateSettings(settings);
+      onStartSession(finalQuestions, settings);
+    } catch (error: any) {
+      console.error('[startExamMode] エラー:', error);
       setLoadError(`問題の読み込みに失敗しました: ${error.message}`);
     } finally {
       setLoading(false);
@@ -188,6 +259,13 @@ const Home: FC<HomeProps> = ({ onStartSession }) => {
     } else {
       setSelectedExamNumbers([...selectedExamNumbers, examNumber]);
     }
+  };
+
+  // 特定の回次の問題数を取得
+  const getExamQuestionCount = (examNumber: number, session: SessionType): number => {
+    return allLoadedQuestions.filter(q =>
+      q.examNumber === examNumber && q.session === session
+    ).length;
   };
 
   // ローディング中
@@ -219,8 +297,8 @@ const Home: FC<HomeProps> = ({ onStartSession }) => {
           </div>
         )}
 
-        {/* メイン画面（設定を開いていない時） */}
-        {!showSettings && (
+        {/* ========== メイン画面 ========== */}
+        {currentScreen === 'main' && (
           <div className="space-y-4">
             {/* すぐに始めるボタン */}
             <button
@@ -237,14 +315,27 @@ const Home: FC<HomeProps> = ({ onStartSession }) => {
 
             {/* 設定を変えて始めるボタン */}
             <button
-              onClick={() => setShowSettings(true)}
+              onClick={() => setCurrentScreen('settings')}
               disabled={isLoading || allLoadedQuestions.length === 0}
               className="w-full bg-white hover:bg-gray-50 active:bg-gray-100 text-gray-800 rounded-2xl p-6 shadow-lg border-2 border-gray-200 transition-all disabled:opacity-50 disabled:cursor-not-allowed"
             >
               <div className="text-4xl mb-2">⚙️</div>
               <div className="text-xl font-bold mb-1">設定を変えて始める</div>
               <div className="text-gray-500 text-sm">
-                問題数・科目・テストモードなど
+                問題数・科目・小テストモードなど
+              </div>
+            </button>
+
+            {/* 本番モードボタン */}
+            <button
+              onClick={() => setCurrentScreen('exam-select')}
+              disabled={isLoading || allLoadedQuestions.length === 0}
+              className="w-full bg-gradient-to-r from-red-500 to-orange-500 hover:from-red-600 hover:to-orange-600 active:from-red-700 active:to-orange-700 text-white rounded-2xl p-6 shadow-lg transition-all disabled:opacity-50 disabled:cursor-not-allowed"
+            >
+              <div className="text-4xl mb-2">📋</div>
+              <div className="text-xl font-bold mb-1">本番モード</div>
+              <div className="text-red-100 text-sm">
+                実際の試験と同じ環境で挑戦
               </div>
             </button>
 
@@ -255,12 +346,12 @@ const Home: FC<HomeProps> = ({ onStartSession }) => {
           </div>
         )}
 
-        {/* 設定画面 */}
-        {showSettings && (
+        {/* ========== 設定画面（練習・小テスト） ========== */}
+        {currentScreen === 'settings' && (
           <div className="space-y-6">
             {/* 戻るボタン */}
             <button
-              onClick={() => setShowSettings(false)}
+              onClick={() => setCurrentScreen('main')}
               className="flex items-center text-gray-600 hover:text-gray-800 mb-4"
             >
               <span className="text-xl mr-2">←</span>
@@ -292,7 +383,7 @@ const Home: FC<HomeProps> = ({ onStartSession }) => {
                   }`}
                 >
                   <div className="text-2xl mb-1">📝</div>
-                  <div className="font-semibold text-sm">テスト</div>
+                  <div className="font-semibold text-sm">小テスト</div>
                   <div className="text-xs text-gray-500">時間制限あり</div>
                 </button>
               </div>
@@ -426,15 +517,193 @@ const Home: FC<HomeProps> = ({ onStartSession }) => {
               disabled={isLoading || selectedExamNumbers.length === 0 || selectedCategories.length === 0}
               className="w-full bg-green-600 hover:bg-green-700 active:bg-green-800 text-white rounded-2xl p-5 shadow-lg font-bold text-lg transition-all disabled:opacity-50 disabled:cursor-not-allowed"
             >
-              {selectedMode === 'learning' ? '🎯 練習を始める' : '📝 テストを始める'}
+              {selectedMode === 'learning' ? '🎯 練習を始める' : '📝 小テストを始める'}
             </button>
 
-            {/* テストモードの場合の時間表示 */}
+            {/* 小テストモードの場合の時間表示 */}
             {selectedMode === 'test' && (
               <p className="text-center text-gray-500 text-sm">
                 ⏱ 制限時間: 約{Math.ceil(Math.min(questionCount, filteredQuestionCount || questionCount) * 75 / 60)}分
               </p>
             )}
+          </div>
+        )}
+
+        {/* ========== 本番モード - 回次選択画面 ========== */}
+        {currentScreen === 'exam-select' && (
+          <div className="space-y-6">
+            {/* 戻るボタン */}
+            <button
+              onClick={() => setCurrentScreen('main')}
+              className="flex items-center text-gray-600 hover:text-gray-800 mb-4"
+            >
+              <span className="text-xl mr-2">←</span>
+              <span>戻る</span>
+            </button>
+
+            {/* タイトル */}
+            <div className="bg-gradient-to-r from-red-500 to-orange-500 rounded-2xl p-4 text-white text-center">
+              <div className="text-3xl mb-2">📋</div>
+              <h2 className="text-xl font-bold">本番モード</h2>
+              <p className="text-sm text-red-100 mt-1">制限時間: 2時間30分</p>
+            </div>
+
+            {/* 回次選択 */}
+            <div className="bg-white rounded-2xl p-4 shadow">
+              <h2 className="text-lg font-bold text-gray-800 mb-4">どの回を受験する？</h2>
+              <div className="space-y-3">
+                {availableExamNumbers.map((examNumber) => {
+                  const gozenCount = getExamQuestionCount(examNumber, 'gozen');
+                  const gogoCount = getExamQuestionCount(examNumber, 'gogo');
+                  const hasQuestions = gozenCount > 0 || gogoCount > 0;
+
+                  return (
+                    <button
+                      key={examNumber}
+                      onClick={() => {
+                        if (hasQuestions) {
+                          setExamModeExamNumber(examNumber);
+                          setCurrentScreen('exam-session-select');
+                        }
+                      }}
+                      disabled={!hasQuestions}
+                      className={`w-full p-4 rounded-xl border-2 text-left transition-all ${
+                        !hasQuestions
+                          ? 'border-gray-100 bg-gray-50 text-gray-300 cursor-not-allowed'
+                          : 'border-gray-200 bg-white hover:border-orange-400 hover:bg-orange-50'
+                      }`}
+                    >
+                      <div className="flex items-center justify-between">
+                        <div>
+                          <span className="text-lg font-bold">第{examNumber}回</span>
+                          {hasQuestions && (
+                            <span className="text-sm text-gray-500 ml-2">
+                              (午前{gozenCount}問 / 午後{gogoCount}問)
+                            </span>
+                          )}
+                        </div>
+                        <span className="text-2xl">→</span>
+                      </div>
+                    </button>
+                  );
+                })}
+              </div>
+            </div>
+          </div>
+        )}
+
+        {/* ========== 本番モード - 午前/午後選択画面 ========== */}
+        {currentScreen === 'exam-session-select' && examModeExamNumber !== null && (
+          <div className="space-y-6">
+            {/* 戻るボタン */}
+            <button
+              onClick={() => setCurrentScreen('exam-select')}
+              className="flex items-center text-gray-600 hover:text-gray-800 mb-4"
+            >
+              <span className="text-xl mr-2">←</span>
+              <span>回次選択に戻る</span>
+            </button>
+
+            {/* タイトル */}
+            <div className="bg-gradient-to-r from-red-500 to-orange-500 rounded-2xl p-4 text-white text-center">
+              <div className="text-3xl mb-2">📋</div>
+              <h2 className="text-xl font-bold">第{examModeExamNumber}回</h2>
+              <p className="text-sm text-red-100 mt-1">本番モード・制限時間 2時間30分</p>
+            </div>
+
+            {/* 午前/午後選択 */}
+            <div className="bg-white rounded-2xl p-4 shadow">
+              <h2 className="text-lg font-bold text-gray-800 mb-4">どちらを受験する？</h2>
+              <div className="space-y-3">
+                {/* 午前の部 */}
+                <button
+                  onClick={() => startExamMode('gozen')}
+                  disabled={getExamQuestionCount(examModeExamNumber, 'gozen') === 0}
+                  className={`w-full p-5 rounded-xl border-2 text-left transition-all ${
+                    getExamQuestionCount(examModeExamNumber, 'gozen') === 0
+                      ? 'border-gray-100 bg-gray-50 text-gray-300 cursor-not-allowed'
+                      : 'border-blue-300 bg-blue-50 hover:border-blue-500 hover:bg-blue-100'
+                  }`}
+                >
+                  <div className="flex items-center justify-between">
+                    <div>
+                      <div className="text-2xl mb-1">🌅</div>
+                      <span className="text-xl font-bold">午前の部</span>
+                      <p className="text-sm text-gray-600 mt-1">
+                        {getExamQuestionCount(examModeExamNumber, 'gozen')}問
+                      </p>
+                    </div>
+                    <span className="text-3xl">▶</span>
+                  </div>
+                </button>
+
+                {/* 午後の部 */}
+                <button
+                  onClick={() => startExamMode('gogo')}
+                  disabled={getExamQuestionCount(examModeExamNumber, 'gogo') === 0}
+                  className={`w-full p-5 rounded-xl border-2 text-left transition-all ${
+                    getExamQuestionCount(examModeExamNumber, 'gogo') === 0
+                      ? 'border-gray-100 bg-gray-50 text-gray-300 cursor-not-allowed'
+                      : 'border-orange-300 bg-orange-50 hover:border-orange-500 hover:bg-orange-100'
+                  }`}
+                >
+                  <div className="flex items-center justify-between">
+                    <div>
+                      <div className="text-2xl mb-1">🌇</div>
+                      <span className="text-xl font-bold">午後の部</span>
+                      <p className="text-sm text-gray-600 mt-1">
+                        {getExamQuestionCount(examModeExamNumber, 'gogo')}問
+                      </p>
+                    </div>
+                    <span className="text-3xl">▶</span>
+                  </div>
+                </button>
+              </div>
+            </div>
+
+            {/* シャッフル設定 */}
+            <div className="bg-white rounded-2xl p-4 shadow">
+              <h2 className="text-lg font-bold text-gray-800 mb-3">オプション</h2>
+              <div className="space-y-3">
+                {/* 問題順シャッフル */}
+                <label className="flex items-center justify-between p-3 rounded-xl border-2 border-gray-200 cursor-pointer hover:bg-gray-50">
+                  <div>
+                    <span className="font-medium">問題の順番をシャッフル</span>
+                    <p className="text-xs text-gray-500">OFFなら本番と同じ順番</p>
+                  </div>
+                  <input
+                    type="checkbox"
+                    checked={examModeShuffle}
+                    onChange={(e) => setExamModeShuffle(e.target.checked)}
+                    className="w-5 h-5 text-orange-500 rounded focus:ring-orange-500"
+                  />
+                </label>
+
+                {/* 選択肢シャッフル */}
+                <label className="flex items-center justify-between p-3 rounded-xl border-2 border-gray-200 cursor-pointer hover:bg-gray-50">
+                  <div>
+                    <span className="font-medium">選択肢の順番をシャッフル</span>
+                    <p className="text-xs text-gray-500">OFFなら本番と同じ順番</p>
+                  </div>
+                  <input
+                    type="checkbox"
+                    checked={examModeShuffleChoices}
+                    onChange={(e) => setExamModeShuffleChoices(e.target.checked)}
+                    className="w-5 h-5 text-orange-500 rounded focus:ring-orange-500"
+                  />
+                </label>
+              </div>
+            </div>
+
+            {/* 注意事項 */}
+            <div className="bg-yellow-50 border border-yellow-200 rounded-xl p-4">
+              <h3 className="font-bold text-yellow-800 mb-2">⚠️ 本番モードの注意</h3>
+              <ul className="text-sm text-yellow-700 space-y-1">
+                <li>• 制限時間は2時間30分です</li>
+                <li>• 途中でやめることはできません</li>
+                <li>• 時間切れで強制終了します</li>
+              </ul>
+            </div>
           </div>
         )}
       </div>

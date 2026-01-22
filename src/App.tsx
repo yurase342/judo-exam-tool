@@ -19,8 +19,15 @@ function App() {
     setCurrentView('session');
   };
 
-  const handleSessionComplete = (sessionAnswers: Answer[]) => {
+  const handleSessionComplete = (sessionAnswers: Answer[], quitAtQuestion?: number) => {
     setAnswers(sessionAnswers);
+    // 途中終了した場合、settingsに記録
+    if (quitAtQuestion !== undefined && settings) {
+      setSettings({
+        ...settings,
+        quitAtQuestion,
+      });
+    }
     setCurrentView('result');
   };
 
@@ -50,6 +57,7 @@ function App() {
         summary={summary}
         mode={settings.mode}
         onBack={handleBackToHome}
+        quitAtQuestion={settings.quitAtQuestion}
       />
     );
   }

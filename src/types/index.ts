@@ -1,8 +1,8 @@
 // セッションタイプ
 export type SessionType = 'gozen' | 'gogo';
 export type QuestionType = 'question' | 'supplement';
-export type Mode = 'learning' | 'test';
-export type AnswerStatus = 'answered' | 'skipped' | 'timeout';
+export type Mode = 'learning' | 'test' | 'exam'; // exam = 本番モード
+export type AnswerStatus = 'answered' | 'skipped' | 'timeout' | 'quit'; // quit = 途中終了
 
 // 科目（カテゴリ）タイプ
 export type CategoryId =
@@ -101,8 +101,10 @@ export interface SessionSettings {
   questionCount: number;
   shuffle: boolean; // 問題の出題順をシャッフル
   shuffleChoices?: boolean; // 選択肢の順番をシャッフル（デフォルト: true）
-  timeLimit?: number; // テストモード専用（秒）
+  timeLimit?: number; // テストモード・本番モード専用（秒）
   prioritizeBessatsu?: boolean; // 別冊参照がある問題を優先的に出題
+  isExamMode?: boolean; // 本番モードかどうか
+  quitAtQuestion?: number; // 途中終了した問題番号（1-indexed）
 }
 
 // セッションサマリー

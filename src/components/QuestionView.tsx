@@ -12,9 +12,9 @@ interface QuestionViewProps {
   onAnswer: (answer: string) => void;
   onSkip?: () => void;
   onHintUsed?: () => void; // ヒントを確認した時のコールバック
-  mode: 'learning' | 'test';
+  mode: 'learning' | 'test' | 'exam';
   elapsedTime?: number; // 経過時間（秒）
-  remainingTime?: number; // 残り時間（秒、テストモード用）
+  remainingTime?: number; // 残り時間（秒、小テスト・本番モード用）
 }
 
 const QuestionView: React.FC<QuestionViewProps> = ({

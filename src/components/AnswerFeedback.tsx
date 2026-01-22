@@ -6,7 +6,7 @@ interface AnswerFeedbackProps {
   correctAnswer: string;
   correctAnswers?: string[]; // 複数正答（AでもBでも正解の場合）
   onNext: () => void;
-  mode: 'learning' | 'test';
+  mode: 'learning' | 'test' | 'exam';
 }
 
 const AnswerFeedback: React.FC<AnswerFeedbackProps> = ({
@@ -22,11 +22,11 @@ const AnswerFeedback: React.FC<AnswerFeedbackProps> = ({
   onNextRef.current = onNext;
 
   // 学習モード: 1秒後に自動遷移
-  // テストモード: 0.5秒後に自動遷移
+  // 小テスト・本番モード: 0.5秒後に自動遷移
   useEffect(() => {
     const timer = setTimeout(() => {
       onNextRef.current();
-    }, mode === 'learning' ? 1000 : 500);
+    }, mode === 'learning' ? 1000 : 500); // test, exam は 0.5秒
 
     return () => clearTimeout(timer);
     // modeのみを依存配列に含める（onNextはrefで管理するため不要）
@@ -70,8 +70,7 @@ const AnswerFeedback: React.FC<AnswerFeedbackProps> = ({
             </>
           )}
           <div className="text-xs sm:text-sm text-gray-500 mt-3 sm:mt-4">
-            {mode === 'learning' ? '1秒後に次の問題へ...' : '0.5秒後に次の問題へ...'}
-          </div>
+            {mode === 'learning' ? '1秒後に次の問題へ...' : '0.5秒後に次の問題へ...'}</div>
         </div>
       </div>
     </div>

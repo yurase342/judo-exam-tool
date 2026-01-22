@@ -9,6 +9,7 @@ interface ResultViewProps {
   mode: Mode;
   onBack: () => void;
   onExportPDF?: () => void;
+  quitAtQuestion?: number; // 途中終了した問題番号（1-indexed）
 }
 
 const ResultView: FC<ResultViewProps> = ({
@@ -17,6 +18,7 @@ const ResultView: FC<ResultViewProps> = ({
   summary,
   mode,
   onBack,
+  quitAtQuestion,
 }) => {
   const handleExportPDF = () => {
     // ブラウザの印刷機能を使用してPDFとして保存
@@ -153,7 +155,7 @@ const ResultView: FC<ResultViewProps> = ({
         {/* ヘッダー */}
         <div className="text-center mb-6 print:mb-4">
           <h1 className="text-2xl sm:text-3xl font-bold mb-2 print:text-xl">
-            {mode === 'learning' ? '学習結果レポート' : 'テスト結果レポート'}
+            {mode === 'exam' ? '本番モード結果レポート' : mode === 'learning' ? '学習結果レポート' : '小テスト結果レポート'}
           </h1>
           {examInfo && (
             <p className="text-lg text-gray-700 font-medium print:text-base">
@@ -164,6 +166,21 @@ const ResultView: FC<ResultViewProps> = ({
             {currentDateTime}
           </p>
         </div>
+
+        {/* 途中終了メッセージ */}
+        {quitAtQuestion && (
+          <div className="bg-yellow-50 border border-yellow-300 rounded-xl p-4 mb-6 print:bg-white print:border-yellow-400">
+            <div className="flex items-center gap-2">
+              <span className="text-2xl">⚠️</span>
+              <div>
+                <p className="font-bold text-yellow-800">途中で終了しました</p>
+                <p className="text-sm text-yellow-700">
+                  問題{quitAtQuestion}で終了しました。{quitAtQuestion - 1}問回答済み、{summary.totalQuestions - quitAtQuestion + 1}問未回答
+                </p>
+              </div>
+            </div>
+          </div>
+        )}
 
         {/* スコアサマリー */}
         <div className="bg-white rounded-lg shadow p-4 sm:p-6 mb-6 print:shadow-none print:border-2 print:border-gray-400 print:mb-4 print:p-4">
@@ -208,7 +225,7 @@ const ResultView: FC<ResultViewProps> = ({
                   )}
                 </>
               )}
-              {mode === 'test' && (
+              {(mode === 'test' || mode === 'exam') && (
                 <>
                   {summary.timeoutCount > 0 && (
                     <span>時間切れ: {summary.timeoutCount}問</span>
@@ -295,6 +312,7 @@ const ResultView: FC<ResultViewProps> = ({
               const isCorrect = answer.isCorrect;
               const isSkipped = answer.status === 'skipped';
               const isTimeout = answer.status === 'timeout';
+              const isQuit = answer.status === 'quit';
               const selectedLabel = answer.selectedAnswer?.toUpperCase() || null;
               const selectedText = getChoiceText(question, answer.selectedAnswer);
               const correctLabels = getCorrectAnswerLabels(question);
@@ -306,6 +324,8 @@ const ResultView: FC<ResultViewProps> = ({
                   className={`border-2 rounded-lg p-4 print:p-3 print:break-inside-avoid ${
                     isCorrect
                       ? 'border-green-300 bg-green-50 print:bg-white'
+                      : isQuit
+                      ? 'border-gray-300 bg-gray-50 print:bg-white'
                       : 'border-red-300 bg-red-50 print:bg-white'
                   }`}
                 >
@@ -339,11 +359,13 @@ const ResultView: FC<ResultViewProps> = ({
                         ? 'bg-green-200 text-green-800'
                         : isSkipped
                         ? 'bg-gray-200 text-gray-700'
-                        : isTimeout && mode === 'test'
+                        : isQuit
+                        ? 'bg-gray-200 text-gray-600'
+                        : (isTimeout && (mode === 'test' || mode === 'exam'))
                         ? 'bg-yellow-200 text-yellow-800'
                         : 'bg-red-200 text-red-800'
                     }`}>
-                      {isCorrect ? '正解' : isSkipped ? 'スキップ' : (isTimeout && mode === 'test') ? '時間切れ' : '不正解'}
+                      {isCorrect ? '正解' : isSkipped ? 'スキップ' : isQuit ? '途中終了' : ((isTimeout && (mode === 'test' || mode === 'exam'))) ? '時間切れ' : '不正解'}
                     </div>
                   </div>
 
@@ -379,7 +401,7 @@ const ResultView: FC<ResultViewProps> = ({
                         </div>
                       ) : (
                         <p className="text-gray-500 italic">
-                          {isSkipped ? 'スキップ（未回答）' : isTimeout ? '時間切れ（未回答）' : '未回答'}
+                          {isSkipped ? 'スキップ（未回答）' : isQuit ? '途中終了（未回答）' : isTimeout ? '時間切れ（未回答）' : '未回答'}
                         </p>
                       )}
                     </div>
